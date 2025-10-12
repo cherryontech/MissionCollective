@@ -5,7 +5,7 @@
 
 ## Motivation and Context
 <!--- Why is this change required? What problem does it solve? -->
-<!--- Please link the relevant story card here. -->
+<!--- Please link the relevant Jira story card here. -->
 
 ## Testing
 <!--- Please describe in detail how you tested your changes, -->
@@ -29,3 +29,4 @@
   - [ ] I have updated the documentation accordingly.
 - [ ] I have added tests to cover my changes.
 - [ ] All new and existing tests passed.
+- [ ] I have linked the relevant Jira story card and checked that my changes meet the success criteria.
