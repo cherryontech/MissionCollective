@@ -21,7 +21,7 @@ export default function LearnMoreModal() {
 
   // this should only display if showLearnMoreModal is true
   return (
-    <div>
+    <div className="LearnMoreModal">
       {/* the text in h3 should change conditionally depending on if the answer was right or not */}
       <h3>{displayText.correct}</h3>
       <p>{DIFFERENT_CULTURES_TRIVIA[currentQuestionID].learnMoreText}</p>

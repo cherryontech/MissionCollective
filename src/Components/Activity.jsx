@@ -1,3 +1,4 @@
+import "../Activity.css";
 import { ActivityContextProvider } from "../Context/ActivityContext";
 import Question from "./Question";
 import QuestionFooter from "./QuestionFooter";
