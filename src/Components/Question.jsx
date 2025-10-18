@@ -24,7 +24,7 @@ export default function Question() {
       <div className="QuestionContainer">
         <p>{currentQuestion.question}</p>
         <img src={currentQuestion.imageURL} alt={currentQuestion.altText}></img>
-        <AnswersContainer></AnswersContainer>
+        <AnswersContainer />
       </div>
       <div className="QuestionNavigation">
         <button onClick={handlePreviousQuestionOnClick}>
@@ -33,7 +33,7 @@ export default function Question() {
         <button onClick={handleSkipOnClick}>Confirm Answer</button>
         <button onClick={handleSkipOnClick}>Skip For Now</button>
       </div>
-      <LearnMoreModal></LearnMoreModal>
+      <LearnMoreModal />
     </div>
   );
 }

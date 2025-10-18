@@ -52,3 +52,13 @@ img {
     ". ."
     ". .";
 }
+.Answer {
+  display: flex;
+  border: 2px solid #0036f5;
+  border-radius: 8px;
+}
+
+.Answer > button {
+  flex-grow: 2;
+  text-align: left;
+}
