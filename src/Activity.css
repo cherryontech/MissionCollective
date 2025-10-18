@@ -40,6 +40,10 @@ img {
   margin: 20px;
 }
 
+.AnswersContainer > button {
+  display: flex;
+}
+
 .QuestionNavigation {
   padding-top: 40px;
   padding-bottom: 40px;
@@ -51,14 +55,4 @@ img {
   grid-template-areas:
     ". ."
     ". .";
-}
-.Answer {
-  display: flex;
-  border: 2px solid #0036f5;
-  border-radius: 8px;
-}
-
-.Answer > button {
-  flex-grow: 2;
-  text-align: left;
 }
