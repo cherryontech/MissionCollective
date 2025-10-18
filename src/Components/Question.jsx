@@ -23,11 +23,11 @@ export default function Question() {
     <div className="QuestionContainer">
       <p>{currentQuestion.question}</p>
       <img src="/" alt={currentQuestion.altText}></img>
+      <AnswersContainer></AnswersContainer>
       <LearnMoreModal></LearnMoreModal>
       <button onClick={handlePreviousQuestionOnClick}>Previous Question</button>
       <button onClick={handleSkipOnClick}>Confirm Answer</button>
-      <button onClick={handleSkipOnClick}>Skip</button>
-      <AnswersContainer></AnswersContainer>
+      <button onClick={handleSkipOnClick}>Skip For Now</button>
     </div>
   );
 }
