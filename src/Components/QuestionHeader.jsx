@@ -10,7 +10,7 @@ export default function QuestionHeader() {
     <div className="QuestionHeader">
       <div className="CurrentQuestionNumber">
         <img src="/" alt="globe icon"></img>
-        <h2>Question {currentQuestionID} of 10</h2>
+        <h2>Question {currentQuestionID + 1} of 10</h2>
         <p>Different Cultures Trivia</p>
       </div>
       <button onClick={handleOnClick}>Exit Mission</button>

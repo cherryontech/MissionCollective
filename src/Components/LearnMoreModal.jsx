@@ -10,6 +10,11 @@ export default function LearnMoreModal() {
     setShowLearnMoreModal,
   } = useActivityContext();
 
+  const displayText = {
+    correct: "Correct! Well done!",
+    incorrect: "Incorrect, but nice try though!",
+  };
+
   function handleOnClick() {
     // this should update the currentQuestionID and set showLearnMoreModal to false
   }
@@ -17,7 +22,8 @@ export default function LearnMoreModal() {
   // this should only display if showLearnMoreModal is true
   return (
     <div>
-      <h4>Correct/Incorrect message</h4>
+      {/* the text in h3 should change conditionally depending on if the answer was right or not */}
+      <h3>{displayText.correct}</h3>
       <p>{DIFFERENT_CULTURES_TRIVIA[currentQuestionID].learnMoreText}</p>
       <button onClick={handleOnClick}>Next question</button>
     </div>

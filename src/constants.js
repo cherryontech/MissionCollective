@@ -1,6 +1,6 @@
 export const DIFFERENT_CULTURES_TRIVIA = [
   {
-    id: 1,
+    id: 0,
     question:
       "What is the musical style widely considered a symbol of Brazilian national identity, often credited with popularizing Brazilian music globally?",
     answers: [
@@ -15,7 +15,7 @@ export const DIFFERENT_CULTURES_TRIVIA = [
     altText: "<placeholder>",
   },
   {
-    id: 2,
+    id: 1,
     question: "EXAMPLE QUESTION",
     answers: [
       { text: "Samba", isCorrect: true },
@@ -29,7 +29,7 @@ export const DIFFERENT_CULTURES_TRIVIA = [
     altText: "<placeholder>",
   },
   {
-    id: 3,
+    id: 2,
     question: "EXAMPLE QUESTION AGAIN",
     answers: [
       { text: "Samba", isCorrect: true },
