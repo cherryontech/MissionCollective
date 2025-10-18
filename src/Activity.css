@@ -1,0 +1,58 @@
+body {
+  color: #1c1c1e;
+  background-color: #ffffff;
+}
+button {
+  border: 2px solid #0036f5;
+  border-radius: 8px;
+  background-color: #ffffff;
+}
+
+.QuestionContainer {
+  border: 1px solid #e5e5e5;
+  border-radius: 8px;
+}
+
+img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+}
+
+.LearnMoreModal {
+  border: 1px solid #e5e5e5;
+}
+
+.QuestionHeader {
+  display: flex;
+  justify-content: space-between;
+}
+
+.AnswersContainer {
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  gap: 10px 10px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". ."
+    ". .";
+  margin: 20px;
+}
+
+.AnswersContainer > button {
+  display: flex;
+}
+
+.QuestionNavigation {
+  padding-top: 40px;
+  padding-bottom: 40px;
+  display: grid;
+  grid-template-columns: 50% 50%;
+  grid-template-rows: 50% 50%;
+  gap: 10px 10px;
+  grid-auto-flow: row;
+  grid-template-areas:
+    ". ."
+    ". .";
+}
