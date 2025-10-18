@@ -24,8 +24,9 @@ export default function LearnMoreModal() {
     <div className="LearnMoreModal">
       {/* the text in h3 should change conditionally depending on if the answer was right or not */}
       <h3>{displayText.correct}</h3>
+      <h4>Learn More:</h4>
       <p>{DIFFERENT_CULTURES_TRIVIA[currentQuestionID].learnMoreText}</p>
-      <button onClick={handleOnClick}>Next question</button>
+      <button onClick={handleOnClick}>Continue</button>
     </div>
   );
 }
