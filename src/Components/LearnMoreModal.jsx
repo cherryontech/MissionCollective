@@ -1,6 +1,6 @@
 import { useActivityContext } from "../Context/ActivityContext";
 
-import { CULTURE_QUIZ } from "../constants";
+import { DIFFERENT_CULTURES_TRIVIA } from "../constants";
 
 export default function LearnMoreModal() {
   const [
@@ -18,7 +18,7 @@ export default function LearnMoreModal() {
   return (
     <div>
       <h4>Correct/Incorrect message</h4>
-      <p>{CULTURE_QUIZ[currentQuestionID].learnMoreText}</p>
+      <p>{DIFFERENT_CULTURES_TRIVIA[currentQuestionID].learnMoreText}</p>
       <button onClick={handleOnClick}>Next question</button>
     </div>
   );
