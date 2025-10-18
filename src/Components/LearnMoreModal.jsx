@@ -3,12 +3,12 @@ import { useActivityContext } from "../Context/ActivityContext";
 import { DIFFERENT_CULTURES_TRIVIA } from "../constants";
 
 export default function LearnMoreModal() {
-  const [
+  const {
     currentQuestionID,
     setCurrentQuestionID,
     showLearnMoreModal,
     setShowLearnMoreModal,
-  ] = useActivityContext;
+  } = useActivityContext();
 
   function handleOnClick() {
     // this should update the currentQuestionID and set showLearnMoreModal to false
