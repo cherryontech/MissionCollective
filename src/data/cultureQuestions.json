@@ -9,7 +9,7 @@
       { "id": "D", "answerText": "Axé", "isCorrect": false }
     ],
     "learnMoreText": "Samba is Brazil's most recognized musical style, celebrated globally for its infectious rhythms and Carnival association. Originating in Rio de Janeiro, it blends African and European influences to create a unifying, collaborative music genre that symbolizes national identity and joy.",
-    "imageURL": "../images/questionID.jpg",
+    "imageURL": "../assets/images/1.jpg",
     "altText": "Female Carnival dancers in green sequined dresses, beaded jewelry, and large feathers."
   },
   {
@@ -22,7 +22,7 @@
       { "id": "D", "answerText": "Colón", "isCorrect": false }
     ],
     "learnMoreText": "The annual Carnival of Las Tablas in Panama is famous for its fierce, yet friendly, competition between two rival street groups, Calle Arriba and Calle Abajo. This intense but festive rivalry involves elaborate floats and costumes, fostering collective town pride and ensuring the celebration remains vibrant and collaborative.",
-    "imageURL": "../images/questionID.jpg",
+    "imageURL": "../assets/images/2.jpg",
     "altText": "Fireworks over a nighttime Carnival crowd with costumed performers on floats."
   },
   {
@@ -35,20 +35,20 @@
       { "id": "D", "answerText": "Palestine", "isCorrect": true }
     ],
     "learnMoreText": "Tatreez is the intricate traditional cross-stitch embroidery used to decorate the Palestinian Thobe (dress). This beautiful art form, passed down through generations, is a visual language where the specific motifs and colors communicate the wearer's village and history, serving as a powerful symbol of cultural identity.",
-    "imageURL": "../images/questionID.jpg",
+    "imageURL": "../assets/images/3.jpg",
     "altText": "A handmade cross-stitched embroidery with flowers and leaves."
   },
   {
     "id": 4,
-    "questionText": "Which Indigenous language, spoken in present-day Mexico, is the source of common English words like 'chocolate' and 'avocado?\t",
+    "questionText": "Which Indigenous language, spoken in present-day Mexico, is the source of common English words like \"chocolate\" and \"avocado\"?",
     "answerOptions": [
       { "id": "A", "answerText": "Yucatec Maya", "isCorrect": false },
       { "id": "B", "answerText": "Nahuatl", "isCorrect": true },
       { "id": "C", "answerText": "Otomi", "isCorrect": false },
       { "id": "D", "answerText": "Tzeltal", "isCorrect": false }
     ],
-    "learnMoreText": "Nahuatl is the Indigenous language historically spoken by the Aztecs and still spoken in present-day Mexico. It has gifted English many common words, such as 'chili' and 'tomato.' Recognizing its influence celebrates the enduring cultural and linguistic contributions of Mesoamerican heritage.",
-    "imageURL": "../images/questionID.jpg",
+    "learnMoreText": "Nahuatl is the Indigenous language historically spoken by the Aztecs and still spoken in present-day Mexico. It has gifted English many common words, such as \"chili\" and \"tomato\". Recognizing its influence celebrates the enduring cultural and linguistic contributions of Mesoamerican heritage.",
+    "imageURL": "../assets/images/4.jpg",
     "altText": "A ceremonial performer in Aztec-style regalia with feathered headdress and turquoise face paint."
   },
   {
@@ -61,7 +61,7 @@
       { "id": "D", "answerText": "BeaverTails", "isCorrect": false }
     ],
     "learnMoreText": "Poutine is a quintessential Canadian cultural staple that originated in Quebec. This simple, rich dish is celebrated from coast to coast, representing a fun, unifying piece of Canadian culinary identity. Despite its popularity now, the dish was initially considered a simple, low-brow ‘mess’ when it first appeared in rural Quebec diners in the 1950s.",
-    "imageURL": "../images/questionID.jpg",
+    "imageURL": "../assets/images/5.jpg",
     "altText": "A person holding a bowl of french fries topped with cheese curds and gravy."
   },
   {
@@ -74,7 +74,7 @@
       { "id": "D", "answerText": "China", "isCorrect": false }
     ],
     "learnMoreText": "Kintsugi is the traditional Japanese art of repairing broken pottery with lacquer mixed with gold. This encouraging practice embraces the object's damage and history, viewing breakage as part of the story. The gold highlights the fault lines, transforming imperfection into an object of unique beauty and strength.",
-    "imageURL": "../images/questionID.jpg",
+    "imageURL": "../assets/images/6.png",
     "altText": "A ceramic tea bowl repaired with gold lacquer in the cracks."
   },
   {
@@ -87,7 +87,7 @@
       { "id": "D", "answerText": "Italy", "isCorrect": true }
     ],
     "learnMoreText": "The Slow Food movement, started in Italy, encourages people to reject the modern speed of fast food and preserve local culinary traditions, regional diversity, and sustainable agriculture. This collaborative effort promotes appreciation for heritage and enjoying food as a source of community and pleasure.",
-    "imageURL": "../images/questionID.jpg",
+    "imageURL": "../assets/images/7.jpg",
     "altText": "Mediterranean cliffside coastline with brightly coloured buildings, and small boats in the sea."
   },
 
@@ -101,7 +101,7 @@
       { "id": "D", "answerText": "The end of winter", "isCorrect": false }
     ],
     "learnMoreText": "The Lunar New Year's Eve reunion dinner (Nian Ye Fan) is the most significant meal of the year. It represents family unity, gratitude, and remembrance of ancestors. This act of togetherness reinforces familial bonds and sets an encouraging tone for the new year, embodying hope and collective well-being.",
-    "imageURL": "../images/questionID.jpg",
+    "imageURL": "../assets/images/8.jpg",
     "altText": "Lunar New Year red envelopes hanging from a mandarin orange tree."
   },
   {
@@ -114,7 +114,7 @@
       { "id": "D", "answerText": "The Harvest Festival", "isCorrect": false }
     ],
     "learnMoreText": "Midsummer's Eve is an annual celebration of the summer solstice, historically marking the longest day and shortest night of the year, particularly in Northern Europe. Celebrations often involve lighting large bonfires, dancing, and gathering outdoors. It is a time for people to celebrate light, fertility, and community before the long winter returns.",
-    "imageURL": "../images/questionID.jpg",
+    "imageURL": "../assets/images/9.jpg",
     "altText": "A large daytime bonfire next to a body of water with the sun on the horizon in the distance."
   },
   {
@@ -127,7 +127,7 @@
       { "id": "D", "answerText": "Cheongsam", "isCorrect": false }
     ],
     "learnMoreText": "The Ao Dai is Vietnam's national garment, recognized for its elegant, high-collared tunic with side vents worn gracefully over long trousers. As a powerful symbol of Vietnamese identity and feminine beauty, it represents cultural pride and is often worn during formal occasions, celebrating the country's rich heritage.",
-    "imageURL": "../images/questionID.jpg",
+    "imageURL": "../assets/images/10.jpg",
     "altText": "A woman in a pink full-length gown and conical hat stands on a boat during the day."
   }
 ]
