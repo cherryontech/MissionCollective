@@ -60,7 +60,7 @@
       { "id": "C", "answerText": "Poutine", "isCorrect": true },
       { "id": "D", "answerText": "BeaverTails", "isCorrect": false }
     ],
-    "learnMoreText": "Poutine is a quintessential Canadian cultural staple that originated in Quebec. This simple, rich dish is celebrated from coast to coast, representing a fun, unifying piece of Canadian culinary identity. Despite its popularity now, the dish was initially considered a simple, low-brow ‘mess’ when it first appeared in rural Quebec diners in the 1950s.",
+    "learnMoreText": "Poutine is a quintessential Canadian cultural staple that originated in Quebec. This simple, rich dish is celebrated from coast to coast, representing a fun, unifying piece of Canadian culinary identity. Despite its popularity now, the dish was initially considered a simple, low-brow \"mess\" when it first appeared in rural Quebec diners in the 1950s.",
     "imageURL": "../assets/images/quiz1/5.jpg",
     "altText": "A person holding a bowl of french fries topped with cheese curds and gravy."
   },
