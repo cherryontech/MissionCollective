@@ -27,7 +27,7 @@
   },
   {
     "id": 3,
-    "questionText": "The Tatreez is a specific style of traditional embroidery. In which country of the Middle East is the Tatreez embroidery technique most closely associated with the national clothing called a Thobe?",
+    "questionText": "The Tatreez is a specific style of traditional embroidery. In which country of the Middle East is this technique most closely associated with the national clothing called a Thobe?",
     "answerOptions": [
       { "id": "A", "answerText": "Jordan", "isCorrect": false },
       { "id": "B", "answerText": "Lebanon", "isCorrect": false },
@@ -93,14 +93,14 @@
 
   {
     "id": 8,
-    "questionText": "What primary concept does the reunion dinner on Chinese/Lunar New Year's Eve represent?",
+    "questionText": "Held on Chinese/Lunar New Year's Eve, the Reunion Dinner is the central event of the holiday. What core concept does this ceremonial gathering primarily represent?",
     "answerOptions": [
       { "id": "A", "answerText": "New job opportunities", "isCorrect": false },
       { "id": "B", "answerText": "Luck in business", "isCorrect": false },
       { "id": "C", "answerText": "Importance of family & togetherness", "isCorrect": true },
       { "id": "D", "answerText": "The end of winter", "isCorrect": false }
     ],
-    "learnMoreText": "The Lunar New Year's Eve reunion dinner (Nian Ye Fan) is the most significant meal of the year. It represents family unity, gratitude, and remembrance of ancestors. This act of togetherness reinforces familial bonds and sets an encouraging tone for the new year, embodying hope and collective well-being.",
+    "learnMoreText": "The Lunar New Year's Eve Reunion Dinner (Nian Ye Fan) is the most significant meal of the year. It represents family unity, gratitude, and remembrance of ancestors. This act of togetherness reinforces familial bonds and sets an encouraging tone for the new year, embodying hope and collective well-being.",
     "imageURL": "../assets/images/quiz1/8.jpg",
     "altText": "Lunar New Year red envelopes hanging from a mandarin orange tree."
   },
