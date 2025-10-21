@@ -5,9 +5,9 @@ body {
 
 button {
   border-radius: 8px;
-  border: 0 solid #E5E7EB;
-  background-color: #0036F5;
-  color: #F2F2F7;
+  border: 0 solid #e5e7eb;
+  background-color: #0036f5;
+  color: #f2f2f7;
   padding: 11px 16px;
   /*TODO: Figure out if this should be a fixed pixel size?*/
   width: 220px;
@@ -20,30 +20,37 @@ button {
 }
 
 .unselectedAnswerButton {
-border: 2px solid #0036F5;
-background-color: #FFFFFF;
-color: #000000;
+  border: 2px solid #0036f5;
+  background-color: #ffffff;
+  color: #000000;
+  width: 359px;
+  height: 60px;
 }
 
 .selectedAnswerButton {
-background-color: #F2BD00;
-color: #000000;
+  background-color: #f2bd00;
+  color: #000000;
+  width: 359px;
+  height: 60px;
 }
 
 .correctAnswerButton {
-background-color: #00B232;
-color: #000000;
+  background-color: #00b232;
+  color: #000000;
+  width: 359px;
+  height: 60px;
 }
 
 .grayButton {
   border-radius: 8px;
-  background-color: #F0F3FF;
-  color: #1C1C1E;
+  background-color: #f0f3ff;
+  color: #1c1c1e;
 }
 
 .buttonAsLink {
   border: 0px;
-  color: #1C1C1E;
+  color: #1c1c1e;
+  background: none;
 }
 
 .QuestionContainer {
@@ -94,5 +101,3 @@ img {
     ". ."
     ". .";
 }
-
-#

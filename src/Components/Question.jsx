@@ -27,11 +27,15 @@ export default function Question() {
         <AnswersContainer />
       </div>
       <div className="QuestionNavigation">
-        <button onClick={handlePreviousQuestionOnClick}>
-          Previous Question
+        <button className="grayButton" onClick={handlePreviousQuestionOnClick}>
+          Previous Question ⤺
         </button>
-        <button onClick={handleSkipOnClick}>Confirm Answer</button>
-        <button onClick={handleSkipOnClick}>Skip For Now</button>
+        <button className="disabledButton" onClick={handleSkipOnClick}>
+          Confirm Answer ➝
+        </button>
+        <button className="buttonAsLink" onClick={handleSkipOnClick}>
+          Skip For Now
+        </button>
       </div>
       <LearnMoreModal />
     </div>

@@ -11,7 +11,7 @@ export default function AnswersContainer() {
   return (
     <div className="AnswersContainer">
       {currentQuestion.answers.map(({ id, text, isCorrect }) => (
-        <button handleOnClick>
+        <button className="unselectedAnswerButton" onClick={handleOnClick}>
           {/* TODO: Talk with design team to verify that these are icons */}
           <img src="/" alt="Icon" />
           {text}
