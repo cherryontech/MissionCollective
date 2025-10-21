@@ -2,10 +2,48 @@ body {
   color: #1c1c1e;
   background-color: #ffffff;
 }
+
 button {
-  border: 2px solid #0036f5;
   border-radius: 8px;
-  background-color: #ffffff;
+  border: 0 solid #E5E7EB;
+  background-color: #0036F5;
+  color: #F2F2F7;
+  padding: 11px 16px;
+  /*TODO: Figure out if this should be a fixed pixel size?*/
+  width: 220px;
+  height: 48px;
+}
+
+.disabledButton {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.unselectedAnswerButton {
+border: 2px solid #0036F5;
+background-color: #FFFFFF;
+color: #000000;
+}
+
+.selectedAnswerButton {
+background-color: #F2BD00;
+color: #000000;
+}
+
+.correctAnswerButton {
+background-color: #00B232;
+color: #000000;
+}
+
+.grayButton {
+  border-radius: 8px;
+  background-color: #F0F3FF;
+  color: #1C1C1E;
+}
+
+.buttonAsLink {
+  border: 0px;
+  color: #1C1C1E;
 }
 
 .QuestionContainer {
@@ -56,3 +94,5 @@ img {
     ". ."
     ". .";
 }
+
+#
