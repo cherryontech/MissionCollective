@@ -1,4 +1,5 @@
 import { useContext, createContext, useState } from "react";
+import { DIFFERENT_CULTURES_TRIVIA } from "../constants";
 
 // step 1: create default state
 export const defaultState = {
@@ -6,10 +7,12 @@ export const defaultState = {
   currentQuestionID: 0,
   totalScore: 0,
   showLearnMoreModal: false,
+  answerMap: {},
   setAnswer: () => {},
   setCurrentQuestion: () => {},
   setTotalScore: () => {},
   setShowLearnMoreModal: () => {},
+  updateAnswerMap: () => {},
 };
 
 // step 2: create context
@@ -24,6 +27,18 @@ export const ActivityContextProvider = ({ children }) => {
   const [currentQuestionID, setCurrentQuestionID] = useState(0);
   const [totalScore, setTotalScore] = useState(0);
   const [showLearnMoreModal, setShowLearnMoreModal] = useState(false);
+  const [answerMap, updateAnswerMap] = useState({
+    0: null,
+    1: null,
+    2: null,
+    3: null,
+    4: null,
+    5: null,
+    6: null,
+    7: null,
+    8: null,
+    9: null,
+  });
   const value = {
     answer,
     setAnswer,
@@ -33,6 +48,8 @@ export const ActivityContextProvider = ({ children }) => {
     setTotalScore,
     showLearnMoreModal,
     setShowLearnMoreModal,
+    answerMap,
+    updateAnswerMap,
   };
   return (
     <ActivityContext.Provider value={value}>
