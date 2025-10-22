@@ -27,7 +27,12 @@ export default function Question() {
         <AnswersContainer />
       </div>
       <div className="QuestionNavigation">
-        <button className="grayButton" onClick={handlePreviousQuestionOnClick}>
+        <button
+          className={
+            currentQuestionID == 0 ? "grayButton disabledButton" : "grayButton"
+          }
+          onClick={handlePreviousQuestionOnClick}
+        >
           Previous Question ⤺
         </button>
         <button
@@ -36,7 +41,14 @@ export default function Question() {
         >
           Confirm Answer ➝
         </button>
-        <button className="buttonAsLink" onClick={handleSkipOnClick}>
+        <button
+          className={
+            currentQuestionID == 9
+              ? "buttonAsLink disabledButton"
+              : "buttonAsLink"
+          }
+          onClick={handleSkipOnClick}
+        >
           Skip For Now
         </button>
       </div>
