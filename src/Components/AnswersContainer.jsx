@@ -12,10 +12,14 @@ export default function AnswersContainer() {
     <div className="AnswersContainer">
       {currentQuestion.answers.map(({ id, text, isCorrect }) => (
         <button
+          key={id}
           className="unselectedAnswerButton answerButton"
           onClick={handleOnClick}
         >
-          <img src="src\assets\images\icons\optionA.svg" alt="Icon A" />
+          <img
+            src={"src\\assets\\images\\icons\\option" + id + ".svg"}
+            alt={"Letter " + id + "icon"}
+          />
           <span className="answerButtonText">{text}</span>
         </button>
       ))}

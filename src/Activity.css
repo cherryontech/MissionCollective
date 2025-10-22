@@ -21,10 +21,13 @@ button {
 .answerButton {
   text-align: left;
   display: flex;
+  align-items: center;
 }
 
 button > img {
   flex-basis: 10%;
+  height: 48px;
+  width: 48px;
 }
 
 .answerButtonText {
