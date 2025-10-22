@@ -4,7 +4,7 @@ import AnswersContainer from "./AnswersContainer";
 import LearnMoreModal from "./LearnMoreModal";
 
 export default function Question() {
-  const { currentQuestionID } = useActivityContext();
+  const { currentQuestionID, answer } = useActivityContext();
   const currentQuestion = DIFFERENT_CULTURES_TRIVIA[currentQuestionID];
 
   function handlePreviousQuestionOnClick() {
@@ -30,7 +30,10 @@ export default function Question() {
         <button className="grayButton" onClick={handlePreviousQuestionOnClick}>
           Previous Question ⤺
         </button>
-        <button className="disabledButton" onClick={handleSkipOnClick}>
+        <button
+          className={answer ? "" : "disabledButton"}
+          onClick={handleConfirmAnswerOnClick}
+        >
           Confirm Answer ➝
         </button>
         <button className="buttonAsLink" onClick={handleSkipOnClick}>
