@@ -4,14 +4,10 @@ import AnswersContainer from "./AnswersContainer";
 import LearnMoreModal from "./LearnMoreModal";
 
 export default function Question() {
-  const { currentQuestionID, answer } = useActivityContext();
+  const { currentQuestionID, answer, updateAnswerMap } = useActivityContext();
   const currentQuestion = DIFFERENT_CULTURES_TRIVIA[currentQuestionID];
 
   function handlePreviousQuestionOnClick() {
-    // TODO
-  }
-
-  function handleConfirmAnswerOnClick() {
     // TODO
   }
 
@@ -37,7 +33,12 @@ export default function Question() {
         </button>
         <button
           className={answer ? "" : "disabledButton"}
-          onClick={handleConfirmAnswerOnClick}
+          onClick={() =>
+            updateAnswerMap((prev) => ({
+              ...prev,
+              [currentQuestionID]: answer,
+            }))
+          }
         >
           Confirm Answer ➝
         </button>
