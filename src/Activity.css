@@ -9,7 +9,6 @@ button {
   background-color: #0036f5;
   color: #f2f2f7;
   padding: 11px 16px;
-  /*TODO: Figure out if this should be a fixed pixel size?*/
   width: 220px;
   height: 48px;
 }
@@ -17,6 +16,19 @@ button {
 .disabledButton {
   opacity: 0.5;
   cursor: not-allowed;
+}
+
+.answerButton {
+  text-align: left;
+  display: flex;
+}
+
+button > img {
+  flex-basis: 10%;
+}
+
+.answerButtonText {
+  flex-basis: 90%;
 }
 
 .unselectedAnswerButton {
