@@ -12,7 +12,7 @@ export default function AnswersContainer() {
           key={id}
           className={
             id == answer
-              ? "selectedAnswerButton"
+              ? "selectedAnswerButton answerButton"
               : "unselectedAnswerButton answerButton"
           }
           onClick={() => setAnswer(id)}
