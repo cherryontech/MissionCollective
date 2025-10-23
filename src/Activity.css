@@ -4,13 +4,13 @@ body {
 }
 
 button {
-  border-radius: 8px;
+  border-radius: 0.5rem;
   border: 0 solid #e5e7eb;
   background-color: #0036f5;
   color: #f2f2f7;
-  padding: 11px 16px;
-  width: 220px;
-  height: 48px;
+  padding: 0.7rem 1rem;
+  width: 13.75rem;
+  height: 3rem;
 }
 
 .disabledButton {
@@ -26,8 +26,8 @@ button {
 
 button > img {
   flex-basis: 10%;
-  height: 48px;
-  width: 48px;
+  height: 3rem;
+  width: 3rem;
 }
 
 .answerButtonText {
@@ -35,42 +35,42 @@ button > img {
 }
 
 .unselectedAnswerButton {
-  border: 2px solid #0036f5;
+  border: 0.13rem solid #0036f5;
   background-color: #ffffff;
   color: #000000;
-  width: 359px;
-  height: 60px;
+  width: 22.44rem;
+  height: 3.75rem;
 }
 
 .selectedAnswerButton {
   background-color: #f2bd00;
   color: #000000;
-  width: 359px;
-  height: 60px;
+  width: 22.44rem;
+  height: 3.75rem;
 }
 
 .correctAnswerButton {
   background-color: #00b232;
   color: #000000;
-  width: 359px;
-  height: 60px;
+  width: 22.44rem;
+  height: 3.75rem;
 }
 
 .grayButton {
-  border-radius: 8px;
+  border-radius: 0.5rem;
   background-color: #f0f3ff;
   color: #1c1c1e;
 }
 
 .buttonAsLink {
-  border: 0px;
+  border: 0rem;
   color: #1c1c1e;
   background: none;
 }
 
 .QuestionContainer {
-  border: 1px solid #e5e5e5;
-  border-radius: 8px;
+  border: 0.06rem solid #e5e5e5;
+  border-radius: 0.5rem;
 }
 
 img {
@@ -80,7 +80,7 @@ img {
 }
 
 .LearnMoreModal {
-  border: 1px solid #e5e5e5;
+  border: 0.06rem solid #e5e5e5;
 }
 
 .QuestionHeader {
@@ -92,12 +92,12 @@ img {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 50% 50%;
-  gap: 10px 10px;
+  gap: 0.63rem 0.63rem;
   grid-auto-flow: row;
   grid-template-areas:
     ". ."
     ". .";
-  margin: 20px;
+  margin: 1.25rem;
 }
 
 .AnswersContainer > button {
@@ -105,12 +105,12 @@ img {
 }
 
 .QuestionNavigation {
-  padding-top: 40px;
-  padding-bottom: 40px;
+  padding-top: 2.5rem;
+  padding-bottom: 2.5rem;
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 50% 50%;
-  gap: 10px 10px;
+  gap: 0.63rem 0.63rem;
   grid-auto-flow: row;
   grid-template-areas:
     ". ."
