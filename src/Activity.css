@@ -2,10 +2,70 @@ body {
   color: #1c1c1e;
   background-color: #ffffff;
 }
+
 button {
-  border: 2px solid #0036f5;
   border-radius: 8px;
+  border: 0 solid #e5e7eb;
+  background-color: #0036f5;
+  color: #f2f2f7;
+  padding: 11px 16px;
+  width: 220px;
+  height: 48px;
+}
+
+.disabledButton {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
+
+.answerButton {
+  text-align: left;
+  display: flex;
+  align-items: center;
+}
+
+button > img {
+  flex-basis: 10%;
+  height: 48px;
+  width: 48px;
+}
+
+.answerButtonText {
+  flex-basis: 90%;
+}
+
+.unselectedAnswerButton {
+  border: 2px solid #0036f5;
   background-color: #ffffff;
+  color: #000000;
+  width: 359px;
+  height: 60px;
+}
+
+.selectedAnswerButton {
+  background-color: #f2bd00;
+  color: #000000;
+  width: 359px;
+  height: 60px;
+}
+
+.correctAnswerButton {
+  background-color: #00b232;
+  color: #000000;
+  width: 359px;
+  height: 60px;
+}
+
+.grayButton {
+  border-radius: 8px;
+  background-color: #f0f3ff;
+  color: #1c1c1e;
+}
+
+.buttonAsLink {
+  border: 0px;
+  color: #1c1c1e;
+  background: none;
 }
 
 .QuestionContainer {
