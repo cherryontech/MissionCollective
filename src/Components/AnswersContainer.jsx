@@ -1,4 +1,4 @@
-import { DIFFERENT_CULTURES_TRIVIA } from "../constants";
+import { CULTURE_QUESTIONS } from "../data/cultureQuestions";
 import { useActivityContext } from "../Context/ActivityContext";
 import correctLight from "../assets/images/icons/correctLight.svg";
 import incorrectLight from "../assets/images/icons/incorrectLight.svg";
@@ -58,12 +58,12 @@ export function getButonIconAlt(id, answer, isCorrect, confirmedAnswer) {
 export default function AnswersContainer() {
   const { currentQuestionID, answer, setAnswer, answerMap } =
     useActivityContext();
-  const currentQuestion = DIFFERENT_CULTURES_TRIVIA[currentQuestionID];
+  const currentQuestion = CULTURE_QUESTIONS[currentQuestionID];
   const confirmedAnswer = answerMap[currentQuestionID];
 
   return (
     <div className="AnswersContainer">
-      {currentQuestion.answers.map(({ id, text, isCorrect }) => (
+      {currentQuestion.answerOptions.map(({ id, answerText, isCorrect }) => (
         <button
           key={id}
           className={getButtonStyle(id, answer, isCorrect, confirmedAnswer)}
@@ -73,7 +73,7 @@ export default function AnswersContainer() {
             src={getButtonIconSrc(id, answer, isCorrect, confirmedAnswer)}
             alt={getButonIconAlt(id, answer, isCorrect, confirmedAnswer)}
           />
-          <span className="answerButtonText">{text}</span>
+          <span className="answerButtonText">{answerText}</span>
         </button>
       ))}
     </div>
