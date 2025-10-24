@@ -1,11 +1,11 @@
 import { useActivityContext } from "../Context/ActivityContext";
-
-import { DIFFERENT_CULTURES_TRIVIA } from "../constants";
+import { CULTURE_QUESTIONS } from "../data/cultureQuestions";
 
 export default function LearnMoreModal() {
   const {
     currentQuestionID,
     setCurrentQuestionID,
+    setAnswer,
     showLearnMoreModal,
     setShowLearnMoreModal,
   } = useActivityContext();
@@ -17,6 +17,8 @@ export default function LearnMoreModal() {
 
   function handleOnClick() {
     // this should update the currentQuestionID and set showLearnMoreModal to false
+    setCurrentQuestionID(currentQuestionID + 1);
+    setAnswer(null);
   }
 
   // this should only display if showLearnMoreModal is true
@@ -25,7 +27,7 @@ export default function LearnMoreModal() {
       {/* the text in h3 should change conditionally depending on if the answer was right or not */}
       <h3>{displayText.correct}</h3>
       <h4>Learn More:</h4>
-      <p>{DIFFERENT_CULTURES_TRIVIA[currentQuestionID].learnMoreText}</p>
+      <p>{CULTURE_QUESTIONS[currentQuestionID].learnMoreText}</p>
       <button onClick={handleOnClick}>Continue</button>
     </div>
   );

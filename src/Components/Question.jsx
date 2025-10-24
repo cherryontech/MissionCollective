@@ -53,6 +53,13 @@ export default function Question() {
     }
   }
 
+  function handleConfirmAnswerOnClick() {
+    updateAnswerMap((prev) => ({
+      ...prev,
+      [currentQuestionID]: answer,
+    }));
+  }
+
   function handleSkipOnClick() {
     if (currentQuestionID != 9) {
       setCurrentQuestionID(currentQuestionID + 1);
@@ -80,12 +87,7 @@ export default function Question() {
         </button>
         <button
           className={answer ? "" : "disabledButton"}
-          onClick={() =>
-            updateAnswerMap((prev) => ({
-              ...prev,
-              [currentQuestionID]: answer,
-            }))
-          }
+          onClick={handleConfirmAnswerOnClick}
         >
           Confirm Answer ➝
         </button>
