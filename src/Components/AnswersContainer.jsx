@@ -20,12 +20,12 @@ export function getButtonStyle(id, answer, isCorrect, confirmedAnswer) {
 
 export function getButtonIconSrc(id, answer, isCorrect, confirmedAnswer) {
   if (isCorrect && confirmedAnswer !== null) {
-    return "src\\assets\\images\\icons\\correctLight.svg";
+    return "../assets/images/icons/correctLight.svg";
   } else if (id == answer && confirmedAnswer !== null) {
-    return "src\\assets\\images\\icons\\incorrectLight.svg";
+    return "../assets/images/icons/incorrectLight.svg";
   }
 
-  return "src\\assets\\images\\icons\\option" + id + ".svg";
+  return "../assets/images/icons/option" + id + ".svg";
 }
 
 export function getButonIconAlt(id, answer, isCorrect, confirmedAnswer) {
@@ -35,7 +35,7 @@ export function getButonIconAlt(id, answer, isCorrect, confirmedAnswer) {
     return "X icon";
   }
 
-  return "Letter " + id + "icon";
+  return "Letter " + id + " icon";
 }
 
 export default function AnswersContainer() {
