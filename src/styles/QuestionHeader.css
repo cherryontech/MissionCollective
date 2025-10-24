@@ -1,5 +1,6 @@
 .QuestionHeader {
     display: flex;
+    flex-direction: row;
     width: 62.5rem;
     padding: 0.375rem 0;
     justify-content: space-between;
@@ -8,9 +9,48 @@
 
 .CurrentQuestionNumber {
     display: flex;
+    flex-direction: row;
+    justify-content: left;
+    align-items: center;
     width: 9.79394rem;
     padding-bottom: 0.0625rem;
+}
+
+.CurrentQuestionNumber img {
+    width: 2.75rem;
+    height: 2.75rem; 
+    border-radius:50%; 
+    padding: 0.5rem; 
+}
+
+.CurrentQuestionNumberText {
+    display: flex;
     flex-direction: column;
-    justify-content: center;
-    align-items: flex-start;
+    min-width: 9.79394rem;
+    align-items: left;
+    margin-left: 0.5rem;
+}
+
+.ExitMissionButton {
+    display: flex;
+    flex-direction: row;
+    align-items: right;
+    gap: 0.25rem;
+    cursor: pointer;
+}
+
+h2 {
+    font-size: 1.125rem;
+    font-weight: 600;
+}
+
+p {
+    font-size: 0.875rem;
+    margin: 0;
+}
+
+button {
+    display: flex;
+    align-items: center;
+    border: none;
 }
