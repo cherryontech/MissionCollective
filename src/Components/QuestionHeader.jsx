@@ -1,4 +1,6 @@
 import { useActivityContext } from "../Context/ActivityContext";
+import GlobeIcon from "../assets/globe-icon.svg";
+import "../styles/QuestionHeader.css";
 
 export default function QuestionHeader() {
   const { currentQuestionID } = useActivityContext();
@@ -10,7 +12,7 @@ export default function QuestionHeader() {
     <div className="QuestionHeader">
       <div className="CurrentQuestionNumber">
         <img
-          src="https://placehold.net/avatar-5.png"
+          src={GlobeIcon}
           alt="globe icon"
           height="40"
           width="40"
