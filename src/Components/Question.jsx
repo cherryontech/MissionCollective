@@ -1,24 +1,29 @@
-import { DIFFERENT_CULTURES_TRIVIA } from "../constants";
+import { CULTURE_QUESTIONS } from "../data/cultureQuestions";
 import { useActivityContext } from "../Context/ActivityContext";
 import AnswersContainer from "./AnswersContainer";
 import LearnMoreModal from "./LearnMoreModal";
 
 export default function Question() {
-  const { currentQuestionID, answer, updateAnswerMap } = useActivityContext();
-  const currentQuestion = DIFFERENT_CULTURES_TRIVIA[currentQuestionID];
+  const { currentQuestionID, setCurrentQuestionID, answer, updateAnswerMap } =
+    useActivityContext();
+  const currentQuestion = CULTURE_QUESTIONS[currentQuestionID];
 
   function handlePreviousQuestionOnClick() {
-    // TODO
+    if (currentQuestionID != 0) {
+      setCurrentQuestionID(currentQuestionID - 1);
+    }
   }
 
   function handleSkipOnClick() {
-    // TODO
+    if (currentQuestionID != 9) {
+      setCurrentQuestionID(currentQuestionID + 1);
+    }
   }
 
   return (
     <div className="Question">
       <div className="QuestionContainer">
-        <p>{currentQuestion.question}</p>
+        <p>{currentQuestion.questionText}</p>
         <img src={currentQuestion.imageURL} alt={currentQuestion.altText}></img>
         <AnswersContainer />
       </div>

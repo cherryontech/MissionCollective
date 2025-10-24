@@ -9,7 +9,7 @@ export const defaultState = {
   showLearnMoreModal: false,
   answerMap: {},
   setAnswer: () => {},
-  setCurrentQuestion: () => {},
+  setCurrentQuestionID: () => {},
   setTotalScore: () => {},
   setShowLearnMoreModal: () => {},
   updateAnswerMap: () => {},
