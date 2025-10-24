@@ -1,5 +1,11 @@
 import { DIFFERENT_CULTURES_TRIVIA } from "../constants";
 import { useActivityContext } from "../Context/ActivityContext";
+import correctLight from "../assets/images/icons/correctLight.svg";
+import incorrectLight from "../assets/images/icons/incorrectLight.svg";
+import optionA from "../assets/images/icons/optionA.svg";
+import optionB from "../assets/images/icons/optionB.svg";
+import optionC from "../assets/images/icons/optionC.svg";
+import optionD from "../assets/images/icons/optionD.svg";
 
 export function getButtonStyle(id, answer, isCorrect, confirmedAnswer) {
   let style = "answerButton";
@@ -20,12 +26,23 @@ export function getButtonStyle(id, answer, isCorrect, confirmedAnswer) {
 
 export function getButtonIconSrc(id, answer, isCorrect, confirmedAnswer) {
   if (isCorrect && confirmedAnswer !== null) {
-    return "../assets/images/icons/correctLight.svg";
+    return correctLight;
   } else if (id == answer && confirmedAnswer !== null) {
-    return "../assets/images/icons/incorrectLight.svg";
+    return incorrectLight;
   }
 
-  return "../assets/images/icons/option" + id + ".svg";
+  switch (id) {
+    case "A":
+      return optionA;
+    case "B":
+      return optionB;
+    case "C":
+      return optionC;
+    case "D":
+      return optionD;
+    default:
+      return;
+  }
 }
 
 export function getButonIconAlt(id, answer, isCorrect, confirmedAnswer) {
