@@ -3,6 +3,8 @@ import { useActivityContext } from "../Context/ActivityContext";
 import AnswersContainer from "./AnswersContainer";
 import LearnMoreModal from "./LearnMoreModal";
 //TODO: Figure out how to use relative paths instead of importing images
+import forwardArrow from "../assets/icons/forwardArrow.svg";
+import backArrow from "../assets/icons/backArrow.svg";
 import image1 from "../assets/images/quiz1/1.jpg";
 import image2 from "../assets/images/quiz1/2.jpg";
 import image3 from "../assets/images/quiz1/3.jpg";
@@ -90,18 +92,28 @@ export default function Question() {
           <button
             className={
               currentQuestionID == 0
-                ? "grayButton disabledButton"
-                : "grayButton"
+                ? "grayButton disabledButton navButton"
+                : "grayButton navButton"
             }
             onClick={handlePreviousQuestionOnClick}
           >
-            Previous Question ⤺
+            <span className="navButtonText">Previous Question</span>
+            <img
+              src={backArrow}
+              alt="Arrow pointing left"
+              className="backArrow"
+            />
           </button>
           <button
-            className={answer ? "" : "disabledButton"}
+            className={answer ? "navButton" : "navButton disabledButton"}
             onClick={handleConfirmAnswerOnClick}
           >
-            Confirm Answer ➝
+            <span className="navButtonText">Confirm Answer</span>
+            <img
+              src={forwardArrow}
+              alt="Arrow pointing right"
+              className="forwardArrow"
+            />
           </button>
         </div>
         <div className="skipSection">

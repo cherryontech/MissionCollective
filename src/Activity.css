@@ -25,7 +25,7 @@ button {
   align-items: center;
 }
 
-button > img {
+.answerButton > img {
   flex-basis: 10%;
   height: 3rem;
   width: 3rem;
@@ -33,6 +33,25 @@ button > img {
 
 .answerButtonText {
   flex-basis: 90%;
+}
+
+.navButton {
+  display: flex;
+  align-items: center;
+  margin: 0rem 0.5rem;
+}
+
+.backArrow {
+  flex-basis: 15%;
+  height: 1.5rem;
+}
+
+.navButtonText {
+  flex-basis: 85%;
+}
+
+.forwardArrow {
+  height: 1rem;
 }
 
 .unselectedAnswerButton {
