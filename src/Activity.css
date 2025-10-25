@@ -76,6 +76,7 @@ button > img {
   width: 50rem;
   height: 37.375rem;
   flex-shrink: 0;
+  margin: 0 auto;
 }
 
 .QuestionContainer > p {
@@ -89,6 +90,7 @@ button > img {
   flex-shrink: 0;
   border-radius: 0.5rem;
   object-fit: cover;
+  margin: 0 auto;
 }
 
 img {
@@ -129,6 +131,7 @@ img {
   padding-top: 2rem;
   padding-bottom: 1.5rem;
   width: 50rem;
+  margin: 0 auto;
 }
 
 .buttonSection {
