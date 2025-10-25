@@ -97,6 +97,7 @@ button {
   height: 37.375rem;
   flex-shrink: 0;
   margin: 0 auto;
+  padding-bottom: 2rem;
 }
 
 .QuestionContainer > p {
