@@ -1,0 +1,80 @@
+/* Question Header */
+.QuestionHeader {
+    display: flex;
+    flex-direction: row;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    
+}
+
+.CurrentQuestionNumber {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    height: 3rem;
+    gap: 0.75rem;
+}
+
+.CurrentQuestionNumberText {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-left: 0.5rem;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 400;
+    min-width: 0;
+}
+
+.CurrentQuestionNumber img {
+    width: 2.75rem;
+    height: 2.75rem; 
+    border-radius:50%; 
+    padding:0.5rem; 
+    box-sizing:content-box;
+}
+
+.ExitMissionButton {
+    display: flex;
+    flex-direction: row;
+    cursor: pointer;
+    font-weight: 500;
+    padding: 0rem;
+}
+
+.ExitMissionButton button {
+    padding: 0rem;
+}
+
+.ExitMissionButton img {
+    padding: 0.75rem 0.5rem;
+}
+
+.QuestionHeader h2 {
+    font-size: 1.125rem;
+    font-weight: 400;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+
+.QuestionHeader p {
+    font-size: 0.875rem;
+    margin: 0;
+    white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+
+.QuestionHeader button {
+    display: flex;
+    align-items: center;
+    border: none;
+}
+
+/* Question Footer */
+.QuestionFooter {
+    flex-shrink: 0;
+    text-align: center;
+    font-size: 0.75rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 2rem;
+}
