@@ -71,6 +71,23 @@ button > img {
 .QuestionContainer {
   border: 0.06rem solid #e5e5e5;
   border-radius: 0.5rem;
+  font-size: 1.125rem;
+  text-align: center;
+  width: 50rem;
+  height: 37.375rem;
+  flex-shrink: 0;
+}
+
+.QuestionContainer > p {
+  padding-top: 1.5rem;
+  padding-bottom: 0.8rem;
+}
+
+.QuestionContainer > img {
+  width: 45.875rem;
+  height: 18.75rem;
+  flex-shrink: 0;
+  border-radius: 0.5rem;
 }
 
 img {
@@ -89,6 +106,9 @@ img {
 }
 
 .AnswersContainer {
+  width: 45.875rem;
+  height: 8.5rem;
+  flex-shrink: 0;
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 50% 50%;
@@ -97,7 +117,7 @@ img {
   grid-template-areas:
     ". ."
     ". .";
-  margin: 1.25rem;
+  margin: 2rem;
 }
 
 .AnswersContainer > button {
