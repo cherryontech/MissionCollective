@@ -11,6 +11,7 @@ button {
   padding: 0.7rem 1rem;
   width: 13.75rem;
   height: 3rem;
+  font-size: 1rem;
 }
 
 .disabledButton {
