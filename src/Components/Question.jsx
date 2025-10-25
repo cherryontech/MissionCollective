@@ -43,14 +43,21 @@ export function getImageSrc(id) {
 }
 
 export default function Question() {
-  const { currentQuestionID, setCurrentQuestionID, answer, updateAnswerMap } =
-    useActivityContext();
+  const {
+    currentQuestionID,
+    setCurrentQuestionID,
+    answer,
+    setAnswer,
+    updateAnswerMap,
+  } = useActivityContext();
   const currentQuestion = CULTURE_QUESTIONS[currentQuestionID];
 
+  // Full functionality to be added later on
   function handlePreviousQuestionOnClick() {
     if (currentQuestionID != 0) {
       setCurrentQuestionID(currentQuestionID - 1);
     }
+    setAnswer(null);
   }
 
   function handleConfirmAnswerOnClick() {
@@ -60,10 +67,12 @@ export default function Question() {
     }));
   }
 
+  // Full functionality to be added later
   function handleSkipOnClick() {
     if (currentQuestionID != 9) {
       setCurrentQuestionID(currentQuestionID + 1);
     }
+    setAnswer(null);
   }
 
   return (
