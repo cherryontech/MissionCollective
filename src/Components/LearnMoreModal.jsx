@@ -1,32 +1,76 @@
 import { useActivityContext } from "../Context/ActivityContext";
-
 import { DIFFERENT_CULTURES_TRIVIA } from "../constants";
+import correctLight from "../assets/icons/correctLight.svg";
+import incorrectLight from "../assets/icons/incorrectLight.svg";
+import "./LearnMoreModal.css";
 
 export default function LearnMoreModal() {
   const {
     currentQuestionID,
     setCurrentQuestionID,
     showLearnMoreModal,
+    answerMap,
     setShowLearnMoreModal,
   } = useActivityContext();
 
-  const displayText = {
-    correct: "Correct! Well done!",
-    incorrect: "Incorrect, but nice try though!",
-  };
-
-  function handleOnClick() {
-    // this should update the currentQuestionID and set showLearnMoreModal to false
+  if (!showLearnMoreModal) {
+    return null;
   }
 
-  // this should only display if showLearnMoreModal is true
+  const currentQuestion = DIFFERENT_CULTURES_TRIVIA[currentQuestionID];
+  const selectedAnswerId = answerMap[currentQuestionID];
+
+  const selectedAnswer = currentQuestion.answers.find(
+    (answer) => answer.id === selectedAnswerId
+  );
+
+  let isCorrect;
+  if (selectedAnswer && selectedAnswer.isCorrect != null) {
+    isCorrect = selectedAnswer.isCorrect;
+  } else {
+    isCorrect = false;
+  }
+
+  const displayText = {
+    correct: (
+      <>
+        <img src={correctLight} /> Correct! You've earned full points for your
+        team.
+      </>
+    ),
+    incorrect: (
+      <>
+        <img src={incorrectLight} /> Incorrect, but you still earned partial
+        points for your team.
+      </>
+    ),
+  };
+
+  const handleContinue = () => {
+    setCurrentQuestionID((id) => id + 1);
+    setShowLearnMoreModal(false);
+  };
+
   return (
-    <div className="LearnMoreModal">
-      {/* the text in h3 should change conditionally depending on if the answer was right or not */}
-      <h3>{displayText.correct}</h3>
-      <h4>Learn More:</h4>
-      <p>{DIFFERENT_CULTURES_TRIVIA[currentQuestionID].learnMoreText}</p>
-      <button onClick={handleOnClick}>Continue</button>
-    </div>
+    <>
+      {showLearnMoreModal && (
+        <div className="LearnMoreModalOverlayer">
+          <div className="LearnMoreModalContainer">
+            <div className="IsCorrectBanner">
+              <h3 className={isCorrect ? "CorrectText" : "IncorrectText"}>
+                {isCorrect ? displayText.correct : displayText.incorrect}
+              </h3>
+            </div>
+            <div className="LearnMoreText">
+              <h4>Learn More:</h4>
+              <p>{currentQuestion.learnMoreText}</p>
+            </div>
+            <button className="ContinueButton" onClick={handleContinue}>
+              Continue
+            </button>
+          </div>
+        </div>
+      )}
+    </>
   );
 }
