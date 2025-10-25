@@ -1,37 +1,121 @@
-import { DIFFERENT_CULTURES_TRIVIA } from "../constants";
+import { CULTURE_QUESTIONS } from "../data/cultureQuestions";
 import { useActivityContext } from "../Context/ActivityContext";
 import AnswersContainer from "./AnswersContainer";
 import LearnMoreModal from "./LearnMoreModal";
+//TODO: Figure out how to use relative paths instead of importing images
+import image1 from "../assets/images/quiz1/1.jpg";
+import image2 from "../assets/images/quiz1/2.jpg";
+import image3 from "../assets/images/quiz1/3.jpg";
+import image4 from "../assets/images/quiz1/4.jpg";
+import image5 from "../assets/images/quiz1/5.jpg";
+import image6 from "../assets/images/quiz1/6.png";
+import image7 from "../assets/images/quiz1/7.jpg";
+import image8 from "../assets/images/quiz1/8.jpg";
+import image9 from "../assets/images/quiz1/9.jpg";
+import image10 from "../assets/images/quiz1/10.jpg";
+
+export function getImageSrc(id) {
+  const imageID = id + 1;
+  switch (imageID) {
+    case 1:
+      return image1;
+    case 2:
+      return image2;
+    case 3:
+      return image3;
+    case 4:
+      return image4;
+    case 5:
+      return image5;
+    case 6:
+      return image6;
+    case 7:
+      return image7;
+    case 8:
+      return image8;
+    case 9:
+      return image9;
+    case 10:
+      return image10;
+    default:
+      return;
+  }
+}
 
 export default function Question() {
-  const { currentQuestionID } = useActivityContext();
-  const currentQuestion = DIFFERENT_CULTURES_TRIVIA[currentQuestionID];
+  const {
+    currentQuestionID,
+    setCurrentQuestionID,
+    answer,
+    setAnswer,
+    updateAnswerMap,
+  } = useActivityContext();
+  const currentQuestion = CULTURE_QUESTIONS[currentQuestionID];
 
+  // Full functionality to be added later on
   function handlePreviousQuestionOnClick() {
-    // TODO
+    if (currentQuestionID != 0) {
+      setCurrentQuestionID(currentQuestionID - 1);
+    }
+    setAnswer(null);
   }
 
   function handleConfirmAnswerOnClick() {
-    // TODO
+    updateAnswerMap((prev) => ({
+      ...prev,
+      [currentQuestionID]: answer,
+    }));
   }
 
+  // Full functionality to be added later
   function handleSkipOnClick() {
-    // TODO
+    if (currentQuestionID != 9) {
+      setCurrentQuestionID(currentQuestionID + 1);
+    }
+    setAnswer(null);
   }
 
   return (
     <div className="Question">
       <div className="QuestionContainer">
-        <p>{currentQuestion.question}</p>
-        <img src={currentQuestion.imageURL} alt={currentQuestion.altText}></img>
+        <p>{currentQuestion.questionText}</p>
+        <img
+          src={getImageSrc(currentQuestionID)}
+          alt={currentQuestion.altText}
+        ></img>
         <AnswersContainer />
       </div>
       <div className="QuestionNavigation">
-        <button onClick={handlePreviousQuestionOnClick}>
-          Previous Question
-        </button>
-        <button onClick={handleSkipOnClick}>Confirm Answer</button>
-        <button onClick={handleSkipOnClick}>Skip For Now</button>
+        <div className="buttonSection">
+          <button
+            className={
+              currentQuestionID == 0
+                ? "grayButton disabledButton"
+                : "grayButton"
+            }
+            onClick={handlePreviousQuestionOnClick}
+          >
+            Previous Question ⤺
+          </button>
+          <button
+            className={answer ? "" : "disabledButton"}
+            onClick={handleConfirmAnswerOnClick}
+          >
+            Confirm Answer ➝
+          </button>
+        </div>
+        <div className="skipSection">
+          <button
+            className={
+              currentQuestionID == 9
+                ? "buttonAsLink disabledButton"
+                : "buttonAsLink"
+            }
+            onClick={handleSkipOnClick}
+          >
+            Skip For Now
+          </button>
+        </div>
       </div>
       <LearnMoreModal />
     </div>

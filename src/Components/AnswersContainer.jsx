@@ -1,20 +1,79 @@
-import { DIFFERENT_CULTURES_TRIVIA } from "../constants";
+import { CULTURE_QUESTIONS } from "../data/cultureQuestions";
 import { useActivityContext } from "../Context/ActivityContext";
+import correctLight from "../assets/images/icons/correctLight.svg";
+import incorrectLight from "../assets/images/icons/incorrectLight.svg";
+import optionA from "../assets/images/icons/optionA.svg";
+import optionB from "../assets/images/icons/optionB.svg";
+import optionC from "../assets/images/icons/optionC.svg";
+import optionD from "../assets/images/icons/optionD.svg";
+
+export function getButtonStyle(id, answer, isCorrect, confirmedAnswer) {
+  let style = "answerButton";
+
+  if (confirmedAnswer !== null && isCorrect) {
+    style = "correctAnswerButton " + style;
+    return style;
+  }
+
+  if (id == answer) {
+    style = "selectedAnswerButton " + style;
+  } else {
+    style = "unselectedAnswerButton " + style;
+  }
+
+  return style;
+}
+
+export function getButtonIconSrc(id, answer, isCorrect, confirmedAnswer) {
+  if (isCorrect && confirmedAnswer !== null) {
+    return correctLight;
+  } else if (id == answer && confirmedAnswer !== null) {
+    return incorrectLight;
+  }
+
+  switch (id) {
+    case "A":
+      return optionA;
+    case "B":
+      return optionB;
+    case "C":
+      return optionC;
+    case "D":
+      return optionD;
+    default:
+      return;
+  }
+}
+
+export function getButonIconAlt(id, answer, isCorrect, confirmedAnswer) {
+  if (isCorrect && confirmedAnswer !== null) {
+    return "Checkmark icon";
+  } else if (id == answer && confirmedAnswer !== null) {
+    return "X icon";
+  }
+
+  return "Letter " + id + " icon";
+}
 
 export default function AnswersContainer() {
-  const { currentQuestionID } = useActivityContext();
-  const currentQuestion = DIFFERENT_CULTURES_TRIVIA[currentQuestionID];
-  function handleOnClick() {
-    //TODO
-  }
+  const { currentQuestionID, answer, setAnswer, answerMap } =
+    useActivityContext();
+  const currentQuestion = CULTURE_QUESTIONS[currentQuestionID];
+  const confirmedAnswer = answerMap[currentQuestionID];
 
   return (
     <div className="AnswersContainer">
-      {currentQuestion.answers.map(({ id, text, isCorrect }) => (
-        <button handleOnClick>
-          {/* TODO: Talk with design team to verify that these are icons */}
-          <img src="/" alt="Icon" />
-          {text}
+      {currentQuestion.answerOptions.map(({ id, answerText, isCorrect }) => (
+        <button
+          key={id}
+          className={getButtonStyle(id, answer, isCorrect, confirmedAnswer)}
+          onClick={() => setAnswer(id)}
+        >
+          <img
+            src={getButtonIconSrc(id, answer, isCorrect, confirmedAnswer)}
+            alt={getButonIconAlt(id, answer, isCorrect, confirmedAnswer)}
+          />
+          <span className="answerButtonText">{answerText}</span>
         </button>
       ))}
     </div>

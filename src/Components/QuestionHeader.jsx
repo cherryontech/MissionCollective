@@ -18,7 +18,9 @@ export default function QuestionHeader() {
         <h2>Question {currentQuestionID + 1} of 10</h2>
         <p>Different Cultures Trivia</p>
       </div>
-      <button onClick={handleOnClick}>Exit Mission</button>
+      <button className="buttonAsLink" onClick={handleOnClick}>
+        Exit Mission ➝
+      </button>
     </div>
   );
 }
