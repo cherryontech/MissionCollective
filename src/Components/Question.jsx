@@ -86,30 +86,36 @@ export default function Question() {
         <AnswersContainer />
       </div>
       <div className="QuestionNavigation">
-        <button
-          className={
-            currentQuestionID == 0 ? "grayButton disabledButton" : "grayButton"
-          }
-          onClick={handlePreviousQuestionOnClick}
-        >
-          Previous Question ⤺
-        </button>
-        <button
-          className={answer ? "" : "disabledButton"}
-          onClick={handleConfirmAnswerOnClick}
-        >
-          Confirm Answer ➝
-        </button>
-        <button
-          className={
-            currentQuestionID == 9
-              ? "buttonAsLink disabledButton"
-              : "buttonAsLink"
-          }
-          onClick={handleSkipOnClick}
-        >
-          Skip For Now
-        </button>
+        <div className="buttonSection">
+          <button
+            className={
+              currentQuestionID == 0
+                ? "grayButton disabledButton"
+                : "grayButton"
+            }
+            onClick={handlePreviousQuestionOnClick}
+          >
+            Previous Question ⤺
+          </button>
+          <button
+            className={answer ? "" : "disabledButton"}
+            onClick={handleConfirmAnswerOnClick}
+          >
+            Confirm Answer ➝
+          </button>
+        </div>
+        <div className="skipSection">
+          <button
+            className={
+              currentQuestionID == 9
+                ? "buttonAsLink disabledButton"
+                : "buttonAsLink"
+            }
+            onClick={handleSkipOnClick}
+          >
+            Skip For Now
+          </button>
+        </div>
       </div>
       <LearnMoreModal />
     </div>

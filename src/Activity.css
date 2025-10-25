@@ -88,6 +88,7 @@ button > img {
   height: 18.75rem;
   flex-shrink: 0;
   border-radius: 0.5rem;
+  object-fit: cover;
 }
 
 img {
@@ -112,7 +113,7 @@ img {
   display: grid;
   grid-template-columns: 50% 50%;
   grid-template-rows: 50% 50%;
-  gap: 0.63rem 0.63rem;
+  gap: 0.5rem 0.5rem;
   grid-auto-flow: row;
   grid-template-areas:
     ". ."
@@ -125,14 +126,15 @@ img {
 }
 
 .QuestionNavigation {
-  padding-top: 2.5rem;
-  padding-bottom: 2.5rem;
-  display: grid;
-  grid-template-columns: 50% 50%;
-  grid-template-rows: 50% 50%;
-  gap: 0.63rem 0.63rem;
-  grid-auto-flow: row;
-  grid-template-areas:
-    ". ."
-    ". .";
+  padding-top: 2rem;
+  padding-bottom: 1.5rem;
+  width: 50rem;
+}
+
+.buttonSection {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding-bottom: 3.5rem;
+  gap: 1rem;
 }
