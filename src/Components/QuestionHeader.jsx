@@ -15,8 +15,6 @@ export default function QuestionHeader() {
         <img
           src={GlobeIcon}
           alt="globe icon"
-          height="40"
-          width="40"
         ></img>
         <div className="CurrentQuestionNumberText">
           <h2>Question {currentQuestionID + 1} of 10</h2>
@@ -30,6 +28,7 @@ export default function QuestionHeader() {
           alt="globe icon"
           height="40"
           width="40"
+          aria-label="Exit mission"
         ></img>
       </div>
     </div>
