@@ -83,11 +83,6 @@ img {
   border: 0.06rem solid #e5e5e5;
 }
 
-.QuestionHeader {
-  display: flex;
-  justify-content: space-between;
-}
-
 .AnswersContainer {
   display: grid;
   grid-template-columns: 50% 50%;

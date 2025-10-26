@@ -23,7 +23,7 @@ export default function QuestionHeader() {
           <p>Different Cultures Trivia</p>
         </div>
       </div>
-      <div className="ExitMissionButton">
+      <div className="ExitMission">
         <button onClick={handleOnClick}>Exit Mission</button>
         <img
           src={ExitArrowIcon}
