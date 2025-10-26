@@ -1,5 +1,5 @@
 import { useActivityContext } from "../Context/ActivityContext";
-import { DIFFERENT_CULTURES_TRIVIA } from "../constants";
+import { CULTURE_QUESTIONS } from "../data/cultureQuestions";
 import correctLight from "../assets/icons/correctLight.svg";
 import incorrectLight from "../assets/icons/incorrectLight.svg";
 import "./LearnMoreModal.css";
@@ -17,7 +17,7 @@ export default function LearnMoreModal() {
     return null;
   }
 
-  const currentQuestion = DIFFERENT_CULTURES_TRIVIA[currentQuestionID];
+  const currentQuestion = CULTURE_QUESTIONS[currentQuestionID];
   const selectedAnswerId = answerMap[currentQuestionID];
 
   const selectedAnswer = currentQuestion.answers.find(
