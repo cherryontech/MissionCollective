@@ -32,18 +32,8 @@ export default function LearnMoreModal() {
   }
 
   const displayText = {
-    correct: (
-      <>
-        <img src={correctLight} />
-        "Correct! Well done!"
-      </>
-    ),
-    incorrect: (
-      <>
-        <img src={incorrectLight} />
-        "Incorrect, but nice try though!"
-      </>
-    ),
+    correct: "Correct! Well done!",
+    incorrect: "Incorrect, but nice try though!",
   };
 
   // TODO: Need logic to handle the case when the user is on the last question in later sprint.
@@ -58,6 +48,11 @@ export default function LearnMoreModal() {
         <div className="LearnMoreModalContainer">
           <div className="IsCorrectBanner">
             <h3 className={isCorrect ? "CorrectText" : "IncorrectText"}>
+              <img
+                src={isCorrect ? correctLight : incorrectLight}
+                alt={isCorrect ? "Correct" : "Incorrect"}
+                className="IsCorrectIcon"
+              />
               {isCorrect ? displayText.correct : displayText.incorrect}
             </h3>
           </div>
