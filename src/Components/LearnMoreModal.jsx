@@ -1,5 +1,7 @@
 import { useActivityContext } from "../Context/ActivityContext";
 import { DIFFERENT_CULTURES_TRIVIA } from "../constants";
+import correctLight from "../assets/icons/correctLight.svg";
+import incorrectLight from "../assets/icons/incorrectLight.svg";
 import "./LearnMoreModal.css";
 
 export default function LearnMoreModal() {
@@ -30,8 +32,18 @@ export default function LearnMoreModal() {
   }
 
   const displayText = {
-    correct: "Correct! Well done!",
-    incorrect: "Incorrect, but nice try though!",
+    correct: (
+      <>
+        <img src={correctLight} />
+        "Correct! Well done!"
+      </>
+    ),
+    incorrect: (
+      <>
+        <img src={incorrectLight} />
+        "Incorrect, but nice try though!"
+      </>
+    ),
   };
 
   // TODO: Need logic to handle the case when the user is on the last question in later sprint.
