@@ -1,5 +1,4 @@
 import { useContext, createContext, useState } from "react";
-import { DIFFERENT_CULTURES_TRIVIA } from "../constants";
 
 // step 1: create default state
 export const defaultState = {
