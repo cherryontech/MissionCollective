@@ -2,10 +2,12 @@
 .QuestionHeader {
     display: flex;
     flex-direction: row;
-    width: 100%;
+    width: 80%;
+    margin: 0 auto;
+    padding: 10px 0;
     justify-content: space-between;
     align-items: center;
-}
+ }
 
 .CurrentQuestionNumber {
     display: flex;
