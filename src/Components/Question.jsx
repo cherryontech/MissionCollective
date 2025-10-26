@@ -51,6 +51,7 @@ export default function Question() {
     answer,
     setAnswer,
     updateAnswerMap,
+    setShowLearnMoreModal,
   } = useActivityContext();
   const currentQuestion = CULTURE_QUESTIONS[currentQuestionID];
 
@@ -67,6 +68,7 @@ export default function Question() {
       ...prev,
       [currentQuestionID]: answer,
     }));
+    setShowLearnMoreModal(true);
   }
 
   // Full functionality to be added later
