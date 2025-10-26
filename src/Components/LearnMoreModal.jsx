@@ -1,7 +1,5 @@
 import { useActivityContext } from "../Context/ActivityContext";
 import { DIFFERENT_CULTURES_TRIVIA } from "../constants";
-import correctLight from "../assets/icons/correctLight.svg";
-import incorrectLight from "../assets/icons/incorrectLight.svg";
 import "./LearnMoreModal.css";
 
 export default function LearnMoreModal() {
@@ -32,18 +30,8 @@ export default function LearnMoreModal() {
   }
 
   const displayText = {
-    correct: (
-      <>
-        <img src={correctLight} /> Correct! You've earned full points for your
-        team.
-      </>
-    ),
-    incorrect: (
-      <>
-        <img src={incorrectLight} /> Incorrect, but you still earned partial
-        points for your team.
-      </>
-    ),
+    correct: "Correct! Well done!",
+    incorrect: "Incorrect, but nice try though!",
   };
 
   const handleContinue = () => {
