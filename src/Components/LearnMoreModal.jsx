@@ -23,7 +23,7 @@ export default function LearnMoreModal() {
   );
 
   let isCorrect;
-  if (selectedAnswer && selectedAnswer.isCorrect != null) {
+  if (selectedAnswer && selectedAnswer.isCorrect !== null) {
     isCorrect = selectedAnswer.isCorrect;
   } else {
     isCorrect = false;
@@ -34,6 +34,7 @@ export default function LearnMoreModal() {
     incorrect: "Incorrect, but nice try though!",
   };
 
+  // TODO: Need logic to handle the case when the user is on the last question in later sprint.
   const handleContinue = () => {
     setCurrentQuestionID((id) => id + 1);
     setShowLearnMoreModal(false);
@@ -41,24 +42,22 @@ export default function LearnMoreModal() {
 
   return (
     <>
-      {showLearnMoreModal && (
-        <div className="LearnMoreModalOverlayer">
-          <div className="LearnMoreModalContainer">
-            <div className="IsCorrectBanner">
-              <h3 className={isCorrect ? "CorrectText" : "IncorrectText"}>
-                {isCorrect ? displayText.correct : displayText.incorrect}
-              </h3>
-            </div>
-            <div className="LearnMoreText">
-              <h4>Learn More:</h4>
-              <p>{currentQuestion.learnMoreText}</p>
-            </div>
-            <button className="ContinueButton" onClick={handleContinue}>
-              Continue
-            </button>
+      <div className="LearnMoreModalOverlayer">
+        <div className="LearnMoreModalContainer">
+          <div className="IsCorrectBanner">
+            <h3 className={isCorrect ? "CorrectText" : "IncorrectText"}>
+              {isCorrect ? displayText.correct : displayText.incorrect}
+            </h3>
           </div>
+          <div className="LearnMoreText">
+            <h4>Learn More:</h4>
+            <p>{currentQuestion.learnMoreText}</p>
+          </div>
+          <button className="ContinueButton" onClick={handleContinue}>
+            Continue
+          </button>
         </div>
-      )}
+      </div>
     </>
   );
 }
