@@ -51,12 +51,19 @@
 }
 
 .LearnMoreText {
-    font-size: 1rem;
     text-align: left;
     background-color: #F0F3FF;
     padding: 1rem;
     border-radius: 8px;
     border: 0.1rem solid #0036f5;
+}
+
+.LearnMoreText h4 {
+    font-size: 1.125rem;
+}
+
+.LearnMoreText p {
+    font-size: 0.875rem;
 }
 
 .ContinueButton {

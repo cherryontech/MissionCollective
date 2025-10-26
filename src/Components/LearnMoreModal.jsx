@@ -10,6 +10,7 @@ export default function LearnMoreModal() {
     setCurrentQuestionID,
     showLearnMoreModal,
     answerMap,
+    setAnswer,
     setShowLearnMoreModal,
   } = useActivityContext();
 
@@ -20,7 +21,7 @@ export default function LearnMoreModal() {
   const currentQuestion = CULTURE_QUESTIONS[currentQuestionID];
   const selectedAnswerId = answerMap[currentQuestionID];
 
-  const selectedAnswer = currentQuestion.answers.find(
+  const selectedAnswer = currentQuestion.answerOptions.find(
     (answer) => answer.id === selectedAnswerId
   );
 
@@ -32,39 +33,38 @@ export default function LearnMoreModal() {
   }
 
   const displayText = {
-    correct: "Correct! Well done!",
-    incorrect: "Incorrect, but nice try though!",
+    correct: "Correct! You've earned full points for your team.",
+    incorrect: "Incorrect, but you still earned partial points for the team!",
   };
 
   // TODO: Need logic to handle the case when the user is on the last question in later sprint.
   const handleContinue = () => {
+    setAnswer(null);
     setCurrentQuestionID((id) => id + 1);
     setShowLearnMoreModal(false);
   };
 
   return (
-    <>
-      <div className="LearnMoreModalOverlayer">
-        <div className="LearnMoreModalContainer">
-          <div className="IsCorrectBanner">
-            <h3 className={isCorrect ? "CorrectText" : "IncorrectText"}>
-              <img
-                src={isCorrect ? correctLight : incorrectLight}
-                alt={isCorrect ? "Correct" : "Incorrect"}
-                className="IsCorrectIcon"
-              />
-              {isCorrect ? displayText.correct : displayText.incorrect}
-            </h3>
-          </div>
-          <div className="LearnMoreText">
-            <h4>Learn More:</h4>
-            <p>{currentQuestion.learnMoreText}</p>
-          </div>
-          <button className="ContinueButton" onClick={handleContinue}>
-            Continue
-          </button>
+    <div className="LearnMoreModalOverlayer">
+      <div className="LearnMoreModalContainer">
+        <div className="IsCorrectBanner">
+          <h3 className={isCorrect ? "CorrectText" : "IncorrectText"}>
+            <img
+              src={isCorrect ? correctLight : incorrectLight}
+              alt={isCorrect ? "Correct" : "Incorrect"}
+              className="IsCorrectIcon"
+            />
+            {isCorrect ? displayText.correct : displayText.incorrect}
+          </h3>
         </div>
+        <div className="LearnMoreText">
+          <h4>Learn More:</h4>
+          <p>{currentQuestion.learnMoreText}</p>
+        </div>
+        <button className="ContinueButton" onClick={handleContinue}>
+          Continue
+        </button>
       </div>
-    </>
+    </div>
   );
 }
