@@ -8,7 +8,6 @@ export default function LearnMoreModal() {
   const {
     currentQuestionID,
     setCurrentQuestionID,
-    setAnswer,
     showLearnMoreModal,
     answerMap,
     setAnswer,
