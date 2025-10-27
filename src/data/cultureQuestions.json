@@ -1,6 +1,6 @@
 [
   {
-    "id": 1,
+    "id": 0,
     "questionText": "What is the musical style widely considered a symbol of Brazilian national identity, often credited with popularizing Brazilian music globally?",
     "answerOptions": [
       { "id": "A", "answerText": "Samba", "isCorrect": true },
@@ -13,7 +13,7 @@
     "altText": "Female Carnival dancers in green sequined dresses, beaded jewelry, and large feathers."
   },
   {
-    "id": 2,
+    "id": 1,
     "questionText": "Which Panamanian city hosts one of the country's most famous carnivals, celebrated for its vibrant music and parades?",
     "answerOptions": [
       { "id": "A", "answerText": "Bocas del Toro", "isCorrect": false },
@@ -26,7 +26,7 @@
     "altText": "Fireworks over a nighttime Carnival crowd with costumed performers on floats."
   },
   {
-    "id": 3,
+    "id": 2,
     "questionText": "The Tatreez is a specific style of traditional embroidery. In which country of the Middle East is this technique most closely associated with the national clothing called a Thobe?",
     "answerOptions": [
       { "id": "A", "answerText": "Jordan", "isCorrect": false },
@@ -39,7 +39,7 @@
     "altText": "A handmade cross-stitched embroidery with flowers and leaves."
   },
   {
-    "id": 4,
+    "id": 3,
     "questionText": "Which Indigenous language, spoken in present-day Mexico, is the source of common English words like \"chocolate\" and \"avocado\"?",
     "answerOptions": [
       { "id": "A", "answerText": "Yucatec Maya", "isCorrect": false },
@@ -52,7 +52,7 @@
     "altText": "A ceremonial performer in Aztec-style regalia with feathered headdress and turquoise face paint."
   },
   {
-    "id": 5,
+    "id": 4,
     "questionText": "This Canadian dish is a celebrated cultural staple that consists of french fries and cheese curds topped with a brown gravy. What is the name of this food?",
     "answerOptions": [
       { "id": "A", "answerText": "Tourtière", "isCorrect": false },
@@ -65,7 +65,7 @@
     "altText": "A person holding a bowl of french fries topped with cheese curds and gravy."
   },
   {
-    "id": 6,
+    "id": 5,
     "questionText": "The traditional art of repairing broken pottery with gold lacquer, celebrating the object's history and imperfections, is known as Kintsugi. Which country is this practice from?",
     "answerOptions": [
       { "id": "A", "answerText": "South Korea", "isCorrect": false },
@@ -78,7 +78,7 @@
     "altText": "A ceramic tea bowl repaired with gold lacquer in the cracks."
   },
   {
-    "id": 7,
+    "id": 6,
     "questionText": "What Mediterranean country is known for its Slow Food movement, which was started in 1986 to preserve traditional regional cooking and encourage local agricultural diversity?",
     "answerOptions": [
       { "id": "A", "answerText": "France", "isCorrect": false },
@@ -92,12 +92,16 @@
   },
 
   {
-    "id": 8,
+    "id": 7,
     "questionText": "Held on Chinese/Lunar New Year's Eve, the Reunion Dinner is the central event of the holiday. What core concept does this ceremonial gathering primarily represent?",
     "answerOptions": [
       { "id": "A", "answerText": "New job opportunities", "isCorrect": false },
       { "id": "B", "answerText": "Luck in business", "isCorrect": false },
-      { "id": "C", "answerText": "Importance of family & togetherness", "isCorrect": true },
+      {
+        "id": "C",
+        "answerText": "Importance of family & togetherness",
+        "isCorrect": true
+      },
       { "id": "D", "answerText": "The end of winter", "isCorrect": false }
     ],
     "learnMoreText": "The Lunar New Year's Eve Reunion Dinner (Nian Ye Fan) is the most significant meal of the year. It represents family unity, gratitude, and remembrance of ancestors. This act of togetherness reinforces familial bonds and sets an encouraging tone for the new year, embodying hope and collective well-being.",
@@ -105,7 +109,7 @@
     "altText": "Lunar New Year red envelopes hanging from a mandarin orange tree."
   },
   {
-    "id": 9,
+    "id": 8,
     "questionText": "Norwegians celebrate a holiday on June 23rd called Jonsok, which is called what in the English-speaking world?",
     "answerOptions": [
       { "id": "A", "answerText": "Constitution Day", "isCorrect": false },
@@ -118,7 +122,7 @@
     "altText": "A large daytime bonfire next to a body of water with the sun on the horizon in the distance."
   },
   {
-    "id": 10,
+    "id": 9,
     "questionText": "Known as a symbol of elegance, what is the name of the traditional Vietnamese garment featuring a long tunic worn over trousers?",
     "answerOptions": [
       { "id": "A", "answerText": "Ao Dai", "isCorrect": true },
