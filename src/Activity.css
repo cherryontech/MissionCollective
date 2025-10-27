@@ -4,19 +4,8 @@ body {
 }
 
 button {
-  border-radius: 0.5rem;
-  border: 0 solid #e5e7eb;
-  background-color: #0036f5;
-  color: #f2f2f7;
-  padding: 0.7rem 1rem;
   width: 13.75rem;
   height: 3rem;
-  font-size: 1rem;
-}
-
-.disabledButton {
-  opacity: 0.5;
-  cursor: not-allowed;
 }
 
 .answerButton {
@@ -74,18 +63,6 @@ button {
   color: #000000;
   width: 22.44rem;
   height: 3.75rem;
-}
-
-.grayButton {
-  border-radius: 0.5rem;
-  background-color: #f0f3ff;
-  color: #1c1c1e;
-}
-
-.buttonAsLink {
-  border: 0rem;
-  color: #1c1c1e;
-  background: none;
 }
 
 .QuestionContainer {
