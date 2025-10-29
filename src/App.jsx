@@ -8,8 +8,10 @@ import Activity from "./Components/Activity";
 function App() {
   return (
     <BrowserRouter>
+      <Navbar />
       <Routes>
-        <Route path="/" element={<Activity />} />
+        <Route path="/" element={<HomePage />} />
+        <Route path="/activity" element={<Activity />} />
       </Routes>
     </BrowserRouter>
   );
