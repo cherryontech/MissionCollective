@@ -7,12 +7,6 @@
 
   color: #212529;
   background-color: #e5e7eb;
-
-  /* TODO: Figure out if we need this */
-  font-synthesis: none;
-  text-rendering: optimizeLegibility;
-  -webkit-font-smoothing: antialiased;
-  -moz-osx-font-smoothing: grayscale;
 }
 
 a {
@@ -91,16 +85,6 @@ button {
   transition: border-color 0.25s;
 }
 
-button:hover {
-  /*TODO: Clarify that there is no button hover state*/
-}
-
-/*TODO: Check in about this -- need for accessibility*/
-button:focus,
-button:focus-visible {
-  outline: 4px auto -webkit-focus-ring-color;
-}
-
 .secondaryButton {
   background-color: #f0f3ff;
   color: #1c1c1e;
@@ -114,7 +98,7 @@ button:focus-visible {
 
 .buttonAsLink:hover {
   color: #0036f5;
-  text-decoration-style: underline;
+  text-decoration: underline;
 }
 
 .disabledButton {
