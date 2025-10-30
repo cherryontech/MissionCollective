@@ -94,8 +94,8 @@ export default function Question() {
           <button
             className={
               currentQuestionID == 0
-                ? "grayButton disabledButton navButton"
-                : "grayButton navButton"
+                ? "secondaryButton disabledButton navButton"
+                : "secondaryButton navButton"
             }
             onClick={handlePreviousQuestionOnClick}
           >
