@@ -2,7 +2,7 @@ import { useActivityContext } from "../Context/ActivityContext";
 import { CULTURE_QUESTIONS } from "../data/cultureQuestions";
 import correctLight from "../assets/icons/correctLight.svg";
 import incorrectLight from "../assets/icons/incorrectLight.svg";
-import "./LearnMoreModal.css";
+import "../styles/LearnMoreModal.css";
 
 export default function LearnMoreModal() {
   const {
