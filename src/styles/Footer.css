@@ -1,0 +1,20 @@
+.footer {
+  display: flex;
+  max-width: 90rem;
+  max-height: 6.3125rem;
+  padding: 2.0625rem 4.31444rem 2.75rem;
+  justify-content: flex-end;
+  align-items: center;
+  border-top: 1px solid #e5e5e5;
+  column-gap: 2.5rem;
+}
+
+a {
+  color: #1c1c1e;
+}
+
+a:hover {
+  color: #0036f5;
+  text-decoration-line: underline;
+  text-underline-position: from-font;
+}
