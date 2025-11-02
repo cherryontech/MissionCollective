@@ -1,5 +1,5 @@
 import "../styles/HomePage.css";
-import react from "../assets/icons/react.svg";
+import correctLight from "../assets/icons/correctLight.svg";
 
 export default function HomePage() {
   return (
@@ -19,7 +19,7 @@ export default function HomePage() {
           <div className="card">
             <div className="card-header-section3">
               <span>1</span>
-              <img src={react} alt="react icon" />
+              <img src={correctLight} alt="correct icon" />
             </div>
             <h2>Start a Mission</h2>
             <p>
@@ -30,7 +30,11 @@ export default function HomePage() {
           <div className="card">
             <div className="card-header-section3">
               <span>2</span>
-              <img src={react} alt="react icon" className="card-icon" />
+              <img
+                src={correctLight}
+                alt="correct icon"
+                className="card-icon"
+              />
             </div>
             <h2>Collaborate & Learn</h2>
             <p>
@@ -41,7 +45,11 @@ export default function HomePage() {
           <div className="card">
             <div className="card-header-section3">
               <span>3</span>
-              <img src={react} alt="react icon" className="card-icon" />
+              <img
+                src={correctLight}
+                alt="correct icon"
+                className="card-icon"
+              />
             </div>
             <h2>Thrive, Together</h2>
             <p>
@@ -59,36 +67,36 @@ export default function HomePage() {
         <div className="card-container">
           <div className="card">
             <div className="card-header-section5">
-              <img src={react} alt="react icon" />
+              <img src={correctLight} alt="correct icon" />
               <span className="profile-title">Valerie, UX Designer</span>
             </div>
             <p>
               “I love that it doesn't take much time, and I can do it when it
-              works for me. It’s the first team activity where I felt like I
-              wasn’t being judged or put on the spot. Finally, a team activity
+              works for me. It's the first team activity where I felt like I
+              wasn't being judged or put on the spot. Finally, a team activity
               that isn't awkward!”
             </p>
             <div className="rating">
-              <img src={react} alt="react icon" />
+              <img src={correctLight} alt="correct icon" />
             </div>
           </div>
           <div className="card">
             <div className="card-header-section5">
-              <img src={react} alt="react icon" />
+              <img src={correctLight} alt="correct icon" />
               <span className="profile-title">Lucas, Project Manager</span>
             </div>
             <p>
-              “It’s the first team tool that feels authentic. Earning points for
+              “It's the first team tool that feels authentic. Earning points for
               a shared training budget makes team-building feel valuable, like a
               direct investment in our skills.”
             </p>
             <div className="rating">
-              <img src={react} alt="react icon" />
+              <img src={correctLight} alt="correct icon" />
             </div>
           </div>
           <div className="card">
             <div className="card-header-section5">
-              <img src={react} alt="react icon" />
+              <img src={correctLight} alt="correct icon" />
               <span className="profile-title">Patrick, Engineer</span>
             </div>
             <p>
@@ -98,7 +106,7 @@ export default function HomePage() {
               improve our connection.”
             </p>
             <div className="rating">
-              <img src={react} alt="react icon" />
+              <img src={correctLight} alt="correct icon" />
             </div>
           </div>
         </div>
