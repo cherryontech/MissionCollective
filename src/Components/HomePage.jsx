@@ -3,6 +3,7 @@ import pinkDice from "../assets/icons/pinkDice.svg";
 import pinkLoop from "../assets/icons/pinkLoop.svg";
 import pinkPartner from "../assets/icons/pinkPartner.svg";
 import stars from "../assets/icons/stars.svg";
+import profileValerie from "../assets/profileValerie.png";
 
 export default function HomePage() {
   return (
@@ -66,7 +67,7 @@ export default function HomePage() {
         <div className="card-container">
           <div className="card">
             <div className="card-header-section5">
-              <img src={pinkDice} alt="pink dice icon" />
+              <img src={profileValerie} alt="Valerie's profile picture" />
               <span className="profile-title">Valerie, UX Designer</span>
             </div>
             <p>
