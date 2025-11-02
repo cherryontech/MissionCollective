@@ -1,0 +1,122 @@
+@import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
+
+:root {
+  font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
+  line-height: 1.5;
+  font-weight: 400;
+
+  color: #212529;
+  background-color: #e5e7eb;
+}
+
+a {
+  font-weight: 500;
+  color: #646cff;
+  text-decoration: inherit;
+}
+
+a:hover {
+  color: #0036f5;
+  text-decoration-style: underline;
+}
+
+body {
+  margin: 0;
+  display: flex;
+  place-items: center;
+  min-width: 320px;
+  min-height: 100vh;
+}
+
+h1 {
+  font-feature-settings: "ss01" on;
+  font-size: 3.75rem;
+  font-weight: 700;
+  line-height: 120%; /* 4.5rem */
+  letter-spacing: 0.02813rem;
+}
+
+h2 {
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 4rem; /* 133.333% */
+}
+
+h3 {
+  font-size: 2.5rem;
+  font-weight: 500;
+  line-height: 3rem; /* 120% */
+}
+
+.subtitle1 {
+  font-size: 1.75rem;
+  font-weight: 400;
+  line-height: 2.5rem; /* 142.857% */
+}
+
+.subtitle2 {
+  font-size: 1.125rem;
+  font-weight: 700;
+  line-height: 1.75rem; /* 155.556% */
+  letter-spacing: 0.025rem;
+  text-transform: uppercase;
+}
+
+.bodyText {
+  font-size: 1.125rem;
+  font-weight: 400;
+  line-height: 1.75rem; /* 155.556% */
+}
+
+.bodyTextAlt {
+  font-size: 1rem;
+  font-weight: 500;
+  line-height: 1.5rem; /* 150% */
+}
+
+button {
+  border-radius: 0.5rem;
+  border: 0;
+  background-color: #0036f5;
+  color: #f2f2f7;
+  padding: 0.7rem 1rem;
+  font-size: 1rem;
+  cursor: pointer;
+  transition: border-color 0.25s;
+  outline-offset: 2px;
+}
+
+button:focus {
+  position: relative;
+}
+
+button:focus::after {
+  content: "";
+  position: absolute;
+  top: -2px;
+  left: -2px;
+  right: -2px;
+  bottom: -2px;
+  outline: 5px auto -webkit-focus-ring-color !important;
+}
+
+.secondaryButton {
+  background-color: #f0f3ff;
+  color: #1c1c1e;
+}
+
+.buttonAsLink {
+  border: 0;
+  color: #1c1c1e;
+  background: none;
+}
+
+.buttonAsLink:hover {
+  color: #0036f5;
+  text-decoration: underline;
+}
+
+.disabledButton {
+  opacity: 0.5;
+  cursor: not-allowed;
+}
