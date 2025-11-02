@@ -1,0 +1,168 @@
+/* Section 3 */
+
+.part3-homepage {
+    /* max-width: 90rem; */
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #F0F3FF;
+    text-align: left;
+}
+
+.part3-homepage h1 {
+    color: #000000;
+    font-family: Inter;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 3.0625rem;
+    /* margin: 4.38rem 30.56rem 2rem 6.94rem; */
+}
+
+.part3-homepage h1 span {
+    color: #000000;
+    font-family: Inter;
+    font-size: 2rem;
+    line-height: 3.0625rem;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.font-bold {
+    font-weight: bold;
+}
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+}
+
+.card {
+    background-color: #f9f9f9;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+}
+
+.card h2 {
+    margin-top: 0.5rem;
+
+}
+
+.card p {
+    color: #555;
+}
+
+.card-header-section3 {
+    position: relative;
+    height: 60px;
+}
+
+.card-header-section3 span {
+    font-size: 2rem;
+    font-weight: bold;
+    /* display: block; */
+    position: absolute;
+    top: 10px;
+    left: 15px;
+}
+
+.card-header-section3 img {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    width: 48px;
+    height: 48px;
+}
+
+.card-number {
+    font-size: 2rem;
+    font-weight: bold;
+    text-align: left;
+}
+
+/* Section 5 */
+.part5-homepage {
+    max-width: 1140px;
+    margin: 0 auto;
+    padding: 40px 20px;
+    background-color: #FFFFFF;
+}
+
+.part5-homepage h1 {
+    text-align: center;
+    margin-bottom: 30px;
+}
+
+.card-header-section5 {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 5px;
+    width: 100%;
+}
+
+.part5-homepage .card-container .card p {
+    text-align: left;
+}
+
+.card-header-section5 img {
+    width: 60px;
+    height: 60px;
+    position: static;
+    margin: 5px;
+
+}
+
+.part5-homepage .card-container .card .profile-title {
+    font-weight: bold;
+    position: static;
+    font-size: 1.2em;
+}
+
+.part5-homepage .card-container .card .rating {
+    display: flex;
+    justify-content: flex-start;
+    margin-top: 10px;
+    margin-left: 0;
+    padding-left: 0;
+    width: 100%;
+}
+
+.part5-homepage .card {
+    text-align: left;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    background-color: #F0F3FF;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    width: 300px;
+    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
+    padding: 1rem;
+
+}
+
+.part5-homepage .card .rating {
+    display: flex;
+    justify-content: flex-start;
+    width: 100%;
+    margin-top: 10px;
+    padding-left: 0;
+}
+
+.part5-homepage .card .rating img {
+    display: block;
+    margin: 0;
+}
+
+.part5-homepage .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+    gap: 20px;
+    align-items: stretch;
+}
