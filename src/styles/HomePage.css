@@ -10,7 +10,7 @@
 }
 
 .part3-homepage h1 {
-    color: #000000;
+    /* color: #000000; */
     font-family: Inter;
     font-size: 3rem;
     font-style: normal;
@@ -91,6 +91,7 @@
     margin: 0 auto;
     padding: 40px 20px;
     background-color: #FFFFFF;
+    color: #000000;
 }
 
 .part5-homepage h1 {
