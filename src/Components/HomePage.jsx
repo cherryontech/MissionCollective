@@ -1,5 +1,8 @@
 import "../styles/HomePage.css";
-import correctLight from "../assets/icons/correctLight.svg";
+import pinkDice from "../assets/icons/pinkDice.svg";
+import pinkLoop from "../assets/icons/pinkLoop.svg";
+import pinkPartner from "../assets/icons/pinkPartner.svg";
+import stars from "../assets/icons/stars.svg";
 
 export default function HomePage() {
   return (
@@ -19,7 +22,7 @@ export default function HomePage() {
           <div className="card">
             <div className="card-header-section3">
               <span>1</span>
-              <img src={correctLight} alt="correct icon" />
+              <img src={pinkDice} alt="pink dice icon" />
             </div>
             <h2>Start a Mission</h2>
             <p>
@@ -30,11 +33,7 @@ export default function HomePage() {
           <div className="card">
             <div className="card-header-section3">
               <span>2</span>
-              <img
-                src={correctLight}
-                alt="correct icon"
-                className="card-icon"
-              />
+              <img src={pinkLoop} alt="pink loop icon" className="card-icon" />
             </div>
             <h2>Collaborate & Learn</h2>
             <p>
@@ -46,8 +45,8 @@ export default function HomePage() {
             <div className="card-header-section3">
               <span>3</span>
               <img
-                src={correctLight}
-                alt="correct icon"
+                src={pinkPartner}
+                alt="pink partner icon"
                 className="card-icon"
               />
             </div>
@@ -67,7 +66,7 @@ export default function HomePage() {
         <div className="card-container">
           <div className="card">
             <div className="card-header-section5">
-              <img src={correctLight} alt="correct icon" />
+              <img src={pinkDice} alt="pink dice icon" />
               <span className="profile-title">Valerie, UX Designer</span>
             </div>
             <p>
@@ -77,12 +76,12 @@ export default function HomePage() {
               that isn't awkward!”
             </p>
             <div className="rating">
-              <img src={correctLight} alt="correct icon" />
+              <img src={stars} alt="star rating icon" />
             </div>
           </div>
           <div className="card">
             <div className="card-header-section5">
-              <img src={correctLight} alt="correct icon" />
+              <img src={pinkDice} alt="pink dice icon" />
               <span className="profile-title">Lucas, Project Manager</span>
             </div>
             <p>
@@ -91,12 +90,12 @@ export default function HomePage() {
               direct investment in our skills.”
             </p>
             <div className="rating">
-              <img src={correctLight} alt="correct icon" />
+              <img src={stars} alt="star rating icon" />
             </div>
           </div>
           <div className="card">
             <div className="card-header-section5">
-              <img src={correctLight} alt="correct icon" />
+              <img src={pinkDice} alt="pink dice icon" />
               <span className="profile-title">Patrick, Engineer</span>
             </div>
             <p>
@@ -106,7 +105,7 @@ export default function HomePage() {
               improve our connection.”
             </p>
             <div className="rating">
-              <img src={correctLight} alt="correct icon" />
+              <img src={stars} alt="star rating icon" />
             </div>
           </div>
         </div>

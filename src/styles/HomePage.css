@@ -6,6 +6,7 @@
     padding: 40px 20px;
     background-color: #F0F3FF;
     text-align: left;
+    color: #000000;
 }
 
 .part3-homepage h1 {
@@ -86,7 +87,7 @@
 
 /* Section 5 */
 .part5-homepage {
-    max-width: 1140px;
+    max-width: 90rem;
     margin: 0 auto;
     padding: 40px 20px;
     background-color: #FFFFFF;
@@ -121,6 +122,7 @@
     font-weight: bold;
     position: static;
     font-size: 1.2em;
+    color: #000000
 }
 
 .part5-homepage .card-container .card .rating {
