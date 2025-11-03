@@ -38,6 +38,10 @@ a:focus {
   text-underline-position: from-font;
 }
 
+.activeLink {
+  color: #ec00aa;
+}
+
 .loginButton {
   color: #0036f5;
   text-align: center;
