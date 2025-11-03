@@ -5,16 +5,16 @@ import LearnMoreModal from "./LearnMoreModal";
 //TODO: Figure out how to use relative paths instead of importing images
 import forwardArrow from "../assets/icons/forwardArrow.svg";
 import backArrow from "../assets/icons/backArrow.svg";
-import image1 from "../assets/images/quiz1/1.jpg";
-import image2 from "../assets/images/quiz1/2.jpg";
-import image3 from "../assets/images/quiz1/3.jpg";
-import image4 from "../assets/images/quiz1/4.jpg";
-import image5 from "../assets/images/quiz1/5.jpg";
+import image1 from "../assets/images/quiz1/1.png";
+import image2 from "../assets/images/quiz1/2.png";
+import image3 from "../assets/images/quiz1/3.png";
+import image4 from "../assets/images/quiz1/4.png";
+import image5 from "../assets/images/quiz1/5.png";
 import image6 from "../assets/images/quiz1/6.png";
-import image7 from "../assets/images/quiz1/7.jpg";
-import image8 from "../assets/images/quiz1/8.jpg";
-import image9 from "../assets/images/quiz1/9.jpg";
-import image10 from "../assets/images/quiz1/10.jpg";
+import image7 from "../assets/images/quiz1/7.png";
+import image8 from "../assets/images/quiz1/8.png";
+import image9 from "../assets/images/quiz1/9.png";
+import image10 from "../assets/images/quiz1/10.png";
 
 export function getImageSrc(id) {
   const imageID = id + 1;
