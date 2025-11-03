@@ -1,6 +1,6 @@
 .footer {
   display: flex;
-  min-width: 90rem;
+  width: 100vw;
   max-height: 6.3125rem;
   padding: 2.0625rem 4.31444rem 2.75rem;
   justify-content: flex-end;
