@@ -1,8 +1,27 @@
 nav {
   display: flex;
-  width: 100vw;
-  padding: 3.58rem 3rem 1.25rem 3rem;
+  width: 100%;
   box-shadow: 0 6px 4.5px rgba(0, 0, 0, 0.25);
+  justify-content: center;
+  margin: 0;
+}
+
+.navElements {
+  padding: 3.58rem 3rem 1.25rem 3rem;
+  display: flex;
+  align-self: center;
+  width: 90rem;
+  justify-content: space-between;
+}
+
+.menu {
+  display: flex;
+  column-gap: 2.5rem;
+  align-items: center;
+}
+
+.userInfo {
+  /* To be used when displaying logged in user */
 }
 
 a:hover {
@@ -42,14 +61,4 @@ a:focus {
 .loginButton:focus {
   border-radius: 0.5rem;
   border: 4px dashed #ec00aa;
-}
-
-.menu {
-  display: flex;
-  column-gap: 2.5rem;
-  align-items: center;
-}
-
-.userInfo {
-  flex-grow: 2;
 }
