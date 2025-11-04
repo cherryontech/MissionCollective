@@ -1,4 +1,5 @@
 import Footer from "./Footer";
+import "../styles/HomePage.css";
 
 const content = {
   heading1: "Building a Better Team, Together",
@@ -6,6 +7,9 @@ const content = {
   heading3: "Points with a Purpose",
   heading4: "What Teams Are Saying",
   heading5: "Ready to Build a Thriving Community?",
+  button1: "Start a Team Mission",
+  button2: "Start a Free Trial",
+  button3: "Explore Missions",
 };
 
 export default function HomePage() {
@@ -23,8 +27,12 @@ export default function HomePage() {
       <div>
         <h2>{content.heading4}</h2>
       </div>
-      <div>
+      <div className="section5">
         <h2>{content.heading5}</h2>
+        <div className="buttonContainer">
+          <button className="primaryButton">{content.button2}</button>
+          <button className="ghostButton">{content.button3}</button>
+        </div>
       </div>
       <Footer />
     </div>
