@@ -12,10 +12,7 @@ export default function QuestionHeader() {
   return (
     <div className="QuestionHeader">
       <div className="CurrentQuestionNumber">
-        <img
-          src={GlobeIcon}
-          alt="globe icon"
-        ></img>
+        <img src={GlobeIcon} alt="globe icon"></img>
         <div className="CurrentQuestionNumberText">
           <h2>Question {currentQuestionID + 1} of 10</h2>
           <p>Different Cultures Trivia</p>
