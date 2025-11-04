@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import Footer from "./Footer";
 import "../styles/HomePage.css";
 
@@ -31,7 +32,9 @@ export default function HomePage() {
         <h2>{content.heading5}</h2>
         <div className="buttonContainer">
           <button className="primaryButton">{content.button2}</button>
-          <button className="ghostButton">{content.button3}</button>
+          <Link to="/activity">
+            <button className="ghostButton">{content.button3}</button>
+          </Link>
         </div>
       </div>
       <Footer />
