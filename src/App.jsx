@@ -1,6 +1,3 @@
-import { BrowserRouter, Routes, Route } from "react-router-dom";
-import reactLogo from "./assets/react.svg";
-import viteLogo from "/vite.svg";
 import "./styles/App.css";
 import Activity from "./Components/Activity";
 import HomePage from "./Components/HomePage";
