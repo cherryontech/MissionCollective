@@ -16,16 +16,16 @@ const content = {
 export default function HomePage() {
   return (
     <div>
-      <div>
+      <div className="section1">
         <h2>{content.heading1}</h2>
       </div>
-      <div>
+      <div className="section2">
         <h2>{content.heading2}</h2>
       </div>
-      <div>
+      <div className="section3">
         <h2>{content.heading3}</h2>
       </div>
-      <div>
+      <div className="section4">
         <h2>{content.heading4}</h2>
       </div>
       <div className="section5">
