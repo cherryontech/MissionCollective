@@ -1,4 +1,4 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, Link } from "react-router-dom";
 import logo from "../assets/icons/logo.svg";
 import "../styles/NavBar.css";
 
@@ -15,32 +15,34 @@ export default function NavBar() {
             Home
           </NavLink>
           <a
-            href=""
             className={({ isActive }) => (isActive ? "activeLink" : "")}
+            title="Coming Soon"
           >
             How It Works
           </a>
-          <NavLink
-            to="/activity"
+          <a
             className={({ isActive }) => (isActive ? "activeLink" : "")}
+            title="Coming Soon"
           >
             Explore Missions
-          </NavLink>
+          </a>
           <a
-            href=""
             className={({ isActive }) => (isActive ? "activeLink" : "")}
+            title="Coming Soon"
           >
             Pricing
           </a>
           <a
-            href=""
             className={({ isActive }) => (isActive ? "activeLink" : "")}
+            title="Coming Soon"
           >
             About Us
           </a>
         </div>
         <div className="userInfo">
-          <button className="loginButton">Log In</button>
+          <Link to="/activity">
+            <button className="loginButton">Log In</button>
+          </Link>
         </div>
       </div>
     </nav>
