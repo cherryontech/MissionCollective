@@ -1,14 +1,15 @@
 main {
-    font-family: Inter, sans-serif;
     color: #000000;
 }
 
 .homepage-container {
     max-width: 1440px;
-    margin: 0 auto;
-    padding: 0 20px;
-    box-sizing: border-box;
+    margin: 0;
     padding-left: 6.94rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
 
 
@@ -18,7 +19,7 @@ main {
     margin: 0 auto;
     width: 100%;
     min-height: 100vh;
-    padding: 40px 0;
+    /* padding: 40px 0; */
     background-color: #F0F3FF;
     text-align: left;
     box-sizing: border-box;
@@ -29,7 +30,7 @@ main {
     font-style: normal;
     font-weight: 800;
     line-height: 3.0625rem;
-    margin: 4rem 0 2rem;
+    margin: 4.38rem 0 2rem;
 }
 
 .part3-homepage h1 span {
@@ -44,7 +45,7 @@ main {
     font-style: normal;
     font-weight: 300;
     line-height: 1.875rem;
-    margin-bottom: 2rem;
+    margin-bottom: 4.75rem;
 }
 
 .font-bold {
@@ -54,9 +55,10 @@ main {
 .card-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
+    justify-content: center;
     gap: 3.75rem;
-    margin: 4.75rem 0 4.81rem;
+    /* margin: 4.75rem 0 4.81rem; */
+    margin-bottom: 4.81rem;
 }
 
 
@@ -64,29 +66,16 @@ main {
     display: flex;
     flex-direction: column;
     border: 1px solid #ddd;
-    border-radius: 8px;
-    box-shadow: 0 2px 5px rgba(0, 0, 0, 0.1);
-    box-sizing: border-box;
-}
-
-
-.part3-homepage .card {
-    width: 22.875rem;
-    height: 25.6875rem;
-    padding: 1.875rem;
-    background-color: #f9f9f9;
-}
-
-
-.card-header-section3 {
-    position: relative;
-    height: 60px;
+    border-radius: 1rem;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 .card-header-section3 span {
     font-size: 2rem;
-    font-weight: bold;
+    font-style: normal;
+    font-weight: 700;
     position: absolute;
+    line-height: normal;
     top: 10px;
     left: 15px;
 }
@@ -99,18 +88,25 @@ main {
     height: 5rem;
 }
 
-.card-number {
-    font-size: 2rem;
-    font-weight: bold;
-    text-align: left;
+.part3-homepage .card {
+    width: 22.875rem;
+    height: 25.6875rem;
+    padding: 1.875rem;
+    background-color: #FFF;
+    gap: 0.625rem;
+}
+
+.card-header-section3 {
+    position: relative;
+    height: 3.75rem;
 }
 
 .card-body {
-    margin-top: 65px;
+    margin-top: 4.25rem;
 }
 
 .card-body h2 {
-    margin: 0 0 0.5rem 0;
+    margin: 0 0 0.438rem 0;
     font-size: 2rem;
     font-style: normal;
     font-weight: 700;
@@ -126,12 +122,12 @@ main {
 }
 
 
-
 /* Section 5 */
 .part5-homepage {
+    margin: 0 auto;
     width: 100%;
     min-height: 100vh;
-    padding: 40px 0;
+    /* padding: 40px 0; */
     background-color: #FFFFFF;
     text-align: left;
     box-sizing: border-box;
@@ -143,14 +139,15 @@ main {
     font-weight: 800;
     line-height: 3.3125rem;
     text-align: center;
-    margin-bottom: 5.25rem;
+    margin: 0 auto 5.25rem auto;
+    width: 100%;
 }
 
 .part5-homepage .card-container {
     display: flex;
     flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 3.75rem;
+    justify-content: center;
+    gap: 4.06rem;
 }
 
 
@@ -158,8 +155,9 @@ main {
     justify-content: space-between;
     width: 22.875rem;
     height: auto;
-    background-color: #f0f3ff;
-    padding: 1.5rem;
+    background: #F0F3FF;
+    padding: 1.5rem 1.1875rem;
+    gap: 1.0625rem;
 }
 
 .part5-homepage .card-header-section5 {
@@ -188,7 +186,8 @@ main {
     font-weight: 400;
     font-style: normal;
     line-height: 1.75rem;
-    margin-bottom: 1rem;
+    margin-top: 1.38rem;
+    margin-bottom: 1.0625rem;
     text-align: left;
 }
 
@@ -207,4 +206,9 @@ main {
     margin: 0 auto 0 0;
     display: block;
     padding-top: 1.06rem;
+}
+
+.part3-homepage .card-container,
+.part5-homepage .card-container {
+    justify-content: center;
 }

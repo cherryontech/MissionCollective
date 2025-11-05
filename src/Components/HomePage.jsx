@@ -90,10 +90,10 @@ export default function HomePage() {
                 <span className="profile-title">Valerie, UX Designer</span>
               </div>
               <p>
-                “I love that it doesn't take much time, and I can do it when it
+                "I love that it doesn't take much time, and I can do it when it
                 works for me. It's the first team activity where I felt like I
                 wasn't being judged or put on the spot. Finally, a team activity
-                that isn't awkward!”
+                that isn't awkward!"
               </p>
               <div className="rating">
                 <img src={stars} alt="star rating icon" />
@@ -105,9 +105,9 @@ export default function HomePage() {
                 <span className="profile-title">Lucas, Project Manager</span>
               </div>
               <p>
-                “It's the first team tool that feels authentic. Earning points
+                "It's the first team tool that feels authentic. Earning points
                 for a shared training budget makes team-building feel valuable,
-                like a direct investment in our skills.”
+                like a direct investment in our skills."
               </p>
               <div className="rating">
                 <img src={stars} alt="star rating icon" />
@@ -119,10 +119,10 @@ export default function HomePage() {
                 <span className="profile-title">Patrick, Engineer</span>
               </div>
               <p>
-                “Since we focused on a team goal, not individual bragging
+                "Since we focused on a team goal, not individual bragging
                 rights, it made me feel like my small contribution was moving
                 the whole team forward. It genuinely feels like we're working
-                together to improve our connection.”
+                together to improve our connection."
               </p>
               <div className="rating">
                 <img src={stars} alt="star rating icon" />
