@@ -28,6 +28,7 @@ a:hover {
   color: #0036f5;
   text-decoration-line: underline;
   text-underline-position: from-font;
+  cursor: pointer;
 }
 
 a:focus {

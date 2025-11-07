@@ -98,6 +98,7 @@ export default function Question() {
                 : "secondaryButton navButton"
             }
             onClick={handlePreviousQuestionOnClick}
+            disabled={currentQuestionID == 0 ? true : false}
           >
             <span className="navButtonText">Previous Question</span>
             <img
@@ -109,6 +110,7 @@ export default function Question() {
           <button
             className={answer ? "navButton" : "navButton disabledButton"}
             onClick={handleConfirmAnswerOnClick}
+            disabled={answer ? false : true}
           >
             <span className="navButtonText">Confirm Answer</span>
             <img
@@ -126,6 +128,7 @@ export default function Question() {
                 : "buttonAsLink"
             }
             onClick={handleSkipOnClick}
+            disabled={currentQuestionID == 9 ? true : false}
           >
             Skip For Now
           </button>
