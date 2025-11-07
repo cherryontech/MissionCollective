@@ -27,60 +27,68 @@ export default function HomePage() {
       <div className="section0">
         <h2>{content.heading0}</h2>
       </div>
-      <div className="section1 homepage-container part3-homepage">
-        <h2>
-          Why Team-Building Fails <span>(And We Don't)</span>
-        </h2>
-        <p className="connection-text">
-          <span className="font-bold">Real Connection in 3 Simple Steps: </span>
-          Mission Collective is built on the belief that genuine connection
-          requires learning and respect. We provide the structure, your team
-          builds the trust.
-        </p>
-        <div className="card-container">
-          <div className="card">
-            <div className="card-header-section3">
-              <span>1</span>
-              <img src={pinkDice} alt="pink dice icon" />
+      <div className="section1  part3-homepage">
+        <div className="homepage-container">
+          <h2>
+            Why Team-Building Fails <span>(And We Don't)</span>
+          </h2>
+          <p className="connection-text">
+            <span className="font-bold">
+              Real Connection in 3 Simple Steps:{" "}
+            </span>
+            Mission Collective is built on the belief that genuine connection
+            requires learning and respect. We provide the structure, your team
+            builds the trust.
+          </p>
+          <div className="card-container">
+            <div className="card">
+              <div className="card-header-section3">
+                <span>1</span>
+                <img src={pinkDice} alt="pink dice icon" />
+              </div>
+              <div className="card-body">
+                <h2>Start a Mission</h2>
+                <p>
+                  A teammate selects a quick, gamified mission from the Mission
+                  Hub, choosing a high-impact activity to kick off the
+                  collaborative fun.
+                </p>
+              </div>
             </div>
-            <div className="card-body">
-              <h2>Start a Mission</h2>
-              <p>
-                A teammate selects a quick, gamified mission from the Mission
-                Hub, choosing a high-impact activity to kick off the
-                collaborative fun.
-              </p>
+            <div className="card">
+              <div className="card-header-section3">
+                <span>2</span>
+                <img
+                  src={pinkLoop}
+                  alt="pink loop icon"
+                  className="card-icon"
+                />
+              </div>
+              <div className="card-body">
+                <h2>Collaborate & Learn</h2>
+                <p>
+                  Each team member answers questions, learns something new about
+                  the topic or each other, and earns points for their
+                  contribution.
+                </p>
+              </div>
             </div>
-          </div>
-          <div className="card">
-            <div className="card-header-section3">
-              <span>2</span>
-              <img src={pinkLoop} alt="pink loop icon" className="card-icon" />
-            </div>
-            <div className="card-body">
-              <h2>Collaborate & Learn</h2>
-              <p>
-                Each team member answers questions, learns something new about
-                the topic or each other, and earns points for their
-                contribution.
-              </p>
-            </div>
-          </div>
-          <div className="card">
-            <div className="card-header-section3">
-              <span>3</span>
-              <img
-                src={pinkPartner}
-                alt="pink partner icon"
-                className="card-icon"
-              />
-            </div>
-            <div className="card-body">
-              <h2>Thrive, Together</h2>
-              <p>
-                Points are converted into shared team rewards, such as a
-                donation goal, training budget, or a group activity.
-              </p>
+            <div className="card">
+              <div className="card-header-section3">
+                <span>3</span>
+                <img
+                  src={pinkPartner}
+                  alt="pink partner icon"
+                  className="card-icon"
+                />
+              </div>
+              <div className="card-body">
+                <h2>Thrive, Together</h2>
+                <p>
+                  Points are converted into shared team rewards, such as a
+                  donation goal, training budget, or a group activity.
+                </p>
+              </div>
             </div>
           </div>
         </div>
@@ -88,7 +96,7 @@ export default function HomePage() {
       <div className="section2">
         <h2>{content.heading2}</h2>
       </div>
-      <div className="section3 part5-homepage homepage-container">
+      <div className="section3 part5-homepage">
         <h2>{content.heading3}</h2>
         <div className="card-container">
           <div className="card">

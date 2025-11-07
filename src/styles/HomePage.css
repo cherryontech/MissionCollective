@@ -1,8 +1,16 @@
+/* Page-Wide Styles */
+
 h2 {
   color: #000;
   font-size: 3rem;
   font-weight: 800;
 }
+
+.font-bold {
+  font-weight: 600;
+}
+
+/* Section-Specific Styles */
 
 .section0 {
   height: 51.59rem;
@@ -10,6 +18,25 @@ h2 {
 
 .section1 {
   height: 48.4375rem;
+  background-color: #f0f3ff;
+  text-align: left;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.section1 h2 span {
+  font-size: 2rem;
+}
+
+.homepage-container {
+  height: 100%;
+  width: 90rem;
+  padding-left: 6.94rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: center;
 }
 
 .section2 {
@@ -17,6 +44,10 @@ h2 {
 }
 
 .section3 {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
   height: 41.62rem;
 }
 
@@ -31,53 +62,13 @@ h2 {
   align-items: center;
 }
 
-.homepage-container {
-  max-width: 1440px;
-  margin: 0;
-  padding-left: 6.94rem;
-  display: flex;
-  flex-direction: column;
-  align-items: flex-start;
-  justify-content: flex-start;
-}
-
-/* Section 3 */
-
-.part3-homepage {
-  margin: 0 auto;
-  width: 100%;
-  min-height: 100vh;
-  /* padding: 40px 0; */
-  background-color: #f0f3ff;
-  text-align: left;
-  box-sizing: border-box;
-}
-
-.part3-homepage h1 {
-  font-size: 3rem;
-  font-style: normal;
-  font-weight: 800;
-  line-height: 3.0625rem;
-  margin: 4.38rem 0 2rem;
-}
-
-.part3-homepage h1 span {
-  font-size: 2rem;
-  line-height: 3.0625rem;
-  font-weight: 800;
-  font-style: normal;
-}
+/* Section 3 (really 1) */
 
 .connection-text {
   font-size: 1.5rem;
-  font-style: normal;
   font-weight: 300;
-  line-height: 1.875rem;
   margin-bottom: 4.75rem;
-}
-
-.font-bold {
-  font-weight: 600;
+  width: 69.125rem;
 }
 
 .card-container {
@@ -149,15 +140,6 @@ h2 {
 }
 
 /* Section 5 */
-.part5-homepage {
-  margin: 0 auto;
-  width: 100%;
-  min-height: 100vh;
-  /* padding: 40px 0; */
-  background-color: #ffffff;
-  text-align: left;
-  box-sizing: border-box;
-}
 
 .part5-homepage h1 {
   font-size: 3rem;
@@ -231,9 +213,4 @@ h2 {
   margin: 0 auto 0 0;
   display: block;
   padding-top: 1.06rem;
-}
-
-.part3-homepage .card-container,
-.part5-homepage .card-container {
-  justify-content: center;
 }
