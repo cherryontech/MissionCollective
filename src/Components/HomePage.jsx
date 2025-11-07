@@ -10,8 +10,8 @@ import profilePatrick from "../assets/profilePatrick.png";
 export default function HomePage() {
   return (
     <main>
-      {/* Part 3 Section */}
-      <section className="part3-homepage">
+      {/* Section1 */}
+      <section className="section1-homepage">
         <div className="homepage-container">
           <h1>
             Why Team-Building Fails <span>(And We Don't)</span>
@@ -26,7 +26,7 @@ export default function HomePage() {
           </p>
           <div className="card-container">
             <div className="card">
-              <div className="card-header-section3">
+              <div className="card-header-section1">
                 <span>1</span>
                 <img src={pinkDice} alt="pink dice icon" />
               </div>
@@ -40,7 +40,7 @@ export default function HomePage() {
               </div>
             </div>
             <div className="card">
-              <div className="card-header-section3">
+              <div className="card-header-section1">
                 <span>2</span>
                 <img
                   src={pinkLoop}
@@ -58,7 +58,7 @@ export default function HomePage() {
               </div>
             </div>
             <div className="card">
-              <div className="card-header-section3">
+              <div className="card-header-section1">
                 <span>3</span>
                 <img
                   src={pinkPartner}
@@ -78,14 +78,14 @@ export default function HomePage() {
         </div>
       </section>
 
-      {/* Part 5 section */}
+      {/* Section3 */}
 
-      <section className="part5-homepage">
+      <section className="section3-homepage">
         <div className="homepage-container">
           <h1>What Teams Are Saying</h1>
           <div className="card-container">
             <div className="card">
-              <div className="card-header-section5">
+              <div className="card-header-section3">
                 <img src={profileValerie} alt="Valerie profile picture" />
                 <span className="profile-title">Valerie, UX Designer</span>
               </div>
@@ -100,7 +100,7 @@ export default function HomePage() {
               </div>
             </div>
             <div className="card">
-              <div className="card-header-section5">
+              <div className="card-header-section3">
                 <img src={profileLucas} alt="Lucas profile icon" />
                 <span className="profile-title">Lucas, Project Manager</span>
               </div>
@@ -114,7 +114,7 @@ export default function HomePage() {
               </div>
             </div>
             <div className="card">
-              <div className="card-header-section5">
+              <div className="card-header-section3">
                 <img src={profilePatrick} alt="Patrick profile icon" />
                 <span className="profile-title">Patrick, Engineer</span>
               </div>

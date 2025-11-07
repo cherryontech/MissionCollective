@@ -13,9 +13,9 @@ main {
 }
 
 
-/* Section 3 */
+/* Section 1 */
 
-.part3-homepage {
+.section1-homepage {
     margin: 0 auto;
     width: 100%;
     min-height: 100vh;
@@ -25,7 +25,7 @@ main {
     box-sizing: border-box;
 }
 
-.part3-homepage h1 {
+.section1-homepage h1 {
     font-size: 3rem;
     font-style: normal;
     font-weight: 800;
@@ -33,7 +33,7 @@ main {
     margin: 4.38rem 0 2rem;
 }
 
-.part3-homepage h1 span {
+.section1-homepage h1 span {
     font-size: 2rem;
     line-height: 3.0625rem;
     font-weight: 800;
@@ -61,7 +61,6 @@ main {
     margin-bottom: 4.81rem;
 }
 
-
 .card {
     display: flex;
     flex-direction: column;
@@ -70,7 +69,7 @@ main {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
-.card-header-section3 span {
+.card-header-section1 span {
     font-size: 2rem;
     font-style: normal;
     font-weight: 700;
@@ -80,15 +79,15 @@ main {
     left: 15px;
 }
 
-.card-header-section3 img {
+.card-header-section1 img {
     position: absolute;
     top: 10px;
     right: 15px;
-    width: 5rem;
-    height: 5rem;
+    width: 4.3125rem;
+    height: 4.3125rem;
 }
 
-.part3-homepage .card {
+.section1-homepage .card {
     width: 22.875rem;
     height: 25.6875rem;
     padding: 1.875rem;
@@ -96,7 +95,7 @@ main {
     gap: 0.625rem;
 }
 
-.card-header-section3 {
+.card-header-section1 {
     position: relative;
     height: 3.75rem;
 }
@@ -122,18 +121,16 @@ main {
 }
 
 
-/* Section 5 */
-.part5-homepage {
+/* Section3 */
+.section3-homepage {
     margin: 0 auto;
     width: 100%;
     min-height: 100vh;
-    /* padding: 40px 0; */
     background-color: #FFFFFF;
     text-align: left;
-    box-sizing: border-box;
 }
 
-.part5-homepage h1 {
+.section3-homepage h1 {
     font-size: 3rem;
     font-style: normal;
     font-weight: 800;
@@ -143,15 +140,14 @@ main {
     width: 100%;
 }
 
-.part5-homepage .card-container {
+.section3-homepage .card-container {
     display: flex;
     flex-wrap: wrap;
     justify-content: center;
     gap: 4.06rem;
 }
 
-
-.part5-homepage .card {
+.section3-homepage .card {
     justify-content: space-between;
     width: 22.875rem;
     height: auto;
@@ -160,7 +156,7 @@ main {
     gap: 1.0625rem;
 }
 
-.part5-homepage .card-header-section5 {
+.section3-homepage .card-header-section3 {
     display: flex;
     align-items: center;
     gap: 1rem;
@@ -168,19 +164,19 @@ main {
     min-height: 4.5rem;
 }
 
-.part5-homepage .card-header-section5 img {
+.section3-homepage .card-header-section3 img {
     width: 4.3125rem;
     height: 4.3125rem;
 }
 
-.part5-homepage .profile-title {
+.section3-homepage .profile-title {
     font-weight: 600;
     font-size: 1.125rem;
     font-style: normal;
     line-height: 1.75rem;
 }
 
-.part5-homepage .card p {
+.section3-homepage .card p {
     flex-grow: 1;
     font-size: 1.125rem;
     font-weight: 400;
@@ -191,14 +187,14 @@ main {
     text-align: left;
 }
 
-.part5-homepage .rating {
+.section3-homepage .rating {
     display: flex;
     justify-content: flex-start;
     align-items: center;
     width: 100%;
 }
 
-.part5-homepage .rating img {
+.section3-homepage .rating img {
     width: 80%;
     max-width: 200px;
     height: auto;
@@ -208,7 +204,10 @@ main {
     padding-top: 1.06rem;
 }
 
-.part3-homepage .card-container,
-.part5-homepage .card-container {
-    justify-content: center;
+.section1-homepage .card-container,
+.section3-homepage .card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+    gap: 3.75rem;
 }

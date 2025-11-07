@@ -1,12 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
+* {
+  box-sizing: border-box;
+}
+
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
   line-height: 1.5;
   font-weight: 400;
-
   color: #212529;
-  background-color: #e5e7eb;
+  background-color: #ffffff;
 }
 
 a {
@@ -20,58 +23,66 @@ a:hover {
   text-decoration-style: underline;
 }
 
-body {
-  margin: 0;
+/* body {
   display: flex;
   place-items: center;
-  min-width: 320px;
   min-height: 100vh;
-}
+  width: 100%;
+  left: 0;
+  margin: 0;
+} */
 
-h1 {
+/* h1 {
   font-feature-settings: "ss01" on;
   font-size: 3.75rem;
   font-weight: 700;
-  line-height: 120%; /* 4.5rem */
-  letter-spacing: 0.02813rem;
-}
+  line-height: 120%; */
+/* 4.5rem */
+/* letter-spacing: 0.02813rem;
+} */
 
-h2 {
+/* h2 {
   font-size: 3rem;
   font-weight: 700;
-  line-height: 4rem; /* 133.333% */
-}
+  line-height: 4rem; */
+/* 133.333% */
+/* } */
 
-h3 {
+/* h3 {
   font-size: 2.5rem;
   font-weight: 500;
-  line-height: 3rem; /* 120% */
-}
+  line-height: 3rem; */
+/* 120% */
+/* } */
 
-.subtitle1 {
+/* .subtitle1 {
   font-size: 1.75rem;
   font-weight: 400;
-  line-height: 2.5rem; /* 142.857% */
-}
+  line-height: 2.5rem; */
+/* 142.857% */
+/* } */
 
-.subtitle2 {
+/* .subtitle2 {
   font-size: 1.125rem;
   font-weight: 700;
-  line-height: 1.75rem; /* 155.556% */
-  letter-spacing: 0.025rem;
+  line-height: 1.75rem; */
+/* 155.556% */
+/* letter-spacing: 0.025rem;
   text-transform: uppercase;
-}
+} */
 
-.bodyText {
+/* .bodyText {
   font-size: 1.125rem;
   font-weight: 400;
-  line-height: 1.75rem; /* 155.556% */
-}
+  line-height: 1.75rem; */
+/* 155.556% */
+/* } */
 
 .bodyTextAlt {
   font-size: 1rem;
   font-weight: 500;
-  line-height: 1.5rem; /* 150% */
+  line-height: 1.5rem;
+  /* 150% */
 }
 
 button {
