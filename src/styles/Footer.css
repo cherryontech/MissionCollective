@@ -1,0 +1,28 @@
+.footerContainer {
+  height: 6.3125rem;
+  border-top: 1px solid #e5e5e5;
+  display: flex;
+  justify-content: center;
+  position: relative;
+  bottom: 0;
+  width: 100%;
+}
+
+.footerElements {
+  width: 90rem;
+  display: flex;
+  justify-content: flex-end;
+  align-items: center;
+  column-gap: 2.5rem;
+  padding: 2.0625rem 4.31444rem 2.75rem;
+}
+
+a {
+  color: #1c1c1e;
+}
+
+a:hover {
+  color: #0036f5;
+  text-decoration-line: underline;
+  text-underline-position: from-font;
+}
