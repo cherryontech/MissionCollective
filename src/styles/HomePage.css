@@ -30,3 +30,210 @@ h2 {
   justify-content: center;
   align-items: center;
 }
+
+.homepage-container {
+  max-width: 1440px;
+  margin: 0;
+  padding-left: 6.94rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
+}
+
+/* Section 3 */
+
+.part3-homepage {
+  margin: 0 auto;
+  width: 100%;
+  min-height: 100vh;
+  /* padding: 40px 0; */
+  background-color: #f0f3ff;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.part3-homepage h1 {
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 3.0625rem;
+  margin: 4.38rem 0 2rem;
+}
+
+.part3-homepage h1 span {
+  font-size: 2rem;
+  line-height: 3.0625rem;
+  font-weight: 800;
+  font-style: normal;
+}
+
+.connection-text {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.875rem;
+  margin-bottom: 4.75rem;
+}
+
+.font-bold {
+  font-weight: 600;
+}
+
+.card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 3.75rem;
+  /* margin: 4.75rem 0 4.81rem; */
+  margin-bottom: 4.81rem;
+}
+
+.card {
+  display: flex;
+  flex-direction: column;
+  border: 1px solid #ddd;
+  border-radius: 1rem;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+.card-header-section3 span {
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  position: absolute;
+  line-height: normal;
+  top: 10px;
+  left: 15px;
+}
+
+.card-header-section3 img {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  width: 5rem;
+  height: 5rem;
+}
+
+.part3-homepage .card {
+  width: 22.875rem;
+  height: 25.6875rem;
+  padding: 1.875rem;
+  background-color: #fff;
+  gap: 0.625rem;
+}
+
+.card-header-section3 {
+  position: relative;
+  height: 3.75rem;
+}
+
+.card-body {
+  margin-top: 4.25rem;
+}
+
+.card-body h2 {
+  margin: 0 0 0.438rem 0;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
+}
+
+.card-body p {
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
+}
+
+/* Section 5 */
+.part5-homepage {
+  margin: 0 auto;
+  width: 100%;
+  min-height: 100vh;
+  /* padding: 40px 0; */
+  background-color: #ffffff;
+  text-align: left;
+  box-sizing: border-box;
+}
+
+.part5-homepage h1 {
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 3.3125rem;
+  text-align: center;
+  margin: 0 auto 5.25rem auto;
+  width: 100%;
+}
+
+.part5-homepage .card-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: center;
+  gap: 4.06rem;
+}
+
+.part5-homepage .card {
+  justify-content: space-between;
+  width: 22.875rem;
+  height: auto;
+  background: #f0f3ff;
+  padding: 1.5rem 1.1875rem;
+  gap: 1.0625rem;
+}
+
+.part5-homepage .card-header-section5 {
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  min-height: 4.5rem;
+}
+
+.part5-homepage .card-header-section5 img {
+  width: 4.3125rem;
+  height: 4.3125rem;
+}
+
+.part5-homepage .profile-title {
+  font-weight: 600;
+  font-size: 1.125rem;
+  font-style: normal;
+  line-height: 1.75rem;
+}
+
+.part5-homepage .card p {
+  flex-grow: 1;
+  font-size: 1.125rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.75rem;
+  margin-top: 1.38rem;
+  margin-bottom: 1.0625rem;
+  text-align: left;
+}
+
+.part5-homepage .rating {
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
+}
+
+.part5-homepage .rating img {
+  width: 80%;
+  max-width: 200px;
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto 0 0;
+  display: block;
+  padding-top: 1.06rem;
+}
+
+.part3-homepage .card-container,
+.part5-homepage .card-container {
+  justify-content: center;
+}
