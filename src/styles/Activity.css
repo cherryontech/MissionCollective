@@ -8,6 +8,10 @@ button {
   height: 3rem;
 }
 
+.wrapper {
+  padding-top: 4rem;
+}
+
 .answerButton {
   text-align: left;
   display: flex;
@@ -67,7 +71,7 @@ button {
   font-size: 1.125rem;
   text-align: center;
   width: 50rem;
-  height: 37.375rem;
+  height: 39.25rem;
   flex-shrink: 0;
   margin: 0 auto;
   padding-bottom: 2rem;

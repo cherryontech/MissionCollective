@@ -1,3 +1,4 @@
+import NavBar from "./NavBar";
 import Footer from "./Footer";
 import "../styles/HomePage.css";
 import pinkDice from "../assets/icons/pinkDice.svg";
@@ -30,6 +31,7 @@ const content = {
 export default function HomePage() {
   return (
     <div>
+      <NavBar />
       <div className="section0">
         <h2>{content.heading0}</h2>
         <img src={coworkersHighFiving} alt="coworkers high-fiving" />

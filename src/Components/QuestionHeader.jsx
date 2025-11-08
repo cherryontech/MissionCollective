@@ -1,13 +1,11 @@
 import { useActivityContext } from "../Context/ActivityContext";
+import { Link } from "react-router-dom";
 import GlobeIcon from "../assets/icons/globe-icon.svg";
 import ExitArrowIcon from "../assets/icons/exit-arrow.svg";
 import "../styles/QuestionHeaderFooter.css";
 
 export default function QuestionHeader() {
   const { currentQuestionID } = useActivityContext();
-  function handleOnClick() {
-    // TODO
-  }
 
   return (
     <div className="QuestionHeader">
@@ -19,14 +17,16 @@ export default function QuestionHeader() {
         </div>
       </div>
       <div className="ExitMission">
-        <button onClick={handleOnClick}>Exit Mission</button>
-        <img
-          src={ExitArrowIcon}
-          alt="globe icon"
-          height="40"
-          width="40"
-          aria-label="Exit mission"
-        ></img>
+        <Link to="/">
+          <button>
+            Exit Mission
+            <img
+              src={ExitArrowIcon}
+              alt="globe icon"
+              aria-label="Exit mission"
+            ></img>
+          </button>
+        </Link>
       </div>
     </div>
   );

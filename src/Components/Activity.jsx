@@ -7,9 +7,11 @@ import QuestionHeader from "./QuestionHeader";
 export default function Activity() {
   return (
     <ActivityContextProvider>
-      <QuestionHeader />
-      <Question />
-      <QuestionFooter />
+      <div className="wrapper">
+        <QuestionHeader />
+        <Question />
+        <QuestionFooter />
+      </div>
     </ActivityContextProvider>
   );
 }
