@@ -1,10 +1,25 @@
 import Footer from "./Footer";
 import "../styles/HomePage.css";
+import pinkDice from "../assets/icons/pinkDice.svg";
+import pinkLoop from "../assets/icons/pinkLoop.svg";
+import pinkPartner from "../assets/icons/pinkPartner.svg";
+import stars from "../assets/icons/stars.svg";
+import profileValerie from "../assets/images/homepage/profileAvatarValerie.png";
+import profileLucas from "../assets/images/homepage/profileAvatarLucas.png";
+import profilePatrick from "../assets/images/homepage/profileAvatarPatrick.png";
+import coworkersHighFiving from "../assets/images/homepage/coworkers high-fiving.png";
+import groupCollab from "../assets/images/homepage/group collab.png";
 
 const content = {
   heading0: "Building a Better Team, Together",
+  subheading0:
+    "True collaboration starts with understanding, and we’re here to help you build that deeper connection.",
+  paragraph0:
+    "Mission Collective replaces dry team-building with purpose-driven fun. Our dedicated virtual space helps modern teams genuinely connect through positive, gamified trivia and collaborative challenges. Discover diverse personal backgrounds in a low-pressure environment, transforming your group into a thriving community.",
   heading1: "Why Team-Building Fails (And We Don't)",
   heading2: "Points with a Purpose",
+  paragraph2:
+    "Mission Collective points are always earned for the whole team. Use them to fund a collective reward that matters, like a shared training course, a team lunch, or a donation to a group-chosen charity. The possibilities are endless! ",
   heading3: "What Teams Are Saying",
   heading4: "Ready to Build a Thriving Community?",
   button0: "Start a Team Mission",
@@ -12,20 +27,12 @@ const content = {
   button2: "Explore Missions",
 };
 
-import "../styles/HomePage.css";
-import pinkDice from "../assets/icons/pinkDice.svg";
-import pinkLoop from "../assets/icons/pinkLoop.svg";
-import pinkPartner from "../assets/icons/pinkPartner.svg";
-import stars from "../assets/icons/stars.svg";
-import profileValerie from "../assets/profileValerie.png";
-import profileLucas from "../assets/profileLucas.png";
-import profilePatrick from "../assets/profilePatrick.png";
-
 export default function HomePage() {
   return (
     <div>
       <div className="section0">
         <h2>{content.heading0}</h2>
+        <img src={coworkersHighFiving} alt="coworkers high-fiving" />
       </div>
       <div className="section1  part3-homepage">
         <div className="homepage-container">
@@ -95,6 +102,7 @@ export default function HomePage() {
       </div>
       <div className="section2">
         <h2>{content.heading2}</h2>
+        <img src={groupCollab} alt="a group of people collaborating on work" />
       </div>
       <div className="section3 part5-homepage">
         <h2>{content.heading3}</h2>

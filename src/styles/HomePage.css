@@ -14,6 +14,9 @@ h2 {
 
 .section0 {
   height: 51.59rem;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
 }
 
 .section1 {
@@ -41,6 +44,9 @@ h2 {
 
 .section2 {
   height: 39.5rem;
+  display: flex;
+  justify-content: center;
+  flex-flow: column;
 }
 
 .section3 {
