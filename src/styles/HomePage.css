@@ -2,212 +2,280 @@ main {
     color: #000000;
 }
 
-.homepage-container {
-    max-width: 1440px;
-    margin: 0;
-    padding-left: 6.94rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
-}
-
-
-/* Section 1 */
+/*Section 1 – Why Team-Building Fails*/
 
 .section1-homepage {
-    margin: 0 auto;
-    width: 100%;
-    min-height: 100vh;
-    /* padding: 40px 0; */
     background-color: #F0F3FF;
-    text-align: left;
-    box-sizing: border-box;
+    padding: 6.38rem 0;
+}
+
+.homepage-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
 }
 
 .section1-homepage h1 {
-    font-size: 3rem;
-    font-style: normal;
-    font-weight: 800;
-    line-height: 3.0625rem;
-    margin: 4.38rem 0 2rem;
+    font-size: 2.5rem;
+    font-weight: 700;
+    line-height: 1.2;
+    margin-bottom: 1.25rem;
 }
 
 .section1-homepage h1 span {
-    font-size: 2rem;
-    line-height: 3.0625rem;
-    font-weight: 800;
-    font-style: normal;
+    font-size: 1.5rem;
+    font-weight: 700;
 }
 
 .connection-text {
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 1.875rem;
-    margin-bottom: 4.75rem;
+    font-size: 1.1rem;
+    line-height: 1.6;
+    margin-bottom: 3rem;
+    max-width: 900px;
 }
 
 .font-bold {
-    font-weight: 600;
+    font-weight: 700;
 }
 
+/*Cards*/
 .card-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: stretch;
     gap: 3.75rem;
-    /* margin: 4.75rem 0 4.81rem; */
-    margin-bottom: 4.81rem;
 }
 
 .card {
+    background: #fff;
+    border-radius: 1rem;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.08);
+    flex: 1;
+    min-height: 18rem;
     display: flex;
     flex-direction: column;
-    border: 1px solid #ddd;
-    border-radius: 1rem;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-}
-
-.card-header-section1 span {
-    font-size: 2rem;
-    font-style: normal;
-    font-weight: 700;
-    position: absolute;
-    line-height: normal;
-    top: 10px;
-    left: 15px;
-}
-
-.card-header-section1 img {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    width: 4.3125rem;
-    height: 4.3125rem;
-}
-
-.section1-homepage .card {
-    width: 22.875rem;
-    height: 25.6875rem;
-    padding: 1.875rem;
-    background-color: #FFF;
-    gap: 0.625rem;
+    padding: 1.88rem;
 }
 
 .card-header-section1 {
-    position: relative;
-    height: 3.75rem;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 0.75rem;
 }
 
-.card-body {
-    margin-top: 4.25rem;
+.card-header-section1 span {
+    font-size: 1.25rem;
+    font-weight: 600;
+    margin-bottom: 0.4rem;
+    display: inline-block;
+}
+
+.card-header-section1 img {
+    width: 3rem;
+    height: 3rem;
+    position: relative;
+    left: 6rem;
+    margin-bottom: 0.75rem;
 }
 
 .card-body h2 {
-    margin: 0 0 0.438rem 0;
-    font-size: 2rem;
-    font-style: normal;
+    font-size: 1.25rem;
     font-weight: 700;
-    line-height: normal;
+    margin-bottom: 0.4rem;
 }
 
 .card-body p {
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin: 0;
+    font-size: 1rem;
+    line-height: 1.55;
+    max-width: 95%;
 }
 
-
-/* Section3 */
+/* Section 3 – What Teams Are Saying */
 .section3-homepage {
-    margin: 0 auto;
-    width: 100%;
-    min-height: 100vh;
-    background-color: #FFFFFF;
-    text-align: left;
+    background-color: #ffffff;
+    padding: 8.62rem 0 6.94rem 0;
 }
 
 .section3-homepage h1 {
-    font-size: 3rem;
-    font-style: normal;
-    font-weight: 800;
-    line-height: 3.3125rem;
+    font-size: 2.5rem;
+    font-weight: 700;
     text-align: center;
-    margin: 0 auto 5.25rem auto;
-    width: 100%;
+    margin-bottom: 5.25rem;
 }
 
 .section3-homepage .card-container {
     display: flex;
-    flex-wrap: wrap;
-    justify-content: center;
+    justify-content: space-between;
+    align-items: stretch;
     gap: 4.06rem;
+    flex-wrap: nowrap;
 }
 
 .section3-homepage .card {
-    justify-content: space-between;
-    width: 22.875rem;
-    height: auto;
     background: #F0F3FF;
-    padding: 1.5rem 1.1875rem;
-    gap: 1.0625rem;
+    border-radius: 1rem;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    flex: 1;
+    /* padding: 1.5rem; */
+    padding-bottom: 4rem;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    min-height: 18rem;
+    position: relative;
 }
 
-.section3-homepage .card-header-section3 {
+
+.card-header-section3 {
     display: flex;
     align-items: center;
     gap: 1rem;
     margin-bottom: 1rem;
-    min-height: 4.5rem;
 }
 
-.section3-homepage .card-header-section3 img {
-    width: 4.3125rem;
-    height: 4.3125rem;
+.card-header-section3 img {
+    width: 3rem;
+    height: 3rem;
 }
 
-.section3-homepage .profile-title {
+.profile-title {
+    font-size: 1.05rem;
     font-weight: 600;
-    font-size: 1.125rem;
-    font-style: normal;
-    line-height: 1.75rem;
 }
 
 .section3-homepage .card p {
     flex-grow: 1;
-    font-size: 1.125rem;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1.75rem;
-    margin-top: 1.38rem;
-    margin-bottom: 1.0625rem;
-    text-align: left;
+    font-size: 1rem;
+    line-height: 1.6;
+    margin-bottom: 1rem;
 }
 
+/* .rating {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: auto;
+
+} */
+
 .section3-homepage .rating {
+    position: absolute;
+    bottom: 1.5rem;
+    left: 1.5rem;
     display: flex;
     justify-content: flex-start;
     align-items: center;
-    width: 100%;
+    margin-top: 0;
 }
 
-.section3-homepage .rating img {
-    width: 80%;
-    max-width: 200px;
+.rating img {
+    width: 7.5rem;
     height: auto;
-    object-fit: contain;
-    margin: 0 auto 0 0;
-    display: block;
-    padding-top: 1.06rem;
 }
 
-.section1-homepage .card-container,
-.section3-homepage .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-    gap: 3.75rem;
+
+@media (max-width: 1024px) {
+
+    .section1-homepage,
+    .section3-homepage {
+        padding: 5rem 0;
+    }
+
+    .homepage-container {
+        padding: 0 1.5rem;
+    }
+
+    .card-container {
+        gap: 2.5rem;
+    }
+
+    .card-body h2 {
+        font-size: 1.2rem;
+    }
+
+    .card-body p {
+        font-size: 0.95rem;
+    }
+
+    .section3-homepage h1 {
+        font-size: 2.2rem;
+        margin-bottom: 4rem;
+    }
+}
+
+@media (max-width: 768px) {
+
+    .section1-homepage h1,
+    .section3-homepage h1 {
+        font-size: 2rem;
+        text-align: center;
+    }
+
+    .connection-text {
+        text-align: center;
+        font-size: 1rem;
+        margin: 0 auto 2rem auto;
+    }
+
+    .card-container {
+        flex-direction: column;
+        align-items: center;
+        gap: 2rem;
+    }
+
+    .card {
+        width: 80%;
+        max-width: 420px;
+    }
+
+    .section3-homepage .card p {
+        text-align: center;
+    }
+
+    .rating {
+        justify-content: flex-start;
+    }
+}
+
+@media (max-width: 480px) {
+
+    .section1-homepage,
+    .section3-homepage {
+        padding: 3.5rem 0;
+    }
+
+    .section1-homepage h1,
+    .section3-homepage h1 {
+        font-size: 1.6rem;
+    }
+
+    .connection-text {
+        font-size: 0.95rem;
+        margin-bottom: 1.75rem;
+    }
+
+    .card {
+        width: 90%;
+        padding: 1.5rem;
+    }
+
+    .card-header-section1 img,
+    .card-header-section3 img {
+        width: 2.25rem;
+        height: 2.25rem;
+    }
+
+    .card-body h2 {
+        font-size: 1.1rem;
+    }
+
+    .card-body p,
+    .section3-homepage .card p {
+        font-size: 0.9rem;
+    }
+
+    .rating img {
+        width: 5rem;
+    }
 }
