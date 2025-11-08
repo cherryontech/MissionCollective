@@ -70,7 +70,7 @@ export const CULTURE_QUESTIONS = [
       { id: "A", answerText: "Tourtière", isCorrect: false },
       { id: "B", answerText: "Nanaimo Bar", isCorrect: false },
       { id: "C", answerText: "Poutine", isCorrect: true },
-      { id: "D", answerText: "BeaverTails", isCorrect: false },
+      { id: "D", answerText: "Beaver Tails", isCorrect: false },
     ],
     learnMoreText:
       'Poutine is a quintessential Canadian cultural staple that originated in Quebec. This simple, rich dish is celebrated from coast to coast, representing a fun, unifying piece of Canadian culinary identity. Despite its popularity now, the dish was initially considered a simple, low-brow "mess" when it first appeared in rural Quebec diners in the 1950s.',
