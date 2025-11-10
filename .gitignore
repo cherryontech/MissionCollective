@@ -32,3 +32,5 @@ dist-ssr
 /build
 
 .vite
+# Local Netlify folder
+.netlify
