@@ -3,6 +3,7 @@ import "./styles/App.css";
 import Activity from "./Components/Activity";
 import HomePage from "./Components/HomePage";
 import NavBar from "./Components/NavBar";
+import MissionHub from "./Components/MissionHub";
 
 function App() {
   return (
@@ -11,6 +12,7 @@ function App() {
       <Routes>
         <Route path="/" element={<HomePage />} />
         <Route path="/activity" element={<Activity />} />
+        <Route path="/mission-hub" element={<MissionHub />} />
       </Routes>
     </BrowserRouter>
   );
