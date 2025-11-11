@@ -1,3 +1,4 @@
+/* Shared Styles */
 main {
     color: #000000;
     width: 100%;
@@ -6,33 +7,49 @@ main {
 
 .homepage-container {
     max-width: 1440px;
-    margin: 0 auto;
-    padding-left: 6.94rem;
+    margin: 0.5rem auto;
+    padding: 0 6.94rem;
     display: flex;
     flex-direction: column;
     align-items: flex-start;
     justify-content: flex-start;
 }
 
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+h2 {
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 3.0625rem;
+}
+
+/* Specific Styles to Section */
 
 /* Section 1 */
 
 .section1 {
     margin: 0 auto;
-    /* padding: 40px 0; */
     background-color: #F0F3FF;
     text-align: left;
 }
 
-.section1 h1 {
-    font-size: 3rem;
-    font-style: normal;
-    font-weight: 800;
-    line-height: 3.0625rem;
+.section1 h2 {
     padding: 4.38rem 0 2rem;
 }
 
-.section1 h1 span {
+.section1 span {
     font-size: 2rem;
     line-height: 3.0625rem;
     font-weight: 800;
@@ -51,19 +68,6 @@ main {
     font-weight: 600;
 }
 
-.card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
-}
-
-.card {
-    display: flex;
-    flex-direction: column;
-    border-radius: 1rem;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-}
-
 .section1 .card-container {
     gap: 3.125rem;
 }
@@ -78,7 +82,6 @@ main {
     margin-bottom: 4.81rem;
     background-color: #f9f9f9;
 }
-
 
 .card-header-section1 {
     position: relative;
@@ -107,7 +110,7 @@ main {
     margin-top: 4.25rem;
 }
 
-.card-body h2 {
+.card-body h3 {
     margin: 0 0 0.5rem 0;
     font-size: 2rem;
     font-style: normal;
@@ -131,27 +134,20 @@ main {
     background-color: #FFFFFF;
 }
 
-.section3 h1 {
-    font-size: 3rem;
-    font-style: normal;
-    font-weight: 800;
-    line-height: 3.3125rem;
+.section3 h2 {
     margin-top: 8.62rem;
     margin-bottom: 5.25rem;
-    /* padding-left: 19.06rem; */
-    padding-left: 24vw;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    width: 100%;
+    text-align: center;
+    align-self: center;
 }
 
 .section3 .card-container {
-    gap: 4.06rem;
+    gap: 3.5rem;
 }
 
 .section3 .card {
     justify-content: space-between;
-    /* width: 22.875rem; */
     width: 22.6875rem;
     height: auto;
     background-color: #f0f3ff;

@@ -15,9 +15,9 @@ export default function HomePage() {
         {/* Section1 */}
         <section className="section1">
           <div className="homepage-container">
-            <h1>
+            <h2>
               Why Team-Building Fails <span>(And We Don't)</span>
-            </h1>
+            </h2>
             <p className="connection-text">
               <span>Real Connection in 3 Simple Steps: </span>
               Mission Collective is built on the belief that genuine connection
@@ -31,7 +31,7 @@ export default function HomePage() {
                   <img src={pinkDice} alt="pink dice icon" />
                 </div>
                 <div className="card-body">
-                  <h2>Start a Mission</h2>
+                  <h3>Start a Mission</h3>
                   <p>
                     A teammate selects a quick, gamified mission from the
                     Mission Hub, choosing a high-impact activity to kick off the
@@ -49,7 +49,7 @@ export default function HomePage() {
                   />
                 </div>
                 <div className="card-body">
-                  <h2>Collaborate & Learn</h2>
+                  <h3>Collaborate & Learn</h3>
                   <p>
                     Each team member answers questions, learns something new
                     about the topic or each other, and earns points for their
@@ -67,7 +67,7 @@ export default function HomePage() {
                   />
                 </div>
                 <div className="card-body">
-                  <h2>Thrive, Together</h2>
+                  <h3>Thrive, Together</h3>
                   <p>
                     Points are converted into shared team rewards, such as a
                     donation goal, training budget, or a group activity.
@@ -82,7 +82,7 @@ export default function HomePage() {
 
         <section className="section3">
           <div className="homepage-container">
-            <h1>What Teams Are Saying</h1>
+            <h2>What Teams Are Saying</h2>
             <div className="card-container">
               <div className="card">
                 <div className="card-header-section3">
