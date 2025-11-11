@@ -1,4 +1,4 @@
-import ".../Styles/MissionBriefingModal.css";
+import "../styles/MissionBriefingModal.css";
 
 export default function MissionBriefingModal() {
   return (
@@ -10,11 +10,11 @@ export default function MissionBriefingModal() {
           <p>Ready to explore and earn points?</p>
         </div>
         <div>
-          <h4></h4>
+          <h4>How it works:</h4>
           <ol>
-            <li></li>
-            <li></li>
-            <li></li>
+            <li>Collaborate to explore global traditions and customs.</li>
+            <li>Learn interesting facts along the way.</li>
+            <li>Secure points for your team reward.</li>
           </ol>
         </div>
         <div>
