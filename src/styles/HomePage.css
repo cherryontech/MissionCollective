@@ -1,0 +1,32 @@
+h2 {
+  color: #000;
+  font-size: 3rem;
+  font-weight: 800;
+}
+
+.section0 {
+  height: 51.59rem;
+}
+
+.section1 {
+  height: 48.4375rem;
+}
+
+.section2 {
+  height: 39.5rem;
+}
+
+.section3 {
+  height: 41.62rem;
+}
+
+.section4 {
+  height: 19.94rem;
+}
+
+.buttonContainer {
+  display: flex;
+  column-gap: 1rem;
+  justify-content: center;
+  align-items: center;
+}
