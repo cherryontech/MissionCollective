@@ -1,3 +1,4 @@
+import "../styles/MissionHubCard.css";
 import calendar from "../assets/icons/missionHub/calendar.svg";
 import completed from "../assets/icons/missionHub/completed.svg";
 import idea from "../assets/icons/missionHub/idea.svg";
@@ -12,16 +13,16 @@ import { cardContent } from "../data/missionHubCards";
 
 export default function MissionHubCard() {
   return (
-    <div>
-      <img src={calendar} alt="calendar icon" />
+    <div className="cardContainer">
+      <img src={world} alt="globe icon" className="cardIcon" />
       <h2>{cardContent[0].headline}</h2>
       <p>{cardContent[0].body}</p>
-      <div>
-        <img src={clock} alt="clock icon" />
+      <div className="infoSection">
+        <img src={clock} alt="clock icon" className="inlineIcon" />
         <p>{cardContent[0].info}</p>
       </div>
-      <div>
-        <img src={starCircle} alt="star icon" />
+      <div className="teammatesSection">
+        <img src={starCircle} alt="star icon" className="inlineIcon" />
         <p>{cardContent[0].numCompleted}/5 teammates completed</p>
       </div>
       <button>Button Text</button>

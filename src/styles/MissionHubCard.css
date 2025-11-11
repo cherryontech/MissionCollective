@@ -1,0 +1,58 @@
+.cardContainer {
+  border-radius: 1rem;
+  border: 1px solid #e5e5e5;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-flow: column;
+  width: 27.25rem;
+  height: 25.25rem;
+  padding: 2.3125rem 2.125rem;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  grid-row: 1 / span 1;
+  grid-column: 1 / span 1;
+  text-align: center;
+}
+
+.cardIcon {
+  width: 5rem;
+  height: 5rem;
+  flex-shrink: 0;
+}
+
+.cardContainer h2 {
+  font-size: 1.25rem;
+  font-weight: 400;
+  line-height: 1.75rem;
+}
+
+.cardContainer p {
+  color: #343a40;
+  font-size: 0.875rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+}
+
+.cardContainer > p {
+  line-height: 1.5rem;
+  font-size: 1rem;
+}
+
+.cardContainer button {
+  width: 23rem;
+}
+
+.infoSection,
+.teammatesSection {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.inlineIcon {
+  width: 1rem;
+  height: 1rem;
+  display: inline;
+  margin-right: 0.5rem;
+}
