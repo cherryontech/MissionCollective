@@ -1,3 +1,12 @@
+import calendar from "../assets/icons/missionHub/calendar.svg";
+import completed from "../assets/icons/missionHub/completed.svg";
+import idea from "../assets/icons/missionHub/idea.svg";
+import masks from "../assets/icons/missionHub/masks.svg";
+import olympics from "../assets/icons/missionHub/olympics.svg";
+import scale from "../assets/icons/missionHub/scale.svg";
+import team from "../assets/icons/missionHub/team.svg";
+import world from "../assets/icons/missionHub/world.svg";
+
 export const cardContent = [
   {
     id: 0,
@@ -5,7 +14,7 @@ export const cardContent = [
     body: "Collaborate to explore world traditions, holidays, and cultural customs.",
     info: "5-10 minutes • 10-100 points",
     numCompleted: 1,
-    icon: "world",
+    icon: world,
     alt: "world icon",
   },
   {
@@ -14,7 +23,7 @@ export const cardContent = [
     body: "Guess your teammates' pet peeves and discover what they find annoying.",
     info: "10-15 minutes • 15-150 points",
     numCompleted: 0,
-    icon: "team",
+    icon: team,
     alt: "team icon",
   },
   {
@@ -23,7 +32,7 @@ export const cardContent = [
     body: "Share your preferences and see how well your teammates know your choices.",
     info: "3-8 minutes • 5-50 points",
     numCompleted: 3,
-    icon: "scale",
+    icon: scale,
     alt: "scale icon",
   },
   {
@@ -32,7 +41,7 @@ export const cardContent = [
     body: "Fast-paced questions to connect on personal and workplace favorites.",
     info: "8-12 minutes • 12-120 points",
     numCompleted: 2,
-    icon: "completed",
+    icon: completed,
     alt: "checkmark icon",
   },
   {
@@ -41,7 +50,7 @@ export const cardContent = [
     body: "Rapid-fire choices on preferred work style, desk snacks, and office habits.",
     info: "10-15 minutes • 15-150 points",
     numCompleted: 1,
-    icon: "olympics",
+    icon: olympics,
     alt: "olympic torch icon",
   },
   {
@@ -50,7 +59,7 @@ export const cardContent = [
     body: "Based on teammate submissions, guess which statement is the fib.",
     info: "5-10 minutes • 10-100 points",
     numCompleted: 2,
-    icon: "masks",
+    icon: masks,
     alt: "drama mask icon",
   },
   {
@@ -59,7 +68,7 @@ export const cardContent = [
     body: "Match international holidays, festivals, and cultural dates to the country of origin.",
     info: "10-15 minutes • 15-150 points",
     numCompleted: 4,
-    icon: "calendar",
+    icon: calendar,
     alt: "calendar icon",
   },
   {
@@ -68,7 +77,7 @@ export const cardContent = [
     body: "Identify which teammate submitted the quote or philosophy they try to live by.",
     info: "8-12 minutes • 12-120 points",
     numCompleted: 0,
-    icon: "idea",
+    icon: idea,
     alt: "lightbulb icon",
   },
 ];
