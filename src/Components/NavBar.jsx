@@ -40,7 +40,7 @@ export default function NavBar() {
           </a>
         </div>
         <div className="userInfo">
-          <Link to="/activity">
+          <Link to="/mission-hub">
             <button className="loginButton">Log In</button>
           </Link>
         </div>

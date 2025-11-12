@@ -103,14 +103,12 @@ button:focus {
   position: relative;
 }
 
-button:focus::after {
-  content: "";
-  position: absolute;
-  top: -2px;
-  left: -2px;
-  right: -2px;
-  bottom: -2px;
-  outline: 5px auto -webkit-focus-ring-color !important;
+.primaryButton:hover {
+  background: #ec00aa;
+}
+
+.primaryButton:focus {
+  border: 4px dashed #ec00aa;
 }
 
 .secondaryButton {
@@ -132,4 +130,20 @@ button:focus::after {
 .disabledButton {
   opacity: 0.5;
   cursor: not-allowed;
+}
+
+.ghostButton {
+  color: #0036f5;
+  background: #f0f3ff;
+  border: 2px solid #0036f5;
+}
+
+.ghostButton:hover {
+  border: 2px solid #ec00aa;
+  color: #ec00aa;
+}
+
+.ghostButton:focus {
+  border-radius: 0.5rem;
+  border: 4px dashed #ec00aa;
 }

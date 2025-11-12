@@ -2,6 +2,7 @@ import "../styles/HomePage.css";
 import Section1 from "./Section1";
 import Section3 from "./Section3";
 import Footer from "./Footer";
+import "../styles/HomePage.css";
 
 export default function HomePage() {
   return (

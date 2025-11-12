@@ -200,3 +200,10 @@ h2 {
     display: block;
     padding-top: 1.12rem;
 }
+
+.buttonContainer {
+    display: flex;
+    column-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+}
