@@ -165,6 +165,7 @@ h2 {
 .card-header-section3 img {
     width: 4.3125rem;
     height: 4.3125rem;
+    margin: 0 1rem 0 0;
 }
 
 .profile-title {
@@ -172,6 +173,7 @@ h2 {
     font-size: 1.125rem;
     font-style: normal;
     line-height: 1.75rem;
+    gap: 1.69rem;
 }
 
 .section3 .card p {
