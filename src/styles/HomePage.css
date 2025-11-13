@@ -130,7 +130,7 @@ h2 {
 /* Section 3 */
 .section3 {
     width: 100%;
-    min-height: 100vh;
+    /* min-height: 100vh; */
     background-color: #FFFFFF;
 }
 
@@ -201,9 +201,20 @@ h2 {
     padding-top: 1.12rem;
 }
 
+.section4 {
+    height: 19.94rem;
+    width: 100%;
+    text-align: center;
+    align-self: center;
+    margin-top: 6.94rem;
+}
+
+
 .buttonContainer {
     display: flex;
     column-gap: 1rem;
     justify-content: center;
     align-items: center;
+    margin-top: 3.8rem;
+    /* align-self: center; */
 }
