@@ -15,7 +15,11 @@ export default function MissionHubCard() {
       <p>{cardContent[0].body}</p>
       <div className="infoSection">
         <img src={clock} alt="clock icon" className="inlineIcon" />
-        <p>{cardContent[0].info}</p>
+        <p>
+          {cardContent[0].minutes}
+          <span>•</span>
+          {cardContent[0].points}
+        </p>
       </div>
       <div className="teammatesSection">
         <img src={starCircle} alt="star icon" className="inlineIcon" />
