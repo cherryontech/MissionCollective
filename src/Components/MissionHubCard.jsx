@@ -3,7 +3,7 @@ import starCircle from "../assets/icons/starCircle.svg";
 import { cardContent } from "../data/missionHubCards";
 
 const buttonText = {
-  beforeActivity: "Mission Briefing",
+  beforeActivity: "View Mission Briefing",
   afterActivity: "View Team Contributions",
 };
 
