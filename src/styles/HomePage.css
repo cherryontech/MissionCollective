@@ -1,32 +1,222 @@
-h2 {
-  color: #000;
-  font-size: 3rem;
-  font-weight: 800;
+/* Shared Styles */
+main {
+    color: #000000;
+    width: 100%;
+    min-height: 100vh;
 }
 
-.section0 {
-  height: 51.59rem;
+.homepage-container {
+    max-width: 1440px;
+    margin: 0.5rem auto;
+    padding: 0 6.94rem;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    justify-content: flex-start;
 }
+
+.card-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    border-radius: 1rem;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+h2 {
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 800;
+    line-height: 3.0625rem;
+}
+
+/* Specific Styles to Section */
+
+/* Section 1 */
 
 .section1 {
-  height: 48.4375rem;
+    margin: 0 auto;
+    background-color: #F0F3FF;
+    text-align: left;
 }
 
-.section2 {
-  height: 39.5rem;
+.section1 h2 {
+    padding: 4.38rem 0 2rem;
 }
 
+.section1 span {
+    font-size: 2rem;
+    line-height: 3.0625rem;
+    font-weight: 800;
+    font-style: normal;
+}
+
+.connection-text {
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 1.875rem;
+    margin-bottom: 4.75rem;
+}
+
+.connection-text span {
+    font-weight: 600;
+}
+
+.section1 .card-container {
+    gap: 3.125rem;
+}
+
+.section1 .card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-start;
+    width: 22.875rem;
+    min-height: 25rem;
+    padding: 1.875rem;
+    margin-bottom: 4.81rem;
+    background-color: #f9f9f9;
+}
+
+.card-header-section1 {
+    position: relative;
+    height: 4.25rem;
+}
+
+.card-header-section1 span {
+    font-size: 2rem;
+    font-weight: 700;
+    font-style: normal;
+    position: absolute;
+    line-height: normal;
+    top: 10px;
+    left: 15px;
+}
+
+.card-header-section1 img {
+    position: absolute;
+    top: 10px;
+    right: 15px;
+    width: 5rem;
+    height: 5rem;
+}
+
+.card-body {
+    margin-top: 4.25rem;
+}
+
+.card-body h3 {
+    margin: 0 0 0.5rem 0;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.card-body p {
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin: 0;
+}
+
+
+/* Section 3 */
 .section3 {
-  height: 41.62rem;
+    width: 100%;
+    /* min-height: 100vh; */
+    background-color: #FFFFFF;
+}
+
+.section3 h2 {
+    margin-top: 8.62rem;
+    margin-bottom: 5.25rem;
+    width: 100%;
+    text-align: center;
+    align-self: center;
+}
+
+.section3 .card-container {
+    gap: 3.5rem;
+}
+
+.section3 .card {
+    justify-content: space-between;
+    width: 22.60rem;
+    height: auto;
+    background-color: #f0f3ff;
+    padding: 1.5rem;
+}
+
+.card-header-section3 {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    margin-bottom: 1rem;
+    min-height: 4.5rem;
+}
+
+.card-header-section3 img {
+    width: 4.3125rem;
+    height: 4.3125rem;
+    margin: 0 1rem 0 0;
+}
+
+.profile-title {
+    font-weight: 600;
+    font-size: 1.125rem;
+    font-style: normal;
+    line-height: 1.75rem;
+    gap: 1.69rem;
+}
+
+.section3 .card p {
+    flex-grow: 1;
+    font-size: 1.0625rem;
+    font-weight: 400;
+    font-style: normal;
+    line-height: 1.75rem;
+    margin-bottom: 1rem;
+    text-align: left;
+}
+
+.section3 .rating {
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    width: 100%;
+}
+
+.section3 .rating img {
+    width: 80%;
+    max-width: 200px;
+    height: auto;
+    object-fit: contain;
+    margin: 0 auto 0 0;
+    display: block;
+    padding-top: 1.12rem;
 }
 
 .section4 {
-  height: 19.94rem;
+    height: 19.94rem;
+    width: 100%;
+    text-align: center;
+    align-self: center;
+    margin-top: 6.94rem;
 }
 
+
 .buttonContainer {
-  display: flex;
-  column-gap: 1rem;
-  justify-content: center;
-  align-items: center;
+    display: flex;
+    column-gap: 1rem;
+    justify-content: center;
+    align-items: center;
+    margin-top: 3.8rem;
+    /* align-self: center; */
 }

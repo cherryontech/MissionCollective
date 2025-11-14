@@ -1,13 +1,15 @@
 @import url("https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap");
 
 * {
+  margin: 0;
+  padding: 0;
   box-sizing: border-box;
 }
 
 :root {
   font-family: Inter, system-ui, Avenir, Helvetica, Arial, sans-serif;
-  line-height: 1.5;
-  font-weight: 400;
+  width: 100%;
+  min-height: 100vh;
   color: #212529;
   background-color: #ffffff;
 }
@@ -37,9 +39,15 @@ h1 {
   font-size: 3.75rem;
   font-weight: 700;
   line-height: 120%;
+  <<<<<<< HEAD
   /* 4.5rem */
   letter-spacing: 0.02813rem;
+  =======>>>>>>>main
 }
+
+/* 4.5rem */
+/* letter-spacing: 0.02813rem;*/
+
 
 h2 {
   font-size: 3rem;
@@ -52,31 +60,39 @@ h3 {
   font-size: 2.5rem;
   font-weight: 500;
   line-height: 3rem;
-  /* 120% */
 }
+
+/* 120% */
+
 
 .subtitle1 {
   font-size: 1.75rem;
   font-weight: 400;
   line-height: 2.5rem;
-  /* 142.857% */
 }
+
+/* 142.857% */
+
 
 .subtitle2 {
   font-size: 1.125rem;
   font-weight: 700;
   line-height: 1.75rem;
-  /* 155.556% */
-  letter-spacing: 0.025rem;
-  text-transform: uppercase;
 }
+
+/* 155.556% */
+/* letter-spacing: 0.025rem;
+  text-transform: uppercase;
+ */
 
 .bodyText {
   font-size: 1.125rem;
   font-weight: 400;
   line-height: 1.75rem;
-  /* 155.556% */
 }
+
+/* 155.556% */
+
 
 .bodyTextAlt {
   font-size: 1rem;
