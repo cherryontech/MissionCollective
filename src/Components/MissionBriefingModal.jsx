@@ -1,4 +1,5 @@
 import "../styles/MissionBriefingModal.css";
+import { useNavigate } from "react-router-dom";
 import { CULTURE_QUESTIONS } from "../data/cultureQuestions";
 import GlobeIcon from "../assets/icons/globe-icon.svg";
 import forwardArrow from "../assets/icons/forwardArrow.svg";
@@ -7,10 +8,12 @@ import step1 from "../assets/icons/step1.svg";
 import step2 from "../assets/icons/step2.svg";
 import step3 from "../assets/icons/step3.svg";
 
-export default function MissionBriefingModal() {
-  function handleGoBack() {}
+export default function MissionBriefingModal({ onClose }) {
+  const navigate = useNavigate();
 
-  function handleStart() {}
+  const handleStart = () => {
+    navigate("/activity");
+  };
 
   return (
     <div className="MissionBriefingModalOverlayer">
@@ -42,31 +45,34 @@ export default function MissionBriefingModal() {
           </p>
         </div>
         <div className="MissionQuestionInfo">
-          <div className="InfoContainer">
-            <span>{CULTURE_QUESTIONS.length}</span>Questions
+          <div className="InfoItem">
+            <span className="InfoNumber">{CULTURE_QUESTIONS.length}</span>
+            <span className="InfoLabel">Questions</span>
           </div>
-          <div className="InfoContainer">
-            <span>{CULTURE_QUESTIONS.length}</span>Points
+          <div className="InfoItem">
+            <span className="InfoNumber">{CULTURE_QUESTIONS.length}</span>
+            <span className="InfoLabel">Points</span>
           </div>
-          <div className="InfoContainer">
-            <span>{CULTURE_QUESTIONS.length}</span>Minutes
+          <div className="InfoItem">
+            <span className="InfoNumber">{CULTURE_QUESTIONS.length}</span>
+            <span className="InfoLabel">Minutes</span>
           </div>
         </div>
-        <div>
-          <button className="GoBackButton" onClick={handleGoBack}>
+        <div className="ModalButtonContainer">
+          <button className="GoBackButton" onClick={onClose}>
             <span className="GoBackText">Go Back</span>
             <img
               src={backArrow}
               alt="Arrow pointing left"
-              className="backArrow"
+              className="ModalBackArrow"
             />
           </button>
           <button className="StartButton" onClick={handleStart}>
-            <span className="GoBackText">Let's Start</span>
+            <span className="StartText">Let's Start</span>
             <img
               src={forwardArrow}
               alt="Arrow pointing right"
-              className="forwardArrow"
+              className="ModalForwardArrow"
             />
           </button>
         </div>
