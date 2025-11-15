@@ -51,7 +51,7 @@ export default function MissionBriefingModal({ onClose }) {
           </div>
           <div className="InfoItem">
             <span className="InfoNumber">{CULTURE_QUESTIONS.length}</span>
-            <span className="InfoLabel">Points</span>
+            <span className="InfoLabel">Points Each</span>
           </div>
           <div className="InfoItem">
             <span className="InfoNumber">{CULTURE_QUESTIONS.length}</span>
@@ -68,7 +68,7 @@ export default function MissionBriefingModal({ onClose }) {
             />
           </button>
           <button className="StartButton" onClick={handleStart}>
-            <span className="StartText">Let's Start</span>
+            <span className="StartText">Start Mission</span>
             <img
               src={forwardArrow}
               alt="Arrow pointing right"
