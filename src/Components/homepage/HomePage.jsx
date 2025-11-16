@@ -1,8 +1,9 @@
-import "../styles/HomePage.css";
+import "../../styles/HomePage.css";
+import Section0 from "./Section0";
 import Section1 from "./Section1";
+import Section2 from "./Section2";
 import Section3 from "./Section3";
-import Footer from "./Footer";
-import "../styles/HomePage.css";
+import Footer from "../Footer";
 
 export default function HomePage() {
   const content = {
@@ -15,7 +16,9 @@ export default function HomePage() {
   return (
     <>
       <main>
+        <Section0 />
         <Section1 />
+        <Section2 />
         <Section3 />
         <div className="section4">
           <h2>{content.heading4}</h2>
