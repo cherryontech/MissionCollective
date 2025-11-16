@@ -1,4 +1,4 @@
-import CardsTestimonials from "./CardsTestimonials.jsx";
+import CardsTestimonials from "./CardsTestimonials";
 import { TESTIMONIALS } from "../../data/homepageData.js";
 
 export default function Section3() {
