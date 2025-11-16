@@ -1,8 +1,8 @@
 import "../../styles/Activity.css";
 import { ActivityContextProvider } from "../../Context/ActivityContext";
 import Question from "./Question";
-import QuestionFooter from "./QuestionFooter";
-import QuestionHeader from "./QuestionHeader";
+import QuestionFooter from "../activity/QuestionHeader";
+import QuestionHeader from "../activity/QuestionFooter";
 
 export default function Activity() {
   return (
