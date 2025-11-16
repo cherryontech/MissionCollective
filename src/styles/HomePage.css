@@ -37,6 +37,14 @@ h2 {
 
 /* Specific Styles to Section */
 
+/* Sections 0 & 2*/
+.img-section-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
 /* Section 1 */
 
 .section1 {
