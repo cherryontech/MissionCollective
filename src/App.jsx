@@ -1,9 +1,9 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./styles/App.css";
-import Activity from "./components/activity/Activity";
-import HomePage from "./components/homepage/HomePage";
-import NavBar from "./components/NavBar";
-import MissionHub from "./components/MissionHub";
+import Activity from "./Components/activity/Activity";
+import HomePage from "./Components/homepage/HomePage";
+import NavBar from "./Components/NavBar";
+import MissionHub from "./Components/MissionHub";
 
 function App() {
   return (
