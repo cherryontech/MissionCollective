@@ -6,6 +6,7 @@ main {
 }
 
 .homepage-container {
+    width: 100%;
     max-width: 1440px;
     margin: 0.5rem auto;
     padding: 0 6.94rem;
@@ -28,11 +29,17 @@ main {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
+h1 {
+    font-size: 3.75rem;
+    font-weight: 800;
+}
+
 h2 {
     font-size: 3rem;
     font-style: normal;
     font-weight: 800;
     line-height: 3.0625rem;
+    padding: 4.38rem 0 2rem;
 }
 
 /* Specific Styles to Section */
@@ -44,6 +51,33 @@ h2 {
     justify-content: space-between;
 }
 
+/* Section 0 */
+.section0-heading {
+    text-align: center;
+    align-self: center;
+    max-width: 62.75rem;
+    width: 100%
+}
+
+.section0 p {
+    font-size: 1.5rem;
+}
+
+.section0-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.section0-text p {
+
+}
+
+.section0-text span {
+    font-weight: 600;
+}
+
 
 /* Section 1 */
 
@@ -51,10 +85,6 @@ h2 {
     margin: 0 auto;
     background-color: #F0F3FF;
     text-align: left;
-}
-
-.section1 h2 {
-    padding: 4.38rem 0 2rem;
 }
 
 .section1 span {
