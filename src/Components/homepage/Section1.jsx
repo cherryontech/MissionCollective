@@ -1,5 +1,5 @@
-import CardsSteps from "./CardsSteps";
-import { MISSIONSTEPS } from "../data/homepageData.js";
+import CardsSteps from "./CardsSteps.jsx";
+import { MISSIONSTEPS } from "../../data/homepageData.js";
 
 export default function Section1() {
   return (

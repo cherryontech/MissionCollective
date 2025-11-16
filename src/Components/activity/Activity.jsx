@@ -1,5 +1,5 @@
-import "../styles/Activity.css";
-import { ActivityContextProvider } from "../Context/ActivityContext";
+import "../../styles/Activity.css";
+import { ActivityContextProvider } from "../../context/ActivityContext";
 import Question from "./Question";
 import QuestionFooter from "./QuestionFooter";
 import QuestionHeader from "./QuestionHeader";
@@ -13,3 +13,4 @@ export default function Activity() {
     </ActivityContextProvider>
   );
 }
+

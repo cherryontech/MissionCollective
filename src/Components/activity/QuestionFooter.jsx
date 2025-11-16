@@ -1,4 +1,4 @@
-import "../styles/QuestionHeaderFooter.css";
+import "../../Styles/QuestionHeaderFooter.css";
 
 export default function QuestionFooter() {
   return (
