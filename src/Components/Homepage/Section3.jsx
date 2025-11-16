@@ -1,5 +1,5 @@
 import CardsTestimonials from "./CardsTestimonials";
-import { TESTIMONIALS } from "../data/homepageData.js";
+import { TESTIMONIALS } from "../../data/homepageData.js";
 
 export default function Section3() {
   return (
