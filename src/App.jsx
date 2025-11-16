@@ -1,7 +1,7 @@
 import { BrowserRouter, Routes, Route } from "react-router-dom";
 import "./styles/App.css";
-import Activity from "./components/activity/Activity";
-import HomePage from "./components/homepage/HomePage";
+import Activity from "./components/Activity/Activity";
+import HomePage from "./components/Homepage/HomePage";
 import NavBar from "./components/NavBar";
 import MissionHub from "./components/MissionHub";
 
