@@ -38,6 +38,7 @@ export const ActivityContextProvider = ({ children }) => {
     8: null,
     9: null,
   });
+  const [showExitModal, setShowExitModal] = useState(false);
   const value = {
     answer,
     setAnswer,
@@ -49,6 +50,8 @@ export const ActivityContextProvider = ({ children }) => {
     setShowLearnMoreModal,
     answerMap,
     updateAnswerMap,
+    showExitModal,
+    setShowExitModal,
   };
   return (
     <ActivityContext.Provider value={value}>

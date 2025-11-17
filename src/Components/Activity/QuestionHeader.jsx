@@ -4,9 +4,9 @@ import ExitArrowIcon from "../../assets/icons/exit-arrow.svg";
 import "../../styles/QuestionHeaderFooter.css";
 
 export default function QuestionHeader() {
-  const { currentQuestionID } = useActivityContext();
+  const { currentQuestionID, setShowExitModal } = useActivityContext();
   function handleOnClick() {
-    // TODO
+    setShowExitModal(true);
   }
 
   return (
