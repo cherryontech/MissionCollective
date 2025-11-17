@@ -16,12 +16,12 @@ export default function Section0() {
           <img src={highFive} alt="coworkers-high-fiving"></img>
           <div className="section0-text">
             <p>
-              <span>Mission Collective </span>
-              replaces dry team-building with purpose-driven fun. Our dedicated 
-              virtual space helps modern teams genuinely connect through positive, 
-              gamified trivia and collaborative challenges. Discover diverse 
-              personal backgrounds in a low-pressure environment, transforming your 
-              group into a thriving community. Start a Team Mission
+              <span className="bold">Mission Collective </span> replaces dry team-building with 
+              purpose-driven fun. Our dedicated virtual space helps modern 
+              teams genuinely connect through positive, gamified trivia and 
+              collaborative challenges. Discover diverse personal backgrounds 
+              in a low-pressure environment, transforming your group into a 
+              <span className="italic"> thriving</span> community.
             </p>
             <Link to="/mission-hub">
             <button className="primaryButton" >Start a Team Mission</button>

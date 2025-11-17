@@ -66,6 +66,7 @@ h2 {
 
 .section0 p {
     font-size: 1.5rem;
+    padding: 0 2rem;
 }
 
 .section0-text {
@@ -77,11 +78,15 @@ h2 {
 
 .section0-text p {
     margin-bottom: 2rem;
-    width: 35.6875rem;
+    width: 34rem;
 }
 
-.section0-text span {
+.section0-text .bold {
     font-weight: 600;
+}
+
+.section0-text .italic {
+    font-style: italic;
 }
 
 
