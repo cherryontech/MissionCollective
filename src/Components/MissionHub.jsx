@@ -1,5 +1,6 @@
 import Footer from "./Footer";
 import MissionHubCard from "./MissionHubCard";
+import { cardContent } from "../data/missionHubCards";
 
 const content = {
   heading: "Launch Your Next Mission",
@@ -13,14 +14,30 @@ export default function MissionHub() {
       <h1>{content.heading}</h1>
       <p className="subtitle1">{content.subheading}</p>
       <div className="missionCards">
-        <MissionHubCard></MissionHubCard>
-        <MissionHubCard></MissionHubCard>
-        <MissionHubCard></MissionHubCard>
-        <MissionHubCard></MissionHubCard>
-        <MissionHubCard></MissionHubCard>
-        <MissionHubCard></MissionHubCard>
-        <MissionHubCard></MissionHubCard>
-        <MissionHubCard></MissionHubCard>
+        {cardContent.map(
+          ({
+            id,
+            icon,
+            alt,
+            headline,
+            body,
+            minutes,
+            points,
+            numCompleted,
+          }) => (
+            <MissionHubCard
+              key={id}
+              id={id}
+              icon={icon}
+              alt={alt}
+              headline={headline}
+              body={body}
+              minutes={minutes}
+              points={points}
+              numCompleted={numCompleted}
+            />
+          )
+        )}
       </div>
       <Footer />
     </div>
