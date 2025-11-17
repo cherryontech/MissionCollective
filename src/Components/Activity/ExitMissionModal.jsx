@@ -1,6 +1,7 @@
 import { useActivityContext } from "../../Context/ActivityContext";
 import { useNavigate } from "react-router-dom";
 import ExitArrow from "../../assets/icons/exit-arrow.svg";
+import BackArrow from "../../assets/icons/back-arrow-white.svg"
 
 export default function ExitMissionModal({ onClose }) {
   const {
@@ -38,12 +39,16 @@ export default function ExitMissionModal({ onClose }) {
         </p>
         <div className="ButtonContainer">
           <div className="BackButton">
-            <button onClick={onClose}>No, Go Back</button>
-            <svg></svg>
+            <button onClick={onClose}>
+              No, Go Back
+              <img src={BackArrow} alt="back-arrow"></img>
+            </button>
           </div>
           <div className="ExitButton">
-            <button onClick={handleConfirmExit}>Yes, Exit Mission</button>
-            <svg src={ExitArrow} alt="exit-arrow"></svg>
+            <button onClick={handleConfirmExit}>
+              Yes, Exit Mission
+              <img src={ExitArrow} alt="exit-arrow"/>
+            </button>
           </div>
         </div>
 
