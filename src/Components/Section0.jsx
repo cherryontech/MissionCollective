@@ -11,7 +11,7 @@ export default function Section0() {
             help you build that deeper connection.
           </p>
         </div>
-        <div className="img-section-content">
+        <div className="section0-content">
           <img src={highFive} alt="coworkers-high-fiving"></img>
           <div className="section0-text">
             <p>
@@ -22,7 +22,7 @@ export default function Section0() {
               personal backgrounds in a low-pressure environment, transforming your 
               group into a thriving community. Start a Team Mission
             </p>
-            <button>Start Next Mission</button>
+            <button>Start a Team Mission</button>
           </div>
         </div>
       </div>

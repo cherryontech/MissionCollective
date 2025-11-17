@@ -44,19 +44,27 @@ h2 {
 
 /* Specific Styles to Section */
 
-/* Sections 0 & 2*/
-.img-section-content {
+/* Sections 0 */
+.section0 {
+    margin-bottom: 6.94rem;
+}
+
+.section0-content {
     display: flex;
     align-items: center;
     justify-content: space-between;
 }
 
-/* Section 0 */
 .section0-heading {
     text-align: center;
     align-self: center;
     max-width: 62.75rem;
-    width: 100%
+    width: 100%;
+    margin: 6.94rem auto;
+}
+
+.section0-content {
+    gap: 2.69rem;
 }
 
 .section0 p {
@@ -71,11 +79,19 @@ h2 {
 }
 
 .section0-text p {
-
+    margin-bottom: 2rem;
 }
 
 .section0-text span {
     font-weight: 600;
+}
+
+.section0 button {
+    padding: 0.7rem 1rem;
+    font-size: 1rem;
+    font-weight: 400;
+    color: #F2F2F7;
+    line-height: normal;
 }
 
 
