@@ -1,4 +1,5 @@
 import highFive from "../assets/images/homepage/coworkers-high-fiving.webp";
+import { Link } from "react-router-dom";
 
 export default function Section0() {
   return (
@@ -22,7 +23,9 @@ export default function Section0() {
               personal backgrounds in a low-pressure environment, transforming your 
               group into a thriving community. Start a Team Mission
             </p>
-            <button>Start a Team Mission</button>
+            <Link to="/mission-hub">
+            <button className="primaryButton" >Start a Team Mission</button>
+            </Link>
           </div>
         </div>
       </div>

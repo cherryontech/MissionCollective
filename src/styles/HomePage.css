@@ -86,14 +86,6 @@ h2 {
     font-weight: 600;
 }
 
-.section0 button {
-    padding: 0.7rem 1rem;
-    font-size: 1rem;
-    font-weight: 400;
-    color: #F2F2F7;
-    line-height: normal;
-}
-
 
 /* Section 1 */
 
@@ -179,6 +171,8 @@ h2 {
     line-height: normal;
     margin: 0;
 }
+
+/* Section 2 */
 
 
 /* Section 3 */
