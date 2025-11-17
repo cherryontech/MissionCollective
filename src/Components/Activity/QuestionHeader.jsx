@@ -1,7 +1,7 @@
-import { useActivityContext } from "../Context/ActivityContext";
-import GlobeIcon from "../assets/icons/globe-icon.svg";
-import ExitArrowIcon from "../assets/icons/exit-arrow.svg";
-import "../styles/QuestionHeaderFooter.css";
+import { useActivityContext } from "../../Context/ActivityContext";
+import GlobeIcon from "../../assets/icons/globe-icon.svg";
+import ExitArrowIcon from "../../assets/icons/exit-arrow.svg";
+import "../../styles/QuestionHeaderFooter.css";
 
 export default function QuestionHeader() {
   const { currentQuestionID } = useActivityContext();

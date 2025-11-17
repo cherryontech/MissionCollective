@@ -1,20 +1,20 @@
-import { CULTURE_QUESTIONS } from "../data/cultureQuestions";
-import { useActivityContext } from "../Context/ActivityContext";
+import { CULTURE_QUESTIONS } from "../../data/cultureQuestions";
+import { useActivityContext } from "../../Context/ActivityContext";
 import AnswersContainer from "./AnswersContainer";
 import LearnMoreModal from "./LearnMoreModal";
 //TODO: Figure out how to use relative paths instead of importing images
-import forwardArrow from "../assets/icons/forwardArrow.svg";
-import backArrow from "../assets/icons/backArrow.svg";
-import image1 from "../assets/images/quiz1/1.png";
-import image2 from "../assets/images/quiz1/2.png";
-import image3 from "../assets/images/quiz1/3.png";
-import image4 from "../assets/images/quiz1/4.png";
-import image5 from "../assets/images/quiz1/5.png";
-import image6 from "../assets/images/quiz1/6.png";
-import image7 from "../assets/images/quiz1/7.png";
-import image8 from "../assets/images/quiz1/8.png";
-import image9 from "../assets/images/quiz1/9.png";
-import image10 from "../assets/images/quiz1/10.png";
+import forwardArrow from "../../assets/icons/forwardArrow.svg";
+import backArrow from "../../assets/icons/backArrow.svg";
+import image1 from "../../assets/images/quiz1/1.png";
+import image2 from "../../assets/images/quiz1/2.png";
+import image3 from "../../assets/images/quiz1/3.png";
+import image4 from "../../assets/images/quiz1/4.png";
+import image5 from "../../assets/images/quiz1/5.png";
+import image6 from "../../assets/images/quiz1/6.png";
+import image7 from "../../assets/images/quiz1/7.png";
+import image8 from "../../assets/images/quiz1/8.png";
+import image9 from "../../assets/images/quiz1/9.png";
+import image10 from "../../assets/images/quiz1/10.png";
 
 export function getImageSrc(id) {
   const imageID = id + 1;

@@ -1,11 +1,11 @@
-import { CULTURE_QUESTIONS } from "../data/cultureQuestions";
-import { useActivityContext } from "../Context/ActivityContext";
-import correctLight from "../assets/icons/correctLight.svg";
-import incorrectLight from "../assets/icons/incorrectLight.svg";
-import optionA from "../assets/icons/optionA.svg";
-import optionB from "../assets/icons/optionB.svg";
-import optionC from "../assets/icons/optionC.svg";
-import optionD from "../assets/icons/optionD.svg";
+import { CULTURE_QUESTIONS } from "../../data/cultureQuestions";
+import { useActivityContext } from "../../Context/ActivityContext";
+import correctLight from "../../assets/icons/correctLight.svg";
+import incorrectLight from "../../assets/icons/incorrectLight.svg";
+import optionA from "../../assets/icons/optionA.svg";
+import optionB from "../../assets/icons/optionB.svg";
+import optionC from "../../assets/icons/optionC.svg";
+import optionD from "../../assets/icons/optionD.svg";
 
 export function getButtonStyle(id, answer, isCorrect, confirmedAnswer) {
   let style = "answerButton";
