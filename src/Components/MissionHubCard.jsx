@@ -1,3 +1,5 @@
+import { useState } from "react";
+import MissionBriefingModal from "./MissionBriefingModal";
 import clock from "../assets/icons/missionHub/clock.svg";
 import starCircle from "../assets/icons/starCircle.svg";
 import { cardContent } from "../data/missionHubCards";
@@ -8,6 +10,15 @@ const buttonText = {
 };
 
 export default function MissionHubCard() {
+  // Add codes here to test out MissionBriefingModal; remove when done testing
+  const [showModal, setShowModal] = useState(false);
+  const handleMissionModal = () => {
+    setShowModal(true);
+  };
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
+
   return (
     <div>
       <img src={cardContent[0].icon} alt={cardContent[0].alt} />
@@ -21,7 +32,9 @@ export default function MissionHubCard() {
         <img src={starCircle} alt="star icon" />
         <p>{cardContent[0].numCompleted}/5 teammates completed</p>
       </div>
-      <button>{buttonText.beforeActivity}</button>
+      {/* Add codes here to test out MissionBriefingModal; remove when done testing */}
+      <button onClick={handleMissionModal}>{buttonText.beforeActivity}</button>
+      {showModal && <MissionBriefingModal onClose={handleCloseModal} />}
     </div>
   );
 }

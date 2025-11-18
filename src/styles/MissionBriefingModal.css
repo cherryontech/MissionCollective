@@ -2,6 +2,8 @@
     position: fixed;
     top: 0;
     left: 0;
+    /* position: sticky;
+    top: 10px; */
     width: 100%;
     height: 100%;
     display: flex;
@@ -9,4 +11,199 @@
     background: rgba(0, 0, 0, 0.15);
     align-items: center;
     z-index: 1000;
+}
+
+.MissionBriefingModalContainer {
+    background-color: #ffffff;
+    border-radius: 0.75rem;
+    padding: 3.12rem 3.12rem 5rem 3.12rem;
+    /* width: 90%; */
+    /* max-width: 37.5rem; */
+    max-width: 43.8rem;
+    height: 45.3rem;
+    text-align: center;
+    box-shadow: 0 0.25rem 1.88rem rgba(0, 0, 0, 0.3);
+}
+
+.MissionBriefingModalHeader img {
+    width: 5rem;
+    height: 5rem;
+    margin-bottom: 1.88rem;
+}
+
+.MissionBriefingModalHeader h3 {
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.75rem;
+    margin-bottom: 0.5rem;
+}
+
+.MissionBriefingModalHeader p {
+    color: #525252;
+    /* text-align: center; */
+    font-size: 1.0625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.75rem;
+    margin-bottom: 1.88rem;
+}
+
+.HowItWorksSection {
+    width: 37.5rem;
+    padding: 1.5rem;
+    /* gap: 0.5rem; */
+    border-radius: 0.5rem;
+    border: 0 solid #F0F3FF;
+    background: #F0F3FF;
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    margin-bottom: 1.88rem;
+    /* align-self: stretch; */
+}
+
+.HowItWorksSection h4 {
+    color: #000;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.75rem;
+    align-self: flex-start;
+    margin: 0 0 0.5rem;
+}
+
+
+.HowItWorksSection p {
+    color: #525252;
+    font-size: 1.0625rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.75rem;
+    text-align: left;
+    display: flex;
+    align-items: center;
+    margin: 0;
+}
+
+.MissionQuestionInfo {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 1.88rem;
+}
+
+.InfoItem {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    /* gap: 1.5rem; */
+    padding: 0 3.33rem 0 3.67rem;
+    border: 0 solid #E5E7EB;
+    background: rgba(0, 0, 0, 0.00);
+}
+
+.InfoNumber {
+    color: #000;
+    text-align: center;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    padding: 0;
+    margin: 0;
+}
+
+.InfoLabel {
+    color: #343A40;
+    text-align: center;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.25rem;
+}
+
+.ModalButtonContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 1rem;
+    /* align-self: stretch; */
+    border: 0 solid #E5E7EB;
+    /* background: rgba(0, 0, 0, 0.00); */
+}
+
+.GoBackButton {
+    display: flex;
+    width: 13.75rem;
+    height: 3rem;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    border: 0 solid #E5E7EB;
+    background: #F0F3FF;
+    /* gap: 0.5rem; */
+}
+
+.GoBackText {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #1C1C1E;
+
+}
+
+.ModalBackArrow {
+    padding: 0.75rem;
+    margin: 0;
+    color: #1C1C1E;
+}
+
+.StartButton {
+    display: flex;
+    width: 13.75rem;
+    height: 3rem;
+    padding: 0;
+    justify-content: center;
+    align-items: center;
+    border-radius: 0.5rem;
+    border: 0 solid #E5E7EB;
+    background: #0036F5;
+    /* gap: 0.5rem; */
+    cursor: pointer;
+}
+
+.StartText {
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    color: #F2F2F7;
+}
+
+.ModalForwardArrow {
+    padding: 0.75rem 0.5rem;
+    margin: 0;
+    color: #F2F2F7;
+}
+
+.GoBackButton,
+.StartButton {
+    transition: all 0.2s ease;
+}
+
+
+.GoBackButton:hover {
+    background-color: #dce3ff;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transform: translateY(-2px);
+}
+
+
+.StartButton:hover {
+    background-color: #0026cc;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.2);
+    transform: translateY(-2px);
 }
