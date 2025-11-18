@@ -1,5 +1,13 @@
 import { useState } from "react";
 import MissionBriefingModal from "./MissionBriefingModal";
+import clock from "../assets/icons/missionHub/clock.svg";
+import starCircle from "../assets/icons/starCircle.svg";
+import { cardContent } from "../data/missionHubCards";
+
+const buttonText = {
+  beforeActivity: "View Mission Briefing",
+  afterActivity: "View Team Contributions",
+};
 
 export default function MissionHubCard() {
   // Add codes here to test out MissionBriefingModal; remove when done testing
@@ -13,14 +21,18 @@ export default function MissionHubCard() {
 
   return (
     <div>
-      <h2>Card Headline</h2>
-      <p>Card Body</p>
-      <p>Mission Info</p>
-      <p>#/# teammates completed</p>
-
-      {/* Add codes here to test out MissionBriefingModal; remove when done testing */}
-      <button onClick={handleMissionModal}>Button Text</button>
-      {showModal && <MissionBriefingModal onClose={handleCloseModal} />}
+      <img src={cardContent[0].icon} alt={cardContent[0].alt} />
+      <h2>{cardContent[0].headline}</h2>
+      <p>{cardContent[0].body}</p>
+      <div>
+        <img src={clock} alt="clock icon" />
+        <p>{cardContent[0].info}</p>
+      </div>
+      <div>
+        <img src={starCircle} alt="star icon" />
+        <p>{cardContent[0].numCompleted}/5 teammates completed</p>
+      </div>
+      <button>{buttonText.beforeActivity}</button>
     </div>
   );
 }
