@@ -197,8 +197,8 @@ h2 {
     display: flex;
     flex-direction: column;
     align-items: center;
-    gap: 3.375rem;
     padding: 1rem;
+    position: relative
 }
 
 .section2-text h2 {
@@ -206,9 +206,10 @@ h2 {
     line-height: 4rem;
     font-weight: 700;
     padding: 0;
+    margin-bottom: 3.4rem;
 }
 
-.section2-content p {
+.section2-text p {
     display: block;
     font-size: 1.5rem;
     border-radius: 1rem;
@@ -217,9 +218,18 @@ h2 {
     font-weight: 400;
     height: 16.3125rem;
     padding: 2.4375rem 4.3125rem 3.375rem 4.3125rem;
+    position: relative;
+    z-index: 1;
 }
 
-.section2-content span {
+.section2-text img {
+    position: absolute;
+    z-index: 1;
+    top: 21.25rem;
+    left: 31.75rem;
+}
+
+.section2-text span {
     font-weight: 700;
 }
 

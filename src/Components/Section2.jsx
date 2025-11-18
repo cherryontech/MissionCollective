@@ -1,4 +1,5 @@
 import groupCollab from "../assets/images/homepage/group-collab.webp";
+import StarCircle from "../assets/icons/starCircle.svg";
 
 export default function Section2() {
   return (
@@ -13,7 +14,8 @@ export default function Section2() {
               whole team. Use them to fund a collective reward that matters, 
               like a shared training course, a team lunch, or a donation to a 
               group-chosen charity. The possibilities are endless! 
-            </p>            
+            </p>
+            <img src={StarCircle} alt="star-icon"></img>         
           </div>
         </div>
       </div>
