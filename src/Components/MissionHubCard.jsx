@@ -1,4 +1,5 @@
-import "../styles/MissionHubCard.css";
+import { useState } from "react";
+import MissionBriefingModal from "./MissionBriefingModal";
 import clock from "../assets/icons/missionHub/clock.svg";
 import starCircle from "../assets/icons/starCircle.svg";
 
@@ -38,6 +39,15 @@ export default function MissionHubCard({
   points,
   numCompleted,
 }) {
+  // Add codes here to test out MissionBriefingModal; remove when done testing
+  const [showModal, setShowModal] = useState(false);
+  const handleMissionModal = () => {
+    setShowModal(true);
+  };
+  const handleCloseModal = () => {
+    setShowModal(false);
+  };
+
   return (
     <div className="cardContainer">
       <img src={icon} alt={alt} className="cardIcon" />
@@ -56,9 +66,14 @@ export default function MissionHubCard({
         <p>{numCompleted}/5 teammates completed</p>
       </div>
       {/* Needs to be updated when full functionality is added */}
-      <button disabled={id == 0 ? false : true} className={getButtonStyle(id)}>
+      <button
+        onClick={handleMissionModal}
+        disabled={id == 0 ? false : true}
+        className={getButtonStyle(id)}
+      >
         {getButtonText(id)}
       </button>
+      {showModal && <MissionBriefingModal onClose={handleCloseModal} />}
     </div>
   );
 }
