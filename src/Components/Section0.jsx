@@ -21,7 +21,7 @@ export default function Section0() {
               space helps modern teams genuinely connect through positive, 
               gamified trivia and collaborative challenges. Discover diverse 
               personal backgrounds in a low-pressure environment, transforming 
-              your group into a <span className="italic"> thriving</span> 
+              your group into a <span className="italic"> thriving </span> 
               community.
             </p>
             <Link to="/mission-hub">
