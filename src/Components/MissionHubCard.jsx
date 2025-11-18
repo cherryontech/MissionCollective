@@ -2,6 +2,7 @@ import { useState } from "react";
 import MissionBriefingModal from "./MissionBriefingModal";
 import clock from "../assets/icons/missionHub/clock.svg";
 import starCircle from "../assets/icons/starCircle.svg";
+import "../styles/MissionHubCard.css";
 
 const buttonText = {
   beforeActivity: "View Mission Briefing",
