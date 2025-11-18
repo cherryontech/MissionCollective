@@ -32,7 +32,9 @@ export default function MissionHubCard() {
         <img src={starCircle} alt="star icon" />
         <p>{cardContent[0].numCompleted}/5 teammates completed</p>
       </div>
-      <button>{buttonText.beforeActivity}</button>
+      {/* Add codes here to test out MissionBriefingModal; remove when done testing */}
+      <button onClick={handleMissionModal}>{buttonText.beforeActivity}</button>
+      {showModal && <MissionBriefingModal onClose={handleCloseModal} />}
     </div>
   );
 }
