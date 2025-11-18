@@ -7,11 +7,13 @@ export const defaultState = {
   totalScore: 0,
   showLearnMoreModal: false,
   answerMap: {},
+  showExitModal: false,
   setAnswer: () => {},
   setCurrentQuestionID: () => {},
   setTotalScore: () => {},
   setShowLearnMoreModal: () => {},
   updateAnswerMap: () => {},
+  setShowExitModal: () => {},
 };
 
 // step 2: create context
