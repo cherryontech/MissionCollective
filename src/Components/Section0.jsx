@@ -6,7 +6,7 @@ export default function Section0() {
     <section className="section0">
       <div className="homepage-container">
         <div className="section0-heading">
-          <h1>Building A Better Team, Together</h1>
+          <h1>Building a Better Team, Together</h1>
           <p>
             True collaboration starts with understanding, and we’re here to 
             help you build that deeper connection.
@@ -16,12 +16,13 @@ export default function Section0() {
           <img src={highFive} alt="coworkers-high-fiving"></img>
           <div className="section0-text">
             <p>
-              <span className="bold">Mission Collective </span> replaces dry team-building with 
-              purpose-driven fun. Our dedicated virtual space helps modern 
-              teams genuinely connect through positive, gamified trivia and 
-              collaborative challenges. Discover diverse personal backgrounds 
-              in a low-pressure environment, transforming your group into a 
-              <span className="italic"> thriving</span> community.
+              <span className="bold">Mission Collective </span> replaces dry 
+              team-building with purpose-driven fun. Our dedicated virtual 
+              space helps modern teams genuinely connect through positive, 
+              gamified trivia and collaborative challenges. Discover diverse 
+              personal backgrounds in a low-pressure environment, transforming 
+              your group into a <span className="italic"> thriving</span> 
+              community.
             </p>
             <Link to="/mission-hub">
             <button className="primaryButton" >Start a Team Mission</button>

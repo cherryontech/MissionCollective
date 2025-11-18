@@ -79,6 +79,7 @@ h2 {
 .section0-text p {
     margin-bottom: 2rem;
     width: 34rem;
+    padding: 0;
 }
 
 .section0-text .bold {
