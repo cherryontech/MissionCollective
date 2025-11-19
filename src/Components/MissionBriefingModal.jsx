@@ -1,7 +1,8 @@
 import "../styles/MissionBriefingModal.css";
 import { useNavigate } from "react-router-dom";
 import { CULTURE_QUESTIONS } from "../data/cultureQuestions";
-import GlobeIcon from "../assets/icons/globe-icon.svg";
+// import GlobeIcon from "../assets/icons/globe-icon.svg";
+import world from "../assets/icons/missionHub/world.svg";
 import forwardArrow from "../assets/icons/forwardArrow.svg";
 import backArrow from "../assets/icons/backArrow.svg";
 import step1 from "../assets/icons/step1.svg";
@@ -19,7 +20,7 @@ export default function MissionBriefingModal({ onClose }) {
     <div className="MissionBriefingModalOverlayer">
       <div className="MissionBriefingModalContainer">
         <div className="MissionBriefingModalHeader">
-          <img src={GlobeIcon} alt="globe icon"></img>
+          <img src={world} alt="globe icon"></img>
           <h3>Different Cultures Trivia</h3>
           <p>Ready to explore and earn points?</p>
         </div>
