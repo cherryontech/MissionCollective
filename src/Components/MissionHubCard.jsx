@@ -2,14 +2,44 @@ import { useState } from "react";
 import MissionBriefingModal from "./MissionBriefingModal";
 import clock from "../assets/icons/missionHub/clock.svg";
 import starCircle from "../assets/icons/starCircle.svg";
-import { cardContent } from "../data/missionHubCards";
+import "../styles/MissionHubCard.css";
 
 const buttonText = {
   beforeActivity: "View Mission Briefing",
   afterActivity: "View Team Contributions",
 };
 
-export default function MissionHubCard() {
+function getButtonStyle(id) {
+  if (id == 0) {
+    return " ";
+  } else if (id == 3) {
+    return "disabledButton secondaryButton";
+  } else {
+    return "disabledButton";
+  }
+}
+
+{
+  /* Needs to be updated when full functionality--i.e tracking if activity is completed--is added */
+}
+function getButtonText(id) {
+  if (id == 3) {
+    return buttonText.afterActivity;
+  } else {
+    return buttonText.beforeActivity;
+  }
+}
+
+export default function MissionHubCard({
+  id,
+  icon,
+  alt,
+  headline,
+  body,
+  minutes,
+  points,
+  numCompleted,
+}) {
   // Add codes here to test out MissionBriefingModal; remove when done testing
   const [showModal, setShowModal] = useState(false);
   const handleMissionModal = () => {
@@ -20,20 +50,30 @@ export default function MissionHubCard() {
   };
 
   return (
-    <div>
-      <img src={cardContent[0].icon} alt={cardContent[0].alt} />
-      <h2>{cardContent[0].headline}</h2>
-      <p>{cardContent[0].body}</p>
-      <div>
-        <img src={clock} alt="clock icon" />
-        <p>{cardContent[0].info}</p>
+    <div className="cardContainer">
+      <img src={icon} alt={alt} className="cardIcon" />
+      <h2>{headline}</h2>
+      <p>{body}</p>
+      <div className="infoSection">
+        <img src={clock} alt="clock icon" className="inlineIcon" />
+        <p>
+          {minutes}
+          <span>•</span>
+          {points}
+        </p>
       </div>
-      <div>
-        <img src={starCircle} alt="star icon" />
-        <p>{cardContent[0].numCompleted}/5 teammates completed</p>
+      <div className="teammatesSection">
+        <img src={starCircle} alt="star icon" className="inlineIcon" />
+        <p>{numCompleted}/5 teammates completed</p>
       </div>
-      {/* Add codes here to test out MissionBriefingModal; remove when done testing */}
-      <button onClick={handleMissionModal}>{buttonText.beforeActivity}</button>
+      {/* Needs to be updated when full functionality is added */}
+      <button
+        onClick={handleMissionModal}
+        disabled={id == 0 ? false : true}
+        className={getButtonStyle(id)}
+      >
+        {getButtonText(id)}
+      </button>
       {showModal && <MissionBriefingModal onClose={handleCloseModal} />}
     </div>
   );
