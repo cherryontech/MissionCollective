@@ -1,7 +1,6 @@
 import "../styles/MissionBriefingModal.css";
 import { useNavigate } from "react-router-dom";
 import { CULTURE_QUESTIONS } from "../data/cultureQuestions";
-// import GlobeIcon from "../assets/icons/globe-icon.svg";
 import world from "../assets/icons/missionHub/world.svg";
 import forwardArrow from "../assets/icons/forwardArrow.svg";
 import backArrow from "../assets/icons/backArrow.svg";
