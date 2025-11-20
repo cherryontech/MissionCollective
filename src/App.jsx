@@ -5,17 +5,20 @@ import HomePage from "./Components/HomePage";
 import NavBar from "./Components/NavBar";
 import MissionHub from "./Components/MissionHub";
 import MissionBriefingModal from "./Components/MissionBriefingModal";
+import { UserContextProvider } from "./Context/UserContext";
 
 function App() {
   return (
     <BrowserRouter>
-      <NavBar />
-      <Routes>
-        <Route path="/" element={<HomePage />} />
-        <Route path="/activity" element={<Activity />} />
-        <Route path="/mission-hub" element={<MissionHub />} />
-        <Route path="/mission-briefing" element={<MissionBriefingModal />} />
-      </Routes>
+      <UserContextProvider>
+        <NavBar />
+        <Routes>
+          <Route path="/" element={<HomePage />} />
+          <Route path="/activity" element={<Activity />} />
+          <Route path="/mission-hub" element={<MissionHub />} />
+          <Route path="/mission-briefing" element={<MissionBriefingModal />} />
+        </Routes>
+      </UserContextProvider>
     </BrowserRouter>
   );
 }
