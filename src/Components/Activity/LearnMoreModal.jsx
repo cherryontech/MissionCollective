@@ -1,6 +1,6 @@
 import { useNavigate } from "react-router-dom";
 import { useActivityContext } from "../../Context/ActivityContext";
-import { useUserContext } from "../Context/UserContext";
+import { useUserContext } from "../../Context/UserContext";
 import { CULTURE_QUESTIONS } from "../../data/cultureQuestions";
 import correctLight from "../../assets/icons/correctLight.svg";
 import incorrectLight from "../../assets/icons/incorrectLight.svg";
