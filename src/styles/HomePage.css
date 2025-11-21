@@ -6,6 +6,7 @@ main {
 }
 
 .homepage-container {
+    width: 100%;
     max-width: 1440px;
     margin: 0.5rem auto;
     padding: 0 6.94rem;
@@ -28,14 +29,67 @@ main {
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
+h1 {
+    font-size: 3.75rem;
+    font-weight: 800;
+}
+
 h2 {
     font-size: 3rem;
     font-style: normal;
     font-weight: 800;
     line-height: 3.0625rem;
+    padding: 4.38rem 0 2rem;
 }
 
 /* Specific Styles to Section */
+
+/* Sections 0 */
+.section0 {
+    margin-bottom: 6.94rem;
+}
+
+.section0-content {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 2.69rem;
+}
+
+.section0-heading {
+    text-align: center;
+    align-self: center;
+    max-width: 62.75rem;
+    width: 100%;
+    margin: 6.94rem auto;
+}
+
+.section0 p {
+    font-size: 1.5rem;
+    padding: 0 2rem;
+}
+
+.section0-text {
+    display: flex;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 0.5rem;
+}
+
+.section0-text p {
+    margin-bottom: 2rem;
+    width: 34rem;
+    padding: 0;
+}
+
+.section0-text .bold {
+    font-weight: 600;
+}
+
+.section0-text .italic {
+    font-style: italic;
+}
+
 
 /* Section 1 */
 
@@ -43,10 +97,6 @@ h2 {
     margin: 0 auto;
     background-color: #F0F3FF;
     text-align: left;
-}
-
-.section1 h2 {
-    padding: 4.38rem 0 2rem;
 }
 
 .section1 span {
@@ -126,6 +176,63 @@ h2 {
     margin: 0;
 }
 
+/* Section 2 */
+.section2 {
+    margin-top: 6.94rem;
+}
+
+.section2-content {
+    display: flex;
+    flex-direction: row;
+    gap: 2.69rem;
+    align-items: center;
+}
+
+.section2-content img {
+    height: auto; 
+}
+
+.section2-text {
+    width: auto;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 1rem;
+    position: relative
+}
+
+.section2-text h2 {
+    text-align: center;
+    line-height: 4rem;
+    font-weight: 700;
+    padding: 0;
+    margin-bottom: 3.4rem;
+}
+
+.section2-text p {
+    display: block;
+    font-size: 1.5rem;
+    border-radius: 1rem;
+    background: #F0F3FF;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    font-weight: 400;
+    height: 16.3125rem;
+    padding: 2.4375rem 4.3125rem 3.375rem 4.3125rem;
+    position: relative;
+    z-index: 1;
+}
+
+.section2-text img {
+    position: absolute;
+    z-index: 1;
+    top: 21.25rem;
+    left: 31.75rem;
+}
+
+.section2-text span {
+    font-weight: 700;
+}
+
 
 /* Section 3 */
 .section3 {
@@ -135,7 +242,7 @@ h2 {
 }
 
 .section3 h2 {
-    margin-top: 8.62rem;
+    margin-top: 2.56rem;
     margin-bottom: 5.25rem;
     width: 100%;
     text-align: center;
