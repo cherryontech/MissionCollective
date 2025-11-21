@@ -7,11 +7,13 @@ export const defaultState = {
   totalScore: 0,
   showLearnMoreModal: false,
   answerMap: {},
+  showExitModal: false,
   setAnswer: () => {},
   setCurrentQuestionID: () => {},
   setTotalScore: () => {},
   setShowLearnMoreModal: () => {},
   updateAnswerMap: () => {},
+  setShowExitModal: () => {},
 };
 
 // step 2: create context
@@ -38,6 +40,7 @@ export const ActivityContextProvider = ({ children }) => {
     8: null,
     9: null,
   });
+  const [showExitModal, setShowExitModal] = useState(false);
   const value = {
     answer,
     setAnswer,
@@ -49,6 +52,8 @@ export const ActivityContextProvider = ({ children }) => {
     setShowLearnMoreModal,
     answerMap,
     updateAnswerMap,
+    showExitModal,
+    setShowExitModal,
   };
   return (
     <ActivityContext.Provider value={value}>
