@@ -1,4 +1,6 @@
 import { useState } from "react";
+import { useUserContext } from "../Context/UserContext";
+import completed from "../assets/icons/missionHub/completed.svg";
 import MissionBriefingModal from "./MissionBriefingModal";
 import clock from "../assets/icons/missionHub/clock.svg";
 import starCircle from "../assets/icons/starCircle.svg";
@@ -9,9 +11,13 @@ const buttonText = {
   afterActivity: "View Team Contributions",
 };
 
-function getButtonStyle(id) {
+function getButtonStyle(id, activityCompleted) {
   if (id == 0) {
-    return " ";
+    if (activityCompleted) {
+      return "secondaryButton";
+    } else {
+      return " ";
+    }
   } else if (id == 3) {
     return "disabledButton secondaryButton";
   } else {
@@ -19,11 +25,10 @@ function getButtonStyle(id) {
   }
 }
 
-{
-  /* Needs to be updated when full functionality--i.e tracking if activity is completed--is added */
-}
-function getButtonText(id) {
+function getButtonText(id, activityCompleted) {
   if (id == 3) {
+    return buttonText.afterActivity;
+  } else if (id == 0 && activityCompleted) {
     return buttonText.afterActivity;
   } else {
     return buttonText.beforeActivity;
@@ -40,8 +45,10 @@ export default function MissionHubCard({
   points,
   numCompleted,
 }) {
-  // Add codes here to test out MissionBriefingModal; remove when done testing
+  const { activityCompleted } = useUserContext();
   const [showModal, setShowModal] = useState(false);
+
+  // TODO: Update to link to the dashboard after activity has been completed
   const handleMissionModal = () => {
     setShowModal(true);
   };
@@ -51,7 +58,11 @@ export default function MissionHubCard({
 
   return (
     <div className="cardContainer">
-      <img src={icon} alt={alt} className="cardIcon" />
+      <img
+        src={activityCompleted && id == 0 ? completed : icon}
+        alt={activityCompleted && id == 0 ? "checkmark icon" : alt}
+        className="cardIcon"
+      />
       <h2>{headline}</h2>
       <p>{body}</p>
       <div className="infoSection">
@@ -64,15 +75,19 @@ export default function MissionHubCard({
       </div>
       <div className="teammatesSection">
         <img src={starCircle} alt="star icon" className="inlineIcon" />
-        <p>{numCompleted}/5 teammates completed</p>
+        <p>
+          {activityCompleted === true && id == 0
+            ? numCompleted + 1
+            : numCompleted}
+          /5 teammates completed
+        </p>
       </div>
-      {/* Needs to be updated when full functionality is added */}
       <button
         onClick={handleMissionModal}
         disabled={id == 0 ? false : true}
-        className={getButtonStyle(id)}
+        className={getButtonStyle(id, activityCompleted)}
       >
-        {getButtonText(id)}
+        {getButtonText(id, activityCompleted)}
       </button>
       {showModal && <MissionBriefingModal onClose={handleCloseModal} />}
     </div>

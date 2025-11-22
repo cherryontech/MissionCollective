@@ -1,329 +1,330 @@
 /* Shared Styles */
 main {
-    color: #000000;
-    width: 100%;
-    min-height: 100vh;
+  color: #000000;
+  width: 100%;
+  min-height: 100vh;
 }
 
 .homepage-container {
-    width: 100%;
-    max-width: 1440px;
-    margin: 0.5rem auto;
-    padding: 0 6.94rem;
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    justify-content: flex-start;
+  width: 100%;
+  max-width: 1440px;
+  margin: 0.5rem auto;
+  padding: 0 6.94rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  justify-content: flex-start;
 }
 
 .card-container {
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: flex-start;
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: flex-start;
 }
 
 .card {
-    display: flex;
-    flex-direction: column;
-    border-radius: 1rem;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  display: flex;
+  flex-direction: column;
+  border-radius: 1rem;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
 h1 {
-    font-size: 3.75rem;
-    font-weight: 800;
+  font-size: 3.75rem;
+  font-weight: 800;
 }
 
 h2 {
-    font-size: 3rem;
-    font-style: normal;
-    font-weight: 800;
-    line-height: 3.0625rem;
-    padding: 4.38rem 0 2rem;
+  font-size: 3rem;
+  font-style: normal;
+  font-weight: 800;
+  line-height: 3.0625rem;
 }
 
 /* Specific Styles to Section */
 
 /* Sections 0 */
 .section0 {
-    margin-bottom: 6.94rem;
+  margin-bottom: 6.94rem;
 }
 
 .section0-content {
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
-    gap: 2.69rem;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 2.69rem;
 }
 
 .section0-heading {
-    text-align: center;
-    align-self: center;
-    max-width: 62.75rem;
-    width: 100%;
-    margin: 6.94rem auto;
+  text-align: center;
+  align-self: center;
+  max-width: 62.75rem;
+  width: 100%;
+  margin: 6.94rem auto;
 }
 
 .section0 p {
-    font-size: 1.5rem;
-    padding: 0 2rem;
+  font-size: 1.5rem;
+  padding: 0 2rem;
 }
 
 .section0-text {
-    display: flex;
-    flex-direction: column;
-    align-items: flex-start;
-    gap: 0.5rem;
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  gap: 0.5rem;
 }
 
 .section0-text p {
-    margin-bottom: 2rem;
-    width: 34rem;
-    padding: 0;
+  margin-bottom: 2rem;
+  width: 34rem;
+  padding: 0;
 }
 
 .section0-text .bold {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .section0-text .italic {
-    font-style: italic;
+  font-style: italic;
 }
-
 
 /* Section 1 */
 
 .section1 {
-    margin: 0 auto;
-    background-color: #F0F3FF;
-    text-align: left;
+  margin: 0 auto;
+  background-color: #f0f3ff;
+  text-align: left;
 }
 
 .section1 span {
-    font-size: 2rem;
-    line-height: 3.0625rem;
-    font-weight: 800;
-    font-style: normal;
+  font-size: 2rem;
+  line-height: 3.0625rem;
+  font-weight: 800;
+  font-style: normal;
 }
 
 .connection-text {
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 300;
-    line-height: 1.875rem;
-    margin-bottom: 4.75rem;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 300;
+  line-height: 1.875rem;
+  margin-bottom: 4.75rem;
 }
 
 .connection-text span {
-    font-weight: 600;
+  font-weight: 600;
 }
 
 .section1 .card-container {
-    gap: 3.125rem;
+  gap: 3.125rem;
 }
 
 .section1 .card {
-    display: flex;
-    flex-direction: column;
-    justify-content: flex-start;
-    width: 22.875rem;
-    min-height: 25rem;
-    padding: 1.875rem;
-    margin-bottom: 4.81rem;
-    background-color: #f9f9f9;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  width: 22.875rem;
+  min-height: 25rem;
+  padding: 1.875rem;
+  margin-bottom: 4.81rem;
+  background-color: #f9f9f9;
+}
+
+.section1 h2 {
+  padding: 4.38rem 0 2rem;
 }
 
 .card-header-section1 {
-    position: relative;
-    height: 4.25rem;
+  position: relative;
+  height: 4.25rem;
 }
 
 .card-header-section1 span {
-    font-size: 2rem;
-    font-weight: 700;
-    font-style: normal;
-    position: absolute;
-    line-height: normal;
-    top: 10px;
-    left: 15px;
+  font-size: 2rem;
+  font-weight: 700;
+  font-style: normal;
+  position: absolute;
+  line-height: normal;
+  top: 10px;
+  left: 15px;
 }
 
 .card-header-section1 img {
-    position: absolute;
-    top: 10px;
-    right: 15px;
-    width: 5rem;
-    height: 5rem;
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  width: 5rem;
+  height: 5rem;
 }
 
 .card-body {
-    margin-top: 4.25rem;
+  margin-top: 4.25rem;
 }
 
 .card-body h3 {
-    margin: 0 0 0.5rem 0;
-    font-size: 2rem;
-    font-style: normal;
-    font-weight: 700;
-    line-height: normal;
+  margin: 0 0 0.5rem 0;
+  font-size: 2rem;
+  font-style: normal;
+  font-weight: 700;
+  line-height: normal;
 }
 
 .card-body p {
-    font-size: 1.5rem;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin: 0;
+  font-size: 1.5rem;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  margin: 0;
 }
 
 /* Section 2 */
 .section2 {
-    margin-top: 6.94rem;
+  margin-top: 6.94rem;
 }
 
 .section2-content {
-    display: flex;
-    flex-direction: row;
-    gap: 2.69rem;
-    align-items: center;
+  display: flex;
+  flex-direction: row;
+  gap: 2.69rem;
+  align-items: center;
 }
 
 .section2-content img {
-    height: auto; 
+  height: auto;
 }
 
 .section2-text {
-    width: auto;
-    display: flex;
-    flex-direction: column;
-    align-items: center;
-    padding: 1rem;
-    position: relative
+  width: auto;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 1rem;
+  position: relative;
 }
 
 .section2-text h2 {
-    text-align: center;
-    line-height: 4rem;
-    font-weight: 700;
-    padding: 0;
-    margin-bottom: 3.4rem;
+  text-align: center;
+  line-height: 4rem;
+  font-weight: 700;
+  padding: 0;
+  margin-bottom: 3.4rem;
 }
 
 .section2-text p {
-    display: block;
-    font-size: 1.5rem;
-    border-radius: 1rem;
-    background: #F0F3FF;
-    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
-    font-weight: 400;
-    height: 16.3125rem;
-    padding: 2.4375rem 4.3125rem 3.375rem 4.3125rem;
-    position: relative;
-    z-index: 1;
+  display: block;
+  font-size: 1.5rem;
+  border-radius: 1rem;
+  background: #f0f3ff;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+  font-weight: 400;
+  height: 16.3125rem;
+  padding: 2.4375rem 4.3125rem 3.375rem 4.3125rem;
+  position: relative;
+  z-index: 1;
 }
 
 .section2-text img {
-    position: absolute;
-    z-index: 1;
-    top: 21.25rem;
-    left: 31.75rem;
+  position: absolute;
+  z-index: 1;
+  top: 21.25rem;
+  left: 31.75rem;
 }
 
 .section2-text span {
-    font-weight: 700;
+  font-weight: 700;
 }
-
 
 /* Section 3 */
 .section3 {
-    width: 100%;
-    /* min-height: 100vh; */
-    background-color: #FFFFFF;
+  width: 100%;
+  /* min-height: 100vh; */
+  background-color: #ffffff;
 }
 
 .section3 h2 {
-    margin-top: 2.56rem;
-    margin-bottom: 5.25rem;
-    width: 100%;
-    text-align: center;
-    align-self: center;
+  margin-top: 2.56rem;
+  margin-bottom: 5.25rem;
+  width: 100%;
+  text-align: center;
+  align-self: center;
+  padding: 4.38rem 0 2rem;
 }
 
 .section3 .card-container {
-    gap: 3.5rem;
+  gap: 3.5rem;
 }
 
 .section3 .card {
-    justify-content: space-between;
-    width: 22.60rem;
-    height: auto;
-    background-color: #f0f3ff;
-    padding: 1.5rem;
+  justify-content: space-between;
+  width: 22.6rem;
+  height: auto;
+  background-color: #f0f3ff;
+  padding: 1.5rem;
 }
 
 .card-header-section3 {
-    display: flex;
-    align-items: center;
-    gap: 1rem;
-    margin-bottom: 1rem;
-    min-height: 4.5rem;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  margin-bottom: 1rem;
+  min-height: 4.5rem;
 }
 
 .card-header-section3 img {
-    width: 4.3125rem;
-    height: 4.3125rem;
-    margin: 0 1rem 0 0;
+  width: 4.3125rem;
+  height: 4.3125rem;
+  margin: 0 1rem 0 0;
 }
 
 .profile-title {
-    font-weight: 600;
-    font-size: 1.125rem;
-    font-style: normal;
-    line-height: 1.75rem;
-    gap: 1.69rem;
+  font-weight: 600;
+  font-size: 1.125rem;
+  font-style: normal;
+  line-height: 1.75rem;
+  gap: 1.69rem;
 }
 
 .section3 .card p {
-    flex-grow: 1;
-    font-size: 1.0625rem;
-    font-weight: 400;
-    font-style: normal;
-    line-height: 1.75rem;
-    margin-bottom: 1rem;
-    text-align: left;
+  flex-grow: 1;
+  font-size: 1.0625rem;
+  font-weight: 400;
+  font-style: normal;
+  line-height: 1.75rem;
+  margin-bottom: 1rem;
+  text-align: left;
 }
 
 .section3 .rating {
-    display: flex;
-    justify-content: flex-start;
-    align-items: center;
-    width: 100%;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 100%;
 }
 
 .section3 .rating img {
-    width: 80%;
-    max-width: 200px;
-    height: auto;
-    object-fit: contain;
-    margin: 0 auto 0 0;
-    display: block;
-    padding-top: 1.12rem;
+  width: 80%;
+  max-width: 200px;
+  height: auto;
+  object-fit: contain;
+  margin: 0 auto 0 0;
+  display: block;
+  padding-top: 1.12rem;
 }
 
 .section4 {
-    height: 19.94rem;
-    width: 100%;
-    text-align: center;
-    align-self: center;
-    margin-top: 6.94rem;
+  height: 19.94rem;
+  width: 100%;
+  text-align: center;
+  align-self: center;
+  margin-top: 6.94rem;
 }
 
-
 .buttonContainer {
-    display: flex;
-    column-gap: 1rem;
-    justify-content: center;
-    align-items: center;
-    margin-top: 3.8rem;
-    /* align-self: center; */
+  display: flex;
+  column-gap: 1rem;
+  justify-content: center;
+  align-items: center;
+  margin-top: 3.8rem;
+  /* align-self: center; */
 }

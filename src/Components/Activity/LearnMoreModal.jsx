@@ -1,4 +1,6 @@
+import { useNavigate } from "react-router-dom";
 import { useActivityContext } from "../../Context/ActivityContext";
+import { useUserContext } from "../../Context/UserContext";
 import { CULTURE_QUESTIONS } from "../../data/cultureQuestions";
 import correctLight from "../../assets/icons/correctLight.svg";
 import incorrectLight from "../../assets/icons/incorrectLight.svg";
@@ -13,6 +15,10 @@ export default function LearnMoreModal() {
     setAnswer,
     setShowLearnMoreModal,
   } = useActivityContext();
+
+  const { setActivityCompleted } = useUserContext();
+
+  const navigate = useNavigate();
 
   if (!showLearnMoreModal) {
     return null;
@@ -39,9 +45,14 @@ export default function LearnMoreModal() {
 
   // TODO: Need logic to handle the case when the user is on the last question in later sprint.
   const handleContinue = () => {
-    setAnswer(null);
-    setCurrentQuestionID((id) => id + 1);
-    setShowLearnMoreModal(false);
+    if (currentQuestionID !== 9) {
+      setAnswer(null);
+      setCurrentQuestionID((id) => id + 1);
+      setShowLearnMoreModal(false);
+    } else {
+      setActivityCompleted(true);
+      navigate("/mission-hub");
+    }
   };
 
   return (
