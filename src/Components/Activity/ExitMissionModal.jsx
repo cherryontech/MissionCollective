@@ -2,6 +2,7 @@ import { useActivityContext } from "../../Context/ActivityContext";
 import { useNavigate } from "react-router-dom";
 import ExitArrow from "../../assets/icons/exit-arrow.svg";
 import BackArrow from "../../assets/icons/back-arrow-white.svg"
+import "../../styles/ExitMissionModal.css";
 
 export default function ExitMissionModal({ onClose }) {
   const {
