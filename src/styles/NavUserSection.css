@@ -39,37 +39,6 @@
 
 }
 
-.NavUserBellIcon:hover {
-    background: #F0F3FF;
-    animation: shake 0.5s ease-in-out
-}
-
-@keyframes shake {
-    0% {
-        transform: rotate(0deg);
-    }
-
-    20% {
-        transform: rotate(-15deg);
-    }
-
-    40% {
-        transform: rotate(15deg);
-    }
-
-    60% {
-        transform: rotate(-10deg);
-    }
-
-    80% {
-        transform: rotate(10deg);
-    }
-
-    100% {
-        transform: rotate(0deg);
-    }
-}
-
 .NavUserProfileContainer {
     display: flex;
     padding-right: 1.25rem;
