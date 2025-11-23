@@ -2,10 +2,13 @@
   display: flex;
   flex-direction: row;
   max-width: 62.5rem;
-  margin: 0 auto;
-  padding: 0 5rem;
+  /* center the header block horizontally */
+  margin: 2.5rem auto 2rem auto;
+  padding: 0 1.5rem; /* reduce horizontal padding so max-width can center properly */
   justify-content: space-between;
   align-items: center;
+  width: 100%;
+  box-sizing: border-box;
 }
 
 .QuestionHeader h2 {
@@ -51,20 +54,19 @@
 }
 
 .ExitMission {
-  display: flex;
-  flex-direction: row;
-  cursor: pointer;
-  font-weight: 500;
-  padding: 0rem;
+  
 }
 
 .ExitMission button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  cursor: pointer;
+  font-weight: 500;
   padding: 0rem;
   background-color: #ffffff;
   color: #000000;
-  height: auto;
   width: 100%;
-  margin: 0 auto;
   border: none;
 }
 

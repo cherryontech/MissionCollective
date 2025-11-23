@@ -19,14 +19,16 @@ export default function QuestionHeader() {
         </div>
       </div>
       <div className="ExitMission">
-        <button onClick={handleOnClick}>Exit Mission</button>
-        <img
+        <button onClick={handleOnClick}>
+          Exit Mission
+          <img
           src={ExitArrowIcon}
           alt="globe icon"
           height="40"
           width="40"
           aria-label="Exit mission"
         ></img>
+        </button>
       </div>
     </div>
   );
