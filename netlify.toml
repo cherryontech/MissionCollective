@@ -1,2 +1,2 @@
 [build]
-functions = "netlify/functions/test-scheduled-function.mjs" 
+functions = "netlify/functions" 
