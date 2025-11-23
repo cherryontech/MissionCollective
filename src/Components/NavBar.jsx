@@ -1,9 +1,8 @@
-import { NavLink } from "react-router-dom";
+import { NavLink, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import logo from "../assets/icons/logo.svg";
 import "../styles/NavBar.css";
 import NavUserSection from "./NavUserSection";
-import { useNavigate } from "react-router-dom";
 
 export default function NavBar() {
   const navigate = useNavigate();
@@ -20,38 +19,53 @@ export default function NavBar() {
       <div className="navElements">
         <div className="menu">
           <img src={logo} alt="logo" />
-          <NavLink
-            to="/"
-            className={({ isActive }) => (isActive ? "activeLink" : "")}
-          >
-            Home
-          </NavLink>
-          <a
-            className={({ isActive }) => (isActive ? "activeLink" : "")}
-            title="Coming Soon"
-          >
-            How It Works
-          </a>
-          <a
-            className={({ isActive }) => (isActive ? "activeLink" : "")}
-            title="Coming Soon"
-          >
-            Explore Missions
-          </a>
-          <a
-            className={({ isActive }) => (isActive ? "activeLink" : "")}
-            title="Coming Soon"
-          >
-            Pricing
-          </a>
-          <a
-            className={({ isActive }) => (isActive ? "activeLink" : "")}
-            title="Coming Soon"
-          >
-            About Us
-          </a>
+
+          {isLoggedIn ? (
+            <>
+              <a className="inactiveLink" title="Coming Soon">
+                Dashboard
+              </a>
+              <NavLink
+                to="/mission-hub"
+                className={({ isActive }) => (isActive ? "activeLink" : "")}
+              >
+                Mission Hub
+              </NavLink>
+              <a className="inactiveLink" title="Coming Soon">
+                Leaderboard
+              </a>
+              <a className="inactiveLink" title="Coming Soon">
+                Your Team
+              </a>
+              <a className="inactiveLink" title="Coming Soon">
+                Team Rewards
+              </a>
+            </>
+          ) : (
+            <>
+              <NavLink
+                to="/"
+                className={({ isActive }) => (isActive ? "activeLink" : "")}
+              >
+                Home
+              </NavLink>
+              <a className="inactiveLink" title="Coming Soon">
+                How It Works
+              </a>
+              <a className="inactiveLink" title="Coming Soon">
+                Explore Missions
+              </a>
+              <a className="inactiveLink" title="Coming Soon">
+                Pricing
+              </a>
+              <a className="inactiveLink" title="Coming Soon">
+                About Us
+              </a>
+            </>
+          )}
         </div>
-        <div>
+
+        <div className="userInfo">
           {isLoggedIn ? (
             <NavUserSection />
           ) : (

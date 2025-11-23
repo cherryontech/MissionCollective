@@ -20,6 +20,10 @@ nav {
   align-items: center;
 }
 
+.userInfo {
+  /* To be used when displaying logged in user */
+}
+
 a:hover {
   color: #0036f5;
   text-decoration-line: underline;
@@ -53,6 +57,7 @@ a:focus {
   border-radius: 0.5rem;
   border: 2px solid #0036f5;
   background: #f0f3ff;
+
 }
 
 .loginButton:hover {
