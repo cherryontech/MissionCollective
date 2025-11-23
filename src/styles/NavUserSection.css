@@ -1,0 +1,95 @@
+.NavUserContainer {
+    display: flex;
+    justify-content: space-between;
+    /* gap: 1.25rem; */
+}
+
+.NavUserPointsContainer {
+    font-weight: bold;
+    margin: 0.69rem;
+    padding: 0.63rem 0.94rem 0.63rem 0.63rem;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 0.4375rem;
+    border-radius: 0.6875rem;
+    background: #F0F3FF;
+}
+
+.NavUserPointsContainer img {
+    width: 1.5rem;
+    height: 1.5rem;
+    aspect-ratio: 1/1;
+}
+
+.NavUserPointsContainer span {
+    color: #0036F5;
+    font-size: 0.9375rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+}
+
+.NavUserBellIcon {
+    display: flex;
+    padding: 0.75rem;
+    border-radius: 6.25rem;
+    background: #FFF;
+    cursor: pointer;
+
+}
+
+.NavUserBellIcon:hover {
+    background: #F0F3FF;
+    animation: shake 0.5s ease-in-out
+}
+
+@keyframes shake {
+    0% {
+        transform: rotate(0deg);
+    }
+
+    20% {
+        transform: rotate(-15deg);
+    }
+
+    40% {
+        transform: rotate(15deg);
+    }
+
+    60% {
+        transform: rotate(-10deg);
+    }
+
+    80% {
+        transform: rotate(10deg);
+    }
+
+    100% {
+        transform: rotate(0deg);
+    }
+}
+
+.NavUserProfileContainer {
+    display: flex;
+    padding-right: 1.25rem;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.NavUserProfileContainer img {
+    display: flex;
+    padding: 0.75rem;
+    justify-content: center;
+    align-items: center;
+    aspect-ratio: 1/1;
+}
+
+.NavUserProfileContainer span {
+    color: #1C1C1E;
+    text-align: center;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 1.5rem;
+}

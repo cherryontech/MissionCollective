@@ -20,10 +20,6 @@ nav {
   align-items: center;
 }
 
-.userInfo {
-  /* To be used when displaying logged in user */
-}
-
 a:hover {
   color: #0036f5;
   text-decoration-line: underline;
@@ -35,7 +31,8 @@ a:focus {
   color: #ec00aa;
   text-decoration-line: underline;
   text-decoration-style: dotted;
-  text-decoration-thickness: 20%; /* 3.2px */
+  text-decoration-thickness: 20%;
+  /* 3.2px */
   text-underline-position: from-font;
 }
 
