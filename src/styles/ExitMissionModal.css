@@ -14,30 +14,63 @@
 .ExitMissionModalContainer {
   background-color: #ffffff;
   border-radius: 0.75rem;
-  padding: 1rem;
-  width: 90%;
+  padding: 2.3rem 1.7rem;
+  width: 31.25rem;
+  height: 19.2rem;
   max-width: 37.5rem;
   text-align: center;
   box-shadow: 0 0.25rem 1.88rem rgba(0, 0, 0, 0.3);
 }
 
+.ExitMissionModalText {
+  text-align: center;
+}
+
 .ExitMissionModalContainer h2 {
-  font-size: 1.125rem;
+  font-size: 1.5rem;
+  line-height: 1.75rem;
+  font-weight: 400;
+  margin: 0 5.75rem 1.06rem 5.75rem;
 }
 
 .ExitMissionModalContainer p {
-  font-size: 0.875rem;
+  font-size: 0.9375rem;
+  font-weight: 400;
+  margin: 0 3.56rem;
 }
 
-.ExitButton button{
-    display: flex;
-    width: 13.75rem;
-    height: 3rem;
-    padding: 0;
-    justify-content: center;
-    align-items: center;
-    border-radius: 0.5rem;
-    border: 0 solid #E5E7EB;
-    background: #F0F3FF;
-    color: #1c1c1e;
+.ExitMissionButtonContainer {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  margin-top: 2rem;
+  gap: 2rem;
+}
+
+.ExitMissionButtonContainer button {
+  width: 12.5rem;
+  height: 3rem;
+  display: flex;
+  flex-direction: row;
+  border-radius: 0.5rem;
+  padding: 0.69rem 1rem;
+  border: none;
+  cursor: pointer;
+  justify-content: center;
+  align-items: center;
+}
+.BackButton,
+.ExitButton {
+  display: flex;
+  flex-direction: row;
+}
+
+.ExitButton button {
+  background: #F0F3FF;
+  color: #1c1c1e;
+}
+
+.ExitMissionButtonContainer button img {
+  display: inline-block;
+  margin: 0.75rem 0.5rem;
 }

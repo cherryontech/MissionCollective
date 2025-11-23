@@ -32,13 +32,15 @@ export default function ExitMissionModal({ onClose }) {
   return (
     <div className="ExitMissionModalOverlayer">
       <div className="ExitMissionModalContainer">
-        <h2>Wait! Are you sure you want to exit?</h2>
-        <p>
-          Your points will not be applied, and your team is counting on your
-          perspective to unlock this reward. Keep in mind that you’ll get fresh
-          questions next time.
-        </p>
-        <div className="ButtonContainer">
+        <div className="ExitMissionModalText">
+          <h2>Wait! Are you sure you want to exit?</h2>
+          <p>
+            Your points will not be applied, and your team is counting on your
+            perspective to unlock this reward. Keep in mind that you’ll get fresh
+            questions next time.
+          </p>
+        </div>
+        <div className="ExitMissionButtonContainer">
           <div className="BackButton">
             <button onClick={onClose}>
               No, Go Back
