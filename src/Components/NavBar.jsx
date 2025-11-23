@@ -1,4 +1,4 @@
-import { NavLink, useNavigate } from "react-router-dom";
+import { NavLink, useLocation, useNavigate } from "react-router-dom";
 import { useState } from "react";
 import logo from "../assets/icons/logo.svg";
 import "../styles/NavBar.css";
@@ -13,6 +13,10 @@ export default function NavBar() {
     setIsLoggedIn(true);
     navigate("/mission-hub");
   };
+
+  const { pathname } = useLocation();
+  if (pathname === "/activity" || pathname.startsWith("/activity/"))
+    return null;
 
   return (
     <nav>
