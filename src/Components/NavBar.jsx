@@ -11,7 +11,7 @@ export default function NavBar() {
   // TODO: Update to link to the dashboard after activity has been completed
   const handleLoginClick = () => {
     setIsLoggedIn(true);
-    navigate("/mission-hub");
+    navigate("/dashboard");
   };
 
   const { pathname } = useLocation();
@@ -26,9 +26,12 @@ export default function NavBar() {
 
           {isLoggedIn ? (
             <>
-              <a className="inactiveLink" title="Coming Soon">
+              <NavLink
+                to="/dashboard"
+                className={({ isActive }) => (isActive ? "activeLink" : "")}
+              >
                 Dashboard
-              </a>
+              </NavLink>
               <NavLink
                 to="/mission-hub"
                 className={({ isActive }) => (isActive ? "activeLink" : "")}
