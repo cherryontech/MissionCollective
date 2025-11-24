@@ -35,7 +35,8 @@ a:focus {
   color: #ec00aa;
   text-decoration-line: underline;
   text-decoration-style: dotted;
-  text-decoration-thickness: 20%; /* 3.2px */
+  text-decoration-thickness: 20%;
+  /* 3.2px */
   text-underline-position: from-font;
 }
 
@@ -56,6 +57,7 @@ a:focus {
   border-radius: 0.5rem;
   border: 2px solid #0036f5;
   background: #f0f3ff;
+
 }
 
 .loginButton:hover {
