@@ -1,13 +1,13 @@
 .NavUserContainer {
     display: flex;
     justify-content: space-between;
-    /* gap: 1.25rem; */
+    gap: 1.25rem;
+    margin: 0;
 }
 
 .NavUserPointsContainer {
     font-weight: bold;
-    margin: 0.69rem;
-    padding: 0.63rem 0.94rem 0.63rem 0.63rem;
+    padding: 0 0.94rem 0 0.63rem;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -20,6 +20,8 @@
     width: 1.5rem;
     height: 1.5rem;
     aspect-ratio: 1/1;
+    margin: 0.62rem 0 0.62rem 0.62rem;
+
 }
 
 .NavUserPointsContainer span {
@@ -32,23 +34,20 @@
 
 .NavUserBellIcon {
     display: flex;
-    padding: 0.75rem;
     border-radius: 6.25rem;
     background: #FFF;
-    cursor: pointer;
+    /* cursor: pointer; */
 
 }
 
 .NavUserProfileContainer {
     display: flex;
-    padding-right: 1.25rem;
     align-items: center;
     gap: 0.5rem;
 }
 
 .NavUserProfileContainer img {
     display: flex;
-    padding: 0.75rem;
     justify-content: center;
     align-items: center;
     aspect-ratio: 1/1;
