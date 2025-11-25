@@ -4,8 +4,8 @@ import Activity from "./Components/Activity/Activity";
 import HomePage from "./Components/HomePage";
 import NavBar from "./Components/NavBar";
 import MissionHub from "./Components/MissionHub";
-import MissionBriefingModal from "./Components/MissionBriefingModal";
 import { UserContextProvider } from "./Context/UserContext";
+import Dashboard from "./Components/Dashboard/Dashboard";
 
 function App() {
   return (
@@ -16,7 +16,7 @@ function App() {
           <Route path="/" element={<HomePage />} />
           <Route path="/activity" element={<Activity />} />
           <Route path="/mission-hub" element={<MissionHub />} />
-          <Route path="/mission-briefing" element={<MissionBriefingModal />} />
+          <Route path="/dashboard" element={<Dashboard />} />
         </Routes>
       </UserContextProvider>
     </BrowserRouter>
