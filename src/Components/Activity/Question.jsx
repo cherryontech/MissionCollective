@@ -4,6 +4,7 @@ import AnswersContainer from "./AnswersContainer";
 import LearnMoreModal from "./LearnMoreModal";
 import forwardArrow from "../../assets/icons/forwardArrow.svg";
 import backArrow from "../../assets/icons/backArrow.svg";
+import { useUserContext } from "../../Context/UserContext";
 
 export default function Question() {
   const {
@@ -14,6 +15,9 @@ export default function Question() {
     updateAnswerMap,
     setShowLearnMoreModal,
   } = useActivityContext();
+
+  const { setQuizScore } = useUserContext();
+
   const currentQuestion = CULTURE_QUESTIONS[currentQuestionID];
 
   // Full functionality to be added later on
@@ -29,6 +33,17 @@ export default function Question() {
       ...prev,
       [currentQuestionID]: answer,
     }));
+
+    const selectedAnswer = currentQuestion.answerOptions.find(
+      (answerOption) => answer === answerOption.id
+    );
+    // 10 points for correct answer, 1 point for incorrect answer
+    if (selectedAnswer.isCorrect) {
+      setQuizScore((prev) => (prev += 10));
+    } else {
+      setQuizScore((prev) => (prev += 1));
+    }
+
     setShowLearnMoreModal(true);
   }
 
@@ -44,7 +59,7 @@ export default function Question() {
     <div className="Question">
       <div className="QuestionContainer">
         <p>{currentQuestion.questionText}</p>
-        <img src={currentQuestion.imageSrc} alt={currentQuestion.altText}></img>
+        <img src={currentQuestion.imageSrc} alt={currentQuestion.altText} />
         <AnswersContainer />
       </div>
       <div className="QuestionNavigation">
