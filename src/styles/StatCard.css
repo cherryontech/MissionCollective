@@ -1,0 +1,22 @@
+.container {
+  border-radius: 0.5rem;
+  border: 2px solid #f2bd00;
+  display: flex;
+  width: 17rem;
+  padding: 1.5rem 0;
+  flex-direction: column;
+  align-items: center;
+}
+
+.number {
+  font-size: 1.875rem;
+  font-weight: 400;
+  margin-top: 0.75rem;
+}
+
+.stat {
+  color: #525252;
+  font-size: 1rem;
+  font-weight: 400;
+  margin-top: 0.25rem;
+}
