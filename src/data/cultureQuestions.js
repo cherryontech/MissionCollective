@@ -1,3 +1,14 @@
+import image1 from "../assets/images/quiz1/1.webp";
+import image2 from "../assets/images/quiz1/2.webp";
+import image3 from "../assets/images/quiz1/3.webp";
+import image4 from "../assets/images/quiz1/4.webp";
+import image5 from "../assets/images/quiz1/5.webp";
+import image6 from "../assets/images/quiz1/6.webp";
+import image7 from "../assets/images/quiz1/7.webp";
+import image8 from "../assets/images/quiz1/8.webp";
+import image9 from "../assets/images/quiz1/9.webp";
+import image10 from "../assets/images/quiz1/10.webp";
+
 export const CULTURE_QUESTIONS = [
   {
     id: 0,
@@ -11,7 +22,7 @@ export const CULTURE_QUESTIONS = [
     ],
     learnMoreText:
       "Samba is Brazil's most recognized musical style, celebrated globally for its infectious rhythms and Carnival association. Originating in Rio de Janeiro, it blends African and European influences to create a unifying, collaborative music genre that symbolizes national identity and joy.",
-    imageURL: "../assets/images/quiz1/1.jpg",
+    imageSrc: image1,
     altText:
       "Female Carnival dancers in green sequined dresses, beaded jewelry, and large feathers.",
   },
@@ -27,7 +38,7 @@ export const CULTURE_QUESTIONS = [
     ],
     learnMoreText:
       "The annual Carnival of Las Tablas in Panama is famous for its fierce, yet friendly, competition between two rival street groups, Calle Arriba and Calle Abajo. This intense but festive rivalry involves elaborate floats and costumes, fostering collective town pride and ensuring the celebration remains vibrant and collaborative.",
-    imageURL: "../assets/images/quiz1/2.jpg",
+    imageSrc: image2,
     altText:
       "Fireworks over a nighttime Carnival crowd with costumed performers on floats.",
   },
@@ -43,7 +54,7 @@ export const CULTURE_QUESTIONS = [
     ],
     learnMoreText:
       "Tatreez is the intricate traditional cross-stitch embroidery used to decorate the Palestinian Thobe (dress). This beautiful art form, passed down through generations, is a visual language where the specific motifs and colors communicate the wearer's village and history, serving as a powerful symbol of cultural identity.",
-    imageURL: "../assets/images/quiz1/3.jpg",
+    imageSrc: image3,
     altText: "A handmade cross-stitched embroidery with flowers and leaves.",
   },
   {
@@ -58,7 +69,7 @@ export const CULTURE_QUESTIONS = [
     ],
     learnMoreText:
       'Nahuatl is the Indigenous language historically spoken by the Aztecs and still spoken in present-day Mexico. It has gifted English many common words, such as "chili" and "tomato". Recognizing its influence celebrates the enduring cultural and linguistic contributions of Mesoamerican heritage.',
-    imageURL: "../assets/images/quiz1/4.jpg",
+    imageSrc: image4,
     altText:
       "A ceremonial performer in Aztec-style regalia with feathered headdress and turquoise face paint.",
   },
@@ -70,11 +81,11 @@ export const CULTURE_QUESTIONS = [
       { id: "A", answerText: "Tourtière", isCorrect: false },
       { id: "B", answerText: "Nanaimo Bar", isCorrect: false },
       { id: "C", answerText: "Poutine", isCorrect: true },
-      { id: "D", answerText: "BeaverTails", isCorrect: false },
+      { id: "D", answerText: "Beaver Tails", isCorrect: false },
     ],
     learnMoreText:
       'Poutine is a quintessential Canadian cultural staple that originated in Quebec. This simple, rich dish is celebrated from coast to coast, representing a fun, unifying piece of Canadian culinary identity. Despite its popularity now, the dish was initially considered a simple, low-brow "mess" when it first appeared in rural Quebec diners in the 1950s.',
-    imageURL: "../assets/images/quiz1/5.jpg",
+    imageSrc: image5,
     altText:
       "A person holding a bowl of french fries topped with cheese curds and gravy.",
   },
@@ -90,7 +101,7 @@ export const CULTURE_QUESTIONS = [
     ],
     learnMoreText:
       "Kintsugi is the traditional Japanese art of repairing broken pottery with lacquer mixed with gold. This encouraging practice embraces the object's damage and history, viewing breakage as part of the story. The gold highlights the fault lines, transforming imperfection into an object of unique beauty and strength.",
-    imageURL: "../assets/images/quiz1/6.png",
+    imageSrc: image6,
     altText: "A ceramic tea bowl repaired with gold lacquer in the cracks.",
   },
   {
@@ -105,7 +116,7 @@ export const CULTURE_QUESTIONS = [
     ],
     learnMoreText:
       "The Slow Food movement, started in Italy, encourages people to reject the modern speed of fast food and preserve local culinary traditions, regional diversity, and sustainable agriculture. This collaborative effort promotes appreciation for heritage and enjoying food as a source of community and pleasure.",
-    imageURL: "../assets/images/quiz1/7.jpg",
+    imageSrc: image7,
     altText:
       "Mediterranean cliffside coastline with brightly coloured buildings, and small boats in the sea.",
   },
@@ -126,7 +137,7 @@ export const CULTURE_QUESTIONS = [
     ],
     learnMoreText:
       "The Lunar New Year's Eve Reunion Dinner (Nian Ye Fan) is the most significant meal of the year. It represents family unity, gratitude, and remembrance of ancestors. This act of togetherness reinforces familial bonds and sets an encouraging tone for the new year, embodying hope and collective well-being.",
-    imageURL: "../assets/images/quiz1/8.jpg",
+    imageSrc: image8,
     altText:
       "Lunar New Year red envelopes hanging from a mandarin orange tree.",
   },
@@ -142,7 +153,7 @@ export const CULTURE_QUESTIONS = [
     ],
     learnMoreText:
       "Midsummer's Eve is an annual celebration of the summer solstice, historically marking the longest day and shortest night of the year, particularly in Northern Europe. Celebrations often involve lighting large bonfires, dancing, and gathering outdoors. It is a time for people to celebrate light, fertility, and community before the long winter returns.",
-    imageURL: "../assets/images/quiz1/9.jpg",
+    imageSrc: image9,
     altText:
       "A large daytime bonfire next to a body of water with the sun on the horizon in the distance.",
   },
@@ -158,7 +169,7 @@ export const CULTURE_QUESTIONS = [
     ],
     learnMoreText:
       "The Ao Dai is Vietnam's national garment, recognized for its elegant, high-collared tunic with side vents worn gracefully over long trousers. As a powerful symbol of Vietnamese identity and feminine beauty, it represents cultural pride and is often worn during formal occasions, celebrating the country's rich heritage.",
-    imageURL: "../assets/images/quiz1/10.jpg",
+    imageSrc: image10,
     altText:
       "A woman in a pink full-length gown and conical hat stands on a boat during the day.",
   },
