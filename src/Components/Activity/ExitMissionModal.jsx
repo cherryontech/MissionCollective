@@ -1,7 +1,8 @@
 import { useActivityContext } from "../../Context/ActivityContext";
+import { useUserContext } from "../../Context/UserContext";
 import { useNavigate } from "react-router-dom";
 import ExitArrow from "../../assets/icons/exit-arrow.svg";
-import BackArrow from "../../assets/icons/back-arrow-white.svg"
+import BackArrow from "../../assets/icons/back-arrow-white.svg";
 import "../../styles/ExitMissionModal.css";
 
 export default function ExitMissionModal({ onClose }) {
@@ -13,6 +14,8 @@ export default function ExitMissionModal({ onClose }) {
     setShowExitModal,
   } = useActivityContext();
 
+  const { setQuizScore } = useUserContext();
+
   const navigate = useNavigate();
 
   function handleConfirmExit() {
@@ -23,7 +26,20 @@ export default function ExitMissionModal({ onClose }) {
     setAnswer(null);
     setCurrentQuestionID(0);
     setTotalScore(0);
-    updateAnswerMap({ 0: null,1: null,2: null,3: null,4: null,5: null,6: null,7: null,8: null,9: null });
+    updateAnswerMap({
+      0: null,
+      1: null,
+      2: null,
+      3: null,
+      4: null,
+      5: null,
+      6: null,
+      7: null,
+      8: null,
+      9: null,
+    });
+
+    setQuizScore(0);
 
     // navigate back to mission hub
     navigate("/mission-hub");
@@ -36,8 +52,8 @@ export default function ExitMissionModal({ onClose }) {
           <h2>Wait! Are you sure you want to exit?</h2>
           <p>
             Your points will not be applied, and your team is counting on your
-            perspective to unlock this reward. Keep in mind that you’ll get fresh
-            questions next time.
+            perspective to unlock this reward. Keep in mind that you’ll get
+            fresh questions next time.
           </p>
         </div>
         <div className="ExitMissionButtonContainer">
@@ -50,11 +66,10 @@ export default function ExitMissionModal({ onClose }) {
           <div className="ExitButton">
             <button onClick={handleConfirmExit}>
               Yes, Exit Mission
-              <img src={ExitArrow} alt="exit-arrow"/>
+              <img src={ExitArrow} alt="exit-arrow" />
             </button>
           </div>
         </div>
-
       </div>
     </div>
   );

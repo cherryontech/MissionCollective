@@ -2,47 +2,9 @@ import { CULTURE_QUESTIONS } from "../../data/cultureQuestions";
 import { useActivityContext } from "../../Context/ActivityContext";
 import AnswersContainer from "./AnswersContainer";
 import LearnMoreModal from "./LearnMoreModal";
-//TODO: Figure out how to use relative paths instead of importing images
 import forwardArrow from "../../assets/icons/forwardArrow.svg";
 import backArrow from "../../assets/icons/backArrow.svg";
-import image1 from "../../assets/images/quiz1/1.png";
-import image2 from "../../assets/images/quiz1/2.png";
-import image3 from "../../assets/images/quiz1/3.png";
-import image4 from "../../assets/images/quiz1/4.png";
-import image5 from "../../assets/images/quiz1/5.png";
-import image6 from "../../assets/images/quiz1/6.png";
-import image7 from "../../assets/images/quiz1/7.png";
-import image8 from "../../assets/images/quiz1/8.png";
-import image9 from "../../assets/images/quiz1/9.png";
-import image10 from "../../assets/images/quiz1/10.png";
-
-export function getImageSrc(id) {
-  const imageID = id + 1;
-  switch (imageID) {
-    case 1:
-      return image1;
-    case 2:
-      return image2;
-    case 3:
-      return image3;
-    case 4:
-      return image4;
-    case 5:
-      return image5;
-    case 6:
-      return image6;
-    case 7:
-      return image7;
-    case 8:
-      return image8;
-    case 9:
-      return image9;
-    case 10:
-      return image10;
-    default:
-      return;
-  }
-}
+import { useUserContext } from "../../Context/UserContext";
 
 export default function Question() {
   const {
@@ -53,6 +15,9 @@ export default function Question() {
     updateAnswerMap,
     setShowLearnMoreModal,
   } = useActivityContext();
+
+  const { setQuizScore } = useUserContext();
+
   const currentQuestion = CULTURE_QUESTIONS[currentQuestionID];
 
   // Full functionality to be added later on
@@ -68,6 +33,17 @@ export default function Question() {
       ...prev,
       [currentQuestionID]: answer,
     }));
+
+    const selectedAnswer = currentQuestion.answerOptions.find(
+      (answerOption) => answer === answerOption.id
+    );
+    // 10 points for correct answer, 1 point for incorrect answer
+    if (selectedAnswer.isCorrect) {
+      setQuizScore((prev) => (prev += 10));
+    } else {
+      setQuizScore((prev) => (prev += 1));
+    }
+
     setShowLearnMoreModal(true);
   }
 
@@ -83,10 +59,7 @@ export default function Question() {
     <div className="Question">
       <div className="QuestionContainer">
         <p>{currentQuestion.questionText}</p>
-        <img
-          src={getImageSrc(currentQuestionID)}
-          alt={currentQuestion.altText}
-        ></img>
+        <img src={currentQuestion.imageSrc} alt={currentQuestion.altText} />
         <AnswersContainer />
       </div>
       <div className="QuestionNavigation">
