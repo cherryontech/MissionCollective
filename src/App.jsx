@@ -4,7 +4,7 @@ import Activity from "./Components/Activity/Activity";
 import HomePage from "./Components/HomePage";
 import NavBar from "./Components/NavBar";
 import MissionHub from "./Components/MissionHub";
-import ResultsPage from "./Components/ResultsPage";
+import ResultsPage from "./Components/Results/ResultsPage";
 import { UserContextProvider } from "./Context/UserContext";
 import Dashboard from "./Components/Dashboard/Dashboard";
 

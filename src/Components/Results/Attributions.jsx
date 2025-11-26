@@ -6,9 +6,17 @@ export default function Attributions() {
     <div>
       <h2>Attributions & Resources</h2>
       <div className="attributionCards">
-        {ATTRIBUTIONS.map(({ id, imageSrc, altText }) => (
-          <AttributionCard key={id} imageSrc={imageSrc} altText={altText} />
-        ))}
+        {ATTRIBUTIONS.map(
+          ({ id, imageSrc, altText, attribution, resource }) => (
+            <AttributionCard
+              key={id}
+              imageSrc={imageSrc}
+              altText={altText}
+              attribution={attribution}
+              resource={resource}
+            />
+          )
+        )}
       </div>
     </div>
   );
