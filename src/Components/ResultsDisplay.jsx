@@ -18,7 +18,6 @@ export default function ResultsDisplay() {
   ];
 
   const handleNudge = (teammate) => {
-    console.log("Clicked teammate:", teammate);
     if (nudgedTeammates[teammate]) {
       toast.info(
         `You recently nudged ${teammate}. Try again tomorrow to give them time to contribute.`,
