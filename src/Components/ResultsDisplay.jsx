@@ -63,7 +63,7 @@ export default function ResultsDisplay() {
               <span>Still waiting for 3 teammates.</span>
             </p>
           </div>
-          {/* ACCOMPLISHED */}
+          {/* Accomplished */}
 
           <div className="Avatar-accolades-container">
             <span className="Section-title">Accomplished by:</span>
@@ -81,7 +81,7 @@ export default function ResultsDisplay() {
             </div>
           </div>
 
-          {/* PENDING */}
+          {/* Pending */}
           <div className="Mission-pending-container">
             <span className="Section-title">Mission Pending:</span>
             <p className="pending-instruction">(Click to send a nudge)</p>
