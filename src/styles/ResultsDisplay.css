@@ -1,0 +1,305 @@
+/*PAGE WRAPPER */
+.Results-grid-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    display: flex;
+    flex-direction: column;
+    width: 996px;
+}
+
+/*
+TOP: POINTS EARNED + BLUE BOX
+ */
+
+.Points-earned-container {
+    display: flex;
+    flex-direction: row;
+    gap: 5.5rem;
+    padding: 5rem 0 3.75rem 0;
+    align-items: flex-start;
+    width: 100%;
+}
+
+/* POINTS TEXT */
+.Points-earned-text h1 {
+    color: #000;
+    font-size: 3.75rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4.5rem;
+    letter-spacing: 0.02813rem;
+    margin-bottom: 3rem;
+}
+
+.Points-earned-text h3 span {
+    color: #000;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 3rem;
+}
+
+.Points-earned-text h3 {
+    color: #000;
+    font-size: 2.5rem;
+    font-style: normal;
+    font-weight: 500;
+    line-height: 3rem;
+    text-align: left;
+}
+
+/* BLUE TEAM POINTS BOX */
+.Team-points-info {
+    display: flex;
+    width: 19rem;
+    height: 12.25rem;
+    flex-direction: column;
+    justify-content: center;
+    border-radius: 0.75rem;
+    border: 0 solid #e5e7eb;
+    background: #0036f5;
+    padding: 0 3.56rem;
+    flex-shrink: 0;
+    align-self: flex-end;
+}
+
+.Team-points-info span {
+    color: #f8f9fa;
+    text-align: center;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+    margin-bottom: 0.59rem;
+}
+
+.Team-points-info p {
+    color: #f8f9fa;
+    text-align: center;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.75rem;
+}
+
+
+.Mission-Info-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 1.5rem;
+    width: 100%;
+
+}
+
+/* left tall card */
+.Mission-status-container {
+    background: #F0F3FF;
+    padding: 1rem;
+    border-radius: 0.625rem;
+    box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
+
+    grid-column: 1;
+    grid-row: 1 / span 2;
+    padding: 0.88rem 1.5rem;
+    width: 100%;
+    max-width: none;
+}
+
+.Mission-status-container h3 {
+    margin: 3.12rem 2.19rem 1.88rem;
+    height: 2.6875rem;
+    align-self: stretch;
+    color: #000;
+    text-align: center;
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: normal;
+}
+
+.Mission-status-container p {
+    /* align-self: stretch; */
+    color: #000;
+    margin: 0 2.19rem 3.12rem;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.75rem;
+}
+
+.Mission-status-container span {
+    /* align-self: stretch; */
+    color: #000;
+    margin-top: 0.25rem;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.75rem;
+}
+
+/* right column top card: Accomplished by */
+.Avatar-accolades-container {
+    grid-column: 2;
+    grid-row: 1;
+
+    background: white;
+    border: 1px solid #eee;
+    border-radius: 0.75rem;
+    width: 100%;
+    max-width: none;
+    height: 12.1875rem;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: 2px solid rgba(0, 54, 245, 0.66);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+/* right column bottom card: Mission Pending */
+.Mission-pending-container {
+    grid-column: 2;
+    grid-row: 2;
+
+    background: white;
+    border: 1px solid #eee;
+    border-radius: 0.75rem;
+    width: 100%;
+    max-width: none;
+    padding: 1.5rem;
+    border-radius: 1rem;
+    border: 2px solid rgba(0, 54, 245, 0.66);
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+}
+
+/* section titles inside right column cards */
+.Section-title {
+    display: flex;
+    color: #000;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.75rem;
+    margin-bottom: 1rem;
+    text-align: center;
+    justify-content: center;
+}
+
+/* note under Mission Pending title */
+.pending-instruction {
+    display: flex;
+    color: #000;
+    text-align: center;
+    font-size: 1.125rem;
+    font-style: italic;
+    font-weight: 400;
+    line-height: 1.75rem;
+    margin-top: -0.50rem;
+    margin-bottom: 1rem;
+    justify-content: center;
+}
+
+
+.Avatar-group-accolades,
+.Avatar-group-pending {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 1.5rem;
+    flex-wrap: wrap;
+
+}
+
+.person {
+    width: 60px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+}
+
+/* Avatar images */
+.person img {
+    width: 3.5rem;
+    height: 3.56rem;
+    border-radius: 50%;
+}
+
+/* Names */
+.person p {
+    margin-top: 0.5rem;
+    font-size: 0.85rem;
+}
+
+.person button {
+    width: 3.5rem;
+    height: 3.56rem;
+    padding: 0;
+    border: none;
+    background: none;
+    cursor: pointer;
+    overflow: hidden;
+    display: inline-block;
+}
+
+.person button img {
+    width: 100%;
+    height: 100%;
+    border-radius: 50%;
+    transition: transform 0.2s ease;
+    transform-origin: center;
+}
+
+.person button:hover img {
+    transform: scale(1.05);
+}
+
+.Toastify__toast {
+    /* green */
+    color: white !important;
+    width: auto !important;
+    padding-right: 3rem !important;
+    position: relative;
+
+    padding-right: 2.5rem !important;
+    padding-left: 1rem !important;
+    padding-top: 0.75rem !important;
+    padding-bottom: 0.75rem !important;
+
+    width: 750px !important;
+    max-width: 800px;
+}
+
+.Toastify__close-button--light,
+.Toastify__close-button {
+    position: absolute !important;
+    top: 8px !important;
+    right: 4px !important;
+    z-index: 2 !important;
+    padding: 2px !important;
+}
+
+.Toastify__toast-body {
+    display: block !important;
+    margin: 0 !important;
+}
+
+.Toastify__close-button {
+    position: absolute !important;
+    top: 6px !important;
+    right: 6px !important;
+    padding: 0 !important;
+    z-index: 2 !important;
+}
+
+.toast-green {
+    background: #28a745 !important;
+    color: white !important;
+    width: 750px !important;
+    max-width: 800px;
+}
+
+.toast-blue {
+    background: blue !important;
+    color: white !important;
+    width: 750px !important;
+    max-width: 800px;
+}
