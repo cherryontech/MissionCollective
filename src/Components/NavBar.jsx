@@ -44,9 +44,13 @@ export default function NavBar() {
               <a className="inactiveLink" title="Coming Soon">
                 Your Team
               </a>
-              <a className="inactiveLink" title="Coming Soon">
+              {/* Just use testing-Remove later */}
+              <NavLink
+                to="/results"
+                className={({ isActive }) => (isActive ? "activeLink" : "")}
+              >
                 Team Rewards
-              </a>
+              </NavLink>
             </>
           ) : (
             <>
