@@ -1,4 +1,4 @@
-/*PAGE WRAPPER */
+/*page wrapper */
 .Results-grid-container {
     max-width: 1200px;
     margin: 0 auto;
@@ -8,7 +8,7 @@
 }
 
 /*
-TOP: POINTS EARNED + BLUE BOX
+Point Earning Section
  */
 
 .Points-earned-container {
@@ -20,7 +20,7 @@ TOP: POINTS EARNED + BLUE BOX
     width: 100%;
 }
 
-/* POINTS TEXT */
+/* points text */
 .Points-earned-text h1 {
     color: #000;
     font-size: 3.75rem;
@@ -48,7 +48,7 @@ TOP: POINTS EARNED + BLUE BOX
     text-align: left;
 }
 
-/* BLUE TEAM POINTS BOX */
+/* blue team points box */
 .Team-points-info {
     display: flex;
     width: 19rem;
