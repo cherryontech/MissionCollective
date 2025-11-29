@@ -1,13 +1,13 @@
-import image1 from "../assets/images/quiz1/1.png";
-import image2 from "../assets/images/quiz1/2.png";
-import image3 from "../assets/images/quiz1/3.png";
-import image4 from "../assets/images/quiz1/4.png";
-import image5 from "../assets/images/quiz1/5.png";
-import image6 from "../assets/images/quiz1/6.png";
-import image7 from "../assets/images/quiz1/7.png";
-import image8 from "../assets/images/quiz1/8.png";
-import image9 from "../assets/images/quiz1/9.png";
-import image10 from "../assets/images/quiz1/10.png";
+import image1 from "../assets/images/quiz1/1.webp";
+import image2 from "../assets/images/quiz1/2.webp";
+import image3 from "../assets/images/quiz1/3.webp";
+import image4 from "../assets/images/quiz1/4.webp";
+import image5 from "../assets/images/quiz1/5.webp";
+import image6 from "../assets/images/quiz1/6.webp";
+import image7 from "../assets/images/quiz1/7.webp";
+import image8 from "../assets/images/quiz1/8.webp";
+import image9 from "../assets/images/quiz1/9.webp";
+import image10 from "../assets/images/quiz1/10.webp";
 
 export const CULTURE_QUESTIONS = [
   {
