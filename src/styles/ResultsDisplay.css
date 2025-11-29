@@ -252,8 +252,9 @@ Point Earning Section
     transform: scale(1.05);
 }
 
+/* Toast */
+
 .Toastify__toast {
-    /* green */
     color: white !important;
     width: auto !important;
     padding-right: 3rem !important;
@@ -302,4 +303,76 @@ Point Earning Section
     color: white !important;
     width: 750px !important;
     max-width: 800px;
+}
+
+/* Results Section Buttons */
+
+.Results-Page-Buttons {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    margin-top: 3.75rem;
+    gap: 1.5rem;
+}
+
+.View-Mission-Hub {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    /* gap: 0.5rem; */
+
+    width: 100%;
+    max-width: 250px;
+    height: 3rem;
+    padding: 0.69rem 1rem 0.69rem 0;
+    border-radius: 0.5rem;
+    border: 0 solid #E5E7EB;
+    background: #F0F3FF;
+    cursor: pointer;
+    /* margin-top: 2rem; */
+}
+
+.View-Mission-Hub:hover {
+    background: #d0d7ff;
+}
+
+.View-Mission-Hub span {
+    color: #1C1C1E;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.Go-to-Dashboard {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 0.5rem;
+
+    width: 100%;
+    max-width: 250px;
+    height: 3rem;
+    padding: 0.69rem 1rem 0.69rem 0;
+
+    border-radius: 0.5rem;
+    border: 0 solid #E5E7EB;
+    background: #0036F5;
+    cursor: pointer;
+    /* margin-top: 2rem; */
+}
+
+.Go-to-Dashboard:hover {
+    background: #002bb8;
+}
+
+
+.Go-to-Dashboard span {
+    color: #F2F2F7;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
 }

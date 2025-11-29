@@ -1,9 +1,12 @@
 import { useState } from "react";
+import { useNavigate } from "react-router-dom";
 import profile from "../assets/images/navbar/profile.png";
 import profileemma from "../assets/images/resultpage/profile-emma.png";
 import profilealex from "../assets/images/resultpage/profile-alex.png";
 import profilesarah from "../assets/images/resultpage/profile-sarah.png";
 import profilemike from "../assets/images/resultpage/profile-mike.png";
+import trophy from "../assets/icons/resultsPage/trophy.svg";
+import home from "../assets/icons/resultsPage/home.svg";
 import { ToastContainer, toast } from "react-toastify";
 import "../styles/ResultsDisplay.css";
 import "react-toastify/dist/ReactToastify.css";
@@ -35,6 +38,15 @@ export default function ResultsDisplay() {
       setNudgedTeammates((prev) => ({ ...prev, [teammate]: true }));
     }
   };
+  const navigate = useNavigate();
+
+  const handleViewMissionHub = () => {
+    navigate("/mission-hub");
+  };
+  const handleGoToDashboard = () => {
+    navigate("/dashboard");
+  };
+
   return (
     <>
       <div className="Results-grid-container">
@@ -96,6 +108,20 @@ export default function ResultsDisplay() {
                 </div>
               ))}
             </div>
+          </div>
+        </div>
+        <div className="Results-Page-Buttons">
+          <div>
+            <button className="View-Mission-Hub" onClick={handleViewMissionHub}>
+              <img src={trophy} alt="trophy icon" className="Trophy-Icon" />
+              <span className="View-Mission-Hub-Text">View Mission Hub</span>
+            </button>
+          </div>
+          <div>
+            <button className="Go-to-Dashboard" onClick={handleGoToDashboard}>
+              <img src={home} alt="home icon" className="Home-Icon" />
+              <span className="Go-to-Dashboard-Text">Go to Dashboard</span>
+            </button>
           </div>
         </div>
         <ToastContainer
