@@ -73,7 +73,9 @@ export default function ResultsDisplay() {
               can reset for a new round of activities.
             </p>
             <p>
-              <span>Still waiting for 3 teammates.</span>
+              <span>
+                Still waiting for {pendingTeammates.length} teammates.
+              </span>
             </p>
           </div>
           {/* Accomplished */}
