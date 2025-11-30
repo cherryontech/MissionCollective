@@ -43,7 +43,6 @@ export default function LearnMoreModal() {
     incorrect: "Incorrect, but you still earned partial points for the team!",
   };
 
-  // TODO: Need logic to handle the case when the user is on the last question in later sprint.
   const handleContinue = () => {
     if (currentQuestionID !== 9) {
       setAnswer(null);
@@ -51,7 +50,7 @@ export default function LearnMoreModal() {
       setShowLearnMoreModal(false);
     } else {
       setActivityCompleted(true);
-      navigate("/mission-hub");
+      navigate("/results");
     }
   };
 
