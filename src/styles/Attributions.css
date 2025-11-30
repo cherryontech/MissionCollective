@@ -1,26 +1,46 @@
 .attributionsContainer {
   width: 70rem;
-  border: 8px solid #f0f3ff;
+  border-width: 0 8px 8px;
+  border-style: solid;
+  border-color: #f0f3ff;
   border-radius: 0.5rem;
-  display: flex;
-  flex-direction: column;
+  margin-bottom: 10rem;
 }
 
-.attributionsContainer > h2 {
+.attributionsHeader {
+  display: flex;
+  background-color: #f0f3ff;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.attributionsHeader > h2 {
   color: #1c1c1e;
   font-size: 1rem;
   font-weight: 600;
-  background-color: #f0f3ff;
   padding-left: 2.94rem;
+  flex-grow: 2;
+}
+
+.attributionsHeader > img {
+  width: 1.5rem;
+  margin-right: 1rem;
+}
+
+.attributionCards {
+  display: flex;
+  flex-direction: column;
+  gap: 2.36rem;
+  margin-top: 2.9rem;
+  margin-bottom: 3.59rem;
 }
 
 .attributionCard {
-  border: 2px solid red;
   display: flex;
   width: 58rem;
   gap: 2.1875rem;
-  margin-bottom: 2.36rem;
   margin-left: 2.94rem;
+  justify-content: space-evenly;
 }
 
 .attributionCard a {
@@ -34,6 +54,6 @@
 }
 
 .attributionText {
-  border: 2px solid blue;
   align-self: center;
+  flex-grow: 2;
 }

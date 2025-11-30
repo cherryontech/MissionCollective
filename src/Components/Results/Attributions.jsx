@@ -1,11 +1,16 @@
 import AttributionCard from "./AttributionCard";
 import "../../styles/Attributions.css";
 import { ATTRIBUTIONS } from "../../data/attributions.js";
+import upArrow from "../../assets/icons/up_arrow.svg";
+import downArrow from "../../assets/icons/down_arrow.svg";
 
 export default function Attributions() {
   return (
     <div className="attributionsContainer">
-      <h2>Attributions & Resources</h2>
+      <div className="attributionsHeader">
+        <h2>Attributions & Resources</h2>
+        <img src={upArrow} alt="arrow icon" />
+      </div>
       <div className="attributionCards">
         {ATTRIBUTIONS.map(
           ({
