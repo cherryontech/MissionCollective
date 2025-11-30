@@ -42,9 +42,9 @@ export const ATTRIBUTIONS = [
     attributionSource2: " CC BY-NC-SA 2.0",
     attributionLink2:
       "https://creativecommons.org/licenses/by-nc-sa/2.0/deed.en",
-    resourceText: "Here's a resource to learn more about ",
-    resourceName: "TBA",
-    resourceLink: "https://en.wikipedia.org/wiki/Samba",
+    resourceText: "Here's a resource to learn more about the ",
+    resourceName: "Carnival of Las Tablas",
+    resourceLink: "https://carnivaland.net/las-tablas-carnival/",
   },
   {
     id: 2,
