@@ -1,0 +1,39 @@
+.attributionsContainer {
+  width: 70rem;
+  border: 8px solid #f0f3ff;
+  border-radius: 0.5rem;
+  display: flex;
+  flex-direction: column;
+}
+
+.attributionsContainer > h2 {
+  color: #1c1c1e;
+  font-size: 1rem;
+  font-weight: 600;
+  background-color: #f0f3ff;
+  padding-left: 2.94rem;
+}
+
+.attributionCard {
+  border: 2px solid red;
+  display: flex;
+  width: 58rem;
+  gap: 2.1875rem;
+  margin-bottom: 2.36rem;
+  margin-left: 2.94rem;
+}
+
+.attributionCard a {
+  font-size: 0.9375rem;
+  font-weight: 400;
+  line-height: 1.25rem;
+  text-decoration-line: underline;
+  text-decoration-style: solid;
+  text-decoration-thickness: auto;
+  text-underline-offset: auto;
+}
+
+.attributionText {
+  border: 2px solid blue;
+  align-self: center;
+}

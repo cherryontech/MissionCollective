@@ -184,7 +184,7 @@ export const ATTRIBUTIONS = [
       "https://unsplash.com/photos/woman-in-pink-dress-on-brown-wooden-boat-on-lake-during-daytime-ffk1uIghG-I",
     attributionSource2: "",
     attributionLink2: "",
-    resourceText: "Here's a resource to learn more about the",
+    resourceText: "Here's a resource to learn more about the ",
     resourceName: "Ao Dai.",
     resourceLink: "https://en.wikipedia.org/wiki/%C3%81o_d%C3%A0i",
   },
