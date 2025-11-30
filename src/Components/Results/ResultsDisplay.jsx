@@ -1,14 +1,14 @@
 import { useState } from "react";
 import { useNavigate } from "react-router-dom";
-import profile from "../assets/images/navbar/profile.png";
-import profileemma from "../assets/images/resultpage/profile-emma.png";
-import profilealex from "../assets/images/resultpage/profile-alex.png";
-import profilesarah from "../assets/images/resultpage/profile-sarah.png";
-import profilemike from "../assets/images/resultpage/profile-mike.png";
-import trophy from "../assets/icons/resultsPage/trophy.svg";
-import home from "../assets/icons/resultsPage/home.svg";
+import profile from "../../assets/images/navbar/profile.png";
+import profileemma from "../../assets/images/resultpage/profile-emma.png";
+import profilealex from "../../assets/images/resultpage/profile-alex.png";
+import profilesarah from "../../assets/images/resultpage/profile-sarah.png";
+import profilemike from "../../assets/images/resultpage/profile-mike.png";
+import trophy from "../../assets/icons/resultsPage/trophy.svg";
+import home from "../../assets/icons/resultsPage/home.svg";
 import { ToastContainer, toast } from "react-toastify";
-import "../styles/ResultsDisplay.css";
+import "../../styles/ResultsDisplay.css";
 import "react-toastify/dist/ReactToastify.css";
 
 export default function ResultsDisplay() {
