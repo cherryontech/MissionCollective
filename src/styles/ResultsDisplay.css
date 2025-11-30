@@ -4,7 +4,8 @@
     margin: 0 auto;
     display: flex;
     flex-direction: column;
-    width: 996px;
+    /* width: 996px; */
+    width: 58.44rem;
 }
 
 /*
@@ -14,15 +15,14 @@ Point Earning Section
 .Points-earned-container {
     display: flex;
     flex-direction: row;
-    gap: 5.5rem;
-    padding: 5rem 0 3.75rem 0;
+    gap: 6.5rem;
+    padding: 10rem 0 3.75rem 0;
     align-items: flex-start;
     width: 100%;
 }
 
 /* points text */
 .Points-earned-text h1 {
-    color: #000;
     font-size: 3.75rem;
     font-style: normal;
     font-weight: 700;
@@ -31,22 +31,20 @@ Point Earning Section
     margin-bottom: 3rem;
 }
 
-.Points-earned-text h3 span {
-    color: #000;
+.Points-earned-text span {
     font-size: 2.5rem;
     font-style: normal;
     font-weight: 700;
     line-height: 3rem;
 }
 
-.Points-earned-text h3 {
-    color: #000;
+.Points-earned-text p {
     font-size: 2.5rem;
     font-style: normal;
     font-weight: 500;
     line-height: 3rem;
     text-align: left;
-    margin-right: 2rem;
+    /* margin-right: 2rem; */
 }
 
 /* blue team points box */
@@ -92,10 +90,9 @@ Point Earning Section
 
 }
 
-/* left tall card */
+/* Mission Status, left tall card */
 .Mission-status-container {
     background: #F0F3FF;
-    padding: 1rem;
     border-radius: 0.625rem;
     box-shadow: 0 1px 3px rgba(0, 0, 0, 0.08);
 
@@ -106,11 +103,10 @@ Point Earning Section
     max-width: none;
 }
 
-.Mission-status-container h3 {
+.Mission-status-container h2 {
     margin: 3.12rem 2.19rem 1.88rem;
     height: 2.6875rem;
     align-self: stretch;
-    color: #000;
     text-align: center;
     font-size: 2rem;
     font-style: normal;
@@ -119,7 +115,6 @@ Point Earning Section
 }
 
 .Mission-status-container p {
-    color: #000;
     margin: 0 2.19rem 3.12rem;
     font-size: 1.5rem;
     font-style: normal;
@@ -129,7 +124,6 @@ Point Earning Section
 
 .Mission-status-container span {
     /* align-self: stretch; */
-    color: #000;
     margin-top: 0.25rem;
     font-size: 1.5rem;
     font-style: normal;
@@ -137,7 +131,7 @@ Point Earning Section
     line-height: 1.75rem;
 }
 
-/* right column top card: Accomplished by */
+/* Accomplished by */
 .Avatar-accolades-container {
     grid-column: 2;
     grid-row: 1;
@@ -154,7 +148,7 @@ Point Earning Section
     box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
 }
 
-/* right column bottom card: Mission Pending */
+/* Mission Pending */
 .Mission-pending-container {
     grid-column: 2;
     grid-row: 2;
@@ -173,7 +167,6 @@ Point Earning Section
 /* section titles inside right column cards */
 .Section-title {
     display: flex;
-    color: #000;
     font-size: 1.125rem;
     font-style: normal;
     font-weight: 600;
@@ -184,15 +177,14 @@ Point Earning Section
 }
 
 /* note under Mission Pending title */
-.pending-instruction {
+.Pending-instruction {
     display: flex;
-    color: #000;
     text-align: center;
     font-size: 1.125rem;
     font-style: italic;
     font-weight: 400;
     line-height: 1.75rem;
-    margin-top: -0.50rem;
+    margin-top: -1rem;
     margin-bottom: 1rem;
     justify-content: center;
 }
@@ -208,7 +200,7 @@ Point Earning Section
 
 }
 
-.person {
+.Person {
     width: 60px;
     display: flex;
     flex-direction: column;
@@ -217,19 +209,19 @@ Point Earning Section
 }
 
 /* Avatar images */
-.person img {
+.Person img {
     width: 3.5rem;
     height: 3.56rem;
     border-radius: 50%;
 }
 
 /* Names */
-.person p {
+.Person p {
     margin-top: 0.5rem;
     font-size: 0.85rem;
 }
 
-.person button {
+.Person button {
     width: 3.5rem;
     height: 3.56rem;
     padding: 0;
@@ -240,7 +232,7 @@ Point Earning Section
     display: inline-block;
 }
 
-.person button img {
+.Person button img {
     width: 100%;
     height: 100%;
     border-radius: 50%;
@@ -248,7 +240,7 @@ Point Earning Section
     transform-origin: center;
 }
 
-.person button:hover img {
+.Person button:hover img {
     transform: scale(1.05);
 }
 
@@ -315,7 +307,7 @@ Point Earning Section
 
 /* Results Section Buttons */
 
-.Results-Page-Buttons {
+.Results-Buttons-Container {
     display: flex;
     flex-direction: row;
     align-items: center;
@@ -329,10 +321,11 @@ Point Earning Section
     display: flex;
     align-items: center;
     justify-content: center;
+    width: 13.8rem;
     /* gap: 0.5rem; */
 
-    width: 100%;
-    max-width: 250px;
+    /* width: 100%;
+    max-width: 250px; */
     height: 3rem;
     padding: 0.69rem 1rem 0.69rem 0;
     border-radius: 0.5rem;
@@ -358,10 +351,11 @@ Point Earning Section
     display: flex;
     align-items: center;
     justify-content: center;
-    gap: 0.5rem;
+    width: 13.8rem;
+    /* gap: 0.5rem; */
 
-    width: 100%;
-    max-width: 250px;
+    /* width: 100%;
+    max-width: 250px; */
     height: 3rem;
     padding: 0.69rem 1rem 0.69rem 0;
 

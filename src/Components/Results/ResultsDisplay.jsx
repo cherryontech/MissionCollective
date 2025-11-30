@@ -15,9 +15,9 @@ export default function ResultsDisplay() {
   const [nudgedTeammates, setNudgedTeammates] = useState({});
 
   const pendingTeammates = [
-    { name: "Alex", img: profilealex },
-    { name: "Sarah", img: profilesarah },
-    { name: "Mike", img: profilemike },
+    { id: 1, name: "Alex K.", img: profilealex },
+    { id: 2, name: "Sarah C.", img: profilesarah },
+    { id: 3, name: "Mike R.", img: profilemike },
   ];
 
   const handleNudge = (teammate) => {
@@ -53,11 +53,11 @@ export default function ResultsDisplay() {
         <div className="Points-earned-container">
           <div className="Points-earned-text">
             <h1>Points Earned: 90</h1>
-            <h3>
+            <p>
               <span>Great work, Lisa! </span>
               <br />
               These have been applied to your team points.
-            </h3>
+            </p>
           </div>
           <div className="Team-points-info">
             <span>1,890</span>
@@ -66,7 +66,7 @@ export default function ResultsDisplay() {
         </div>
         <div className="Mission-Info-container">
           <div className="Mission-status-container">
-            <h3>Mission Status</h3>
+            <h2>Mission Status</h2>
             <p>
               This mission is now complete for you, but the team's work
               continues! Once everyone on the team has contributed, the mission
@@ -84,12 +84,12 @@ export default function ResultsDisplay() {
             <span className="Section-title">Accomplished by:</span>
 
             <div className="Avatar-group-accolades">
-              <div className="person">
-                <img src={profile} alt="Lisa" />
+              <div className="Person">
+                <img src={profile} alt="Lisa P." />
                 <p>Lisa P.</p>
               </div>
 
-              <div className="person">
+              <div className="Person">
                 <img src={profileemma} alt="Emma" />
                 <p>Emma J.</p>
               </div>
@@ -99,11 +99,11 @@ export default function ResultsDisplay() {
           {/* Pending */}
           <div className="Mission-pending-container">
             <span className="Section-title">Mission Pending:</span>
-            <p className="pending-instruction">(Click to send a nudge)</p>
+            <p className="Pending-instruction">(Click to send a nudge)</p>
 
             <div className="Avatar-group-pending">
               {pendingTeammates.map((teammate) => (
-                <div className="person" key={teammate.name}>
+                <div className="Person" key={teammate.id}>
                   <button onClick={() => handleNudge(teammate.name)}>
                     <img src={teammate.img} alt={teammate.name} />
                   </button>
@@ -113,7 +113,7 @@ export default function ResultsDisplay() {
             </div>
           </div>
         </div>
-        <div className="Results-Page-Buttons">
+        <div className="Results-Buttons-Container">
           <div>
             <button className="View-Mission-Hub" onClick={handleViewMissionHub}>
               <img src={trophy} alt="trophy icon" className="Trophy-Icon" />
@@ -130,7 +130,7 @@ export default function ResultsDisplay() {
         <ToastContainer
           toastClassName="toast-body"
           position="top-center"
-          autoClose={5000}
+          autoClose={8000}
           newestOnTop
           hideProgressBar={true}
           closeOnClick={false}

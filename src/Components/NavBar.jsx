@@ -15,8 +15,14 @@ export default function NavBar() {
   };
 
   const { pathname } = useLocation();
-  if (pathname === "/activity" || pathname.startsWith("/activity/"))
-    return null;
+
+  const hideOnActivity =
+    pathname === "/activity" || pathname.startsWith("/activity/");
+
+  const hideOnResults =
+    pathname === "/results" || pathname.startsWith("/results/");
+
+  if (hideOnActivity || hideOnResults) return null;
 
   return (
     <nav>
