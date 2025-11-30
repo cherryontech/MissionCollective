@@ -55,6 +55,7 @@ export default function ResultsDisplay() {
             <h1>Points Earned: 90</h1>
             <h3>
               <span>Great work, Lisa! </span>
+              <br />
               These have been applied to your team points.
             </h3>
           </div>
@@ -125,15 +126,15 @@ export default function ResultsDisplay() {
           </div>
         </div>
         <ToastContainer
-          className="toast-container"
-          bodyClassName="toast-body"
+          toastClassName="toast-body"
           position="top-center"
-          autoClose={false}
+          autoClose={5000}
           newestOnTop
           hideProgressBar={true}
-          closeOnClick
-          closeButton={true}
+          closeOnClick={false}
+          // closeButton={true}
           pauseOnFocusLoss
+          pauseOnHover
           theme="colored"
         />
       </div>

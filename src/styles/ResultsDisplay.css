@@ -46,6 +46,7 @@ Point Earning Section
     font-weight: 500;
     line-height: 3rem;
     text-align: left;
+    margin-right: 2rem;
 }
 
 /* blue team points box */
@@ -118,7 +119,6 @@ Point Earning Section
 }
 
 .Mission-status-container p {
-    /* align-self: stretch; */
     color: #000;
     margin: 0 2.19rem 3.12rem;
     font-size: 1.5rem;
@@ -254,55 +254,63 @@ Point Earning Section
 
 /* Toast */
 
-.Toastify__toast {
-    color: white !important;
-    width: auto !important;
-    padding-right: 3rem !important;
-    position: relative;
+.Toastify__toast-container {
+    display: flex;
+    justify-content: center;
+    width: 100% !important;
 
-    padding-right: 2.5rem !important;
-    padding-left: 1rem !important;
-    padding-top: 0.75rem !important;
-    padding-bottom: 0.75rem !important;
-
-    width: 750px !important;
-    max-width: 800px;
 }
 
-.Toastify__close-button--light,
+.Toastify__toast {
+    font-family: "Inter", sans-serif;
+    width: fit-content !important;
+
+}
+
+
+/* .Toastify__close-button--light, */
 .Toastify__close-button {
     position: absolute !important;
     top: 8px !important;
     right: 4px !important;
     z-index: 2 !important;
     padding: 2px !important;
+    width: fit-content !important;
 }
 
 .Toastify__toast-body {
     display: block !important;
     margin: 0 !important;
+
 }
 
+/* .Toastify_close-button-light, */
 .Toastify__close-button {
-    position: absolute !important;
+    position: relative !important;
     top: 6px !important;
     right: 6px !important;
     padding: 0 !important;
     z-index: 2 !important;
+    display: flex !important;
+    align-items: flex-start !important;
+    margin-left: 2rem !important;
+    margin-right: 0 !important;
+    padding: 0 !important;
+}
+
+.toast-body {
+    width: auto !important;
+    max-width: 350px;
 }
 
 .toast-green {
     background: #28a745 !important;
     color: white !important;
-    width: 750px !important;
-    max-width: 800px;
 }
 
 .toast-blue {
     background: blue !important;
     color: white !important;
-    width: 750px !important;
-    max-width: 800px;
 }
 
 /* Results Section Buttons */
