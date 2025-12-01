@@ -15,8 +15,14 @@ export default function NavBar() {
   };
 
   const { pathname } = useLocation();
-  if (pathname === "/activity" || pathname.startsWith("/activity/"))
-    return null;
+
+  const hideOnActivity =
+    pathname === "/activity" || pathname.startsWith("/activity/");
+
+  const hideOnResults =
+    pathname === "/results" || pathname.startsWith("/results/");
+
+  if (hideOnActivity || hideOnResults) return null;
 
   return (
     <nav>
@@ -44,9 +50,13 @@ export default function NavBar() {
               <a className="inactiveLink" title="Coming Soon">
                 Your Team
               </a>
-              <a className="inactiveLink" title="Coming Soon">
+              {/* Just use testing-Remove later */}
+              <NavLink
+                to="/results"
+                className={({ isActive }) => (isActive ? "activeLink" : "")}
+              >
                 Team Rewards
-              </a>
+              </NavLink>
             </>
           ) : (
             <>
