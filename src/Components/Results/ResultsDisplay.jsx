@@ -7,6 +7,7 @@ import profilesarah from "../../assets/images/resultpage/profile-sarah.png";
 import profilemike from "../../assets/images/resultpage/profile-mike.png";
 import trophy from "../../assets/icons/resultsPage/trophy.svg";
 import home from "../../assets/icons/resultsPage/home.svg";
+import checkGreen from "../../assets/icons/resultsPage/checkGreen.svg";
 import { ToastContainer, toast } from "react-toastify";
 import "../../styles/ResultsDisplay.css";
 import "react-toastify/dist/ReactToastify.css";
@@ -20,24 +21,23 @@ export default function ResultsDisplay() {
     { id: 3, name: "Mike R.", img: profilemike },
   ];
 
-  const handleNudge = (teammate) => {
-    if (nudgedTeammates[teammate]) {
-      toast.info(
-        `You recently nudged ${teammate}. Try again tomorrow to give them time to contribute.`,
-        {
-          className: "toast-blue",
-        }
-      );
-    } else {
-      toast.success(
-        `Friendly nudge sent to ${teammate}! Thanks for helping the team.`,
-        {
-          className: "toast-green",
-        }
-      );
-      setNudgedTeammates((prev) => ({ ...prev, [teammate]: true }));
-    }
+  const handleNudge = (id, teammate) => {
+    if (nudgedTeammates[id]) return;
+    // toast.info(
+    //   `You recently nudged ${teammate}. Try again tomorrow to give them time to contribute.`,
+    //   {
+    //     className: "toast-blue",
+    //   }
+    // );
+    toast.success(
+      `Friendly nudge sent to ${teammate}! Thanks for helping the team.`,
+      {
+        className: "toast-green",
+      }
+    );
+    setNudgedTeammates((prev) => ({ ...prev, [id]: true }));
   };
+
   const navigate = useNavigate();
 
   const handleViewMissionHub = () => {
@@ -104,7 +104,17 @@ export default function ResultsDisplay() {
             <div className="Avatar-group-pending">
               {pendingTeammates.map((teammate) => (
                 <div className="Person" key={teammate.id}>
-                  <button onClick={() => handleNudge(teammate.name)}>
+                  {nudgedTeammates[teammate.id] && (
+                    <img
+                      src={checkGreen}
+                      alt="checked"
+                      className="Nudge-check"
+                    />
+                  )}
+                  <button
+                    onClick={() => handleNudge(teammate.id, teammate.name)}
+                    disabled={nudgedTeammates[teammate.id]}
+                  >
                     <img src={teammate.img} alt={teammate.name} />
                   </button>
                   <p>{teammate.name}</p>

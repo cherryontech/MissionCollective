@@ -202,10 +202,18 @@ Point Earning Section
 
 .Person {
     width: 60px;
-    display: flex;
+    /* display: flex;
     flex-direction: column;
     align-items: center;
-    text-align: center;
+    text-align: center; */
+    position: relative;
+}
+
+.Nudge-check {
+    position: absolute;
+    width: 21px;
+    height: 21px;
+    z-index: 3;
 }
 
 /* Avatar images */
@@ -230,6 +238,7 @@ Point Earning Section
     cursor: pointer;
     overflow: hidden;
     display: inline-block;
+    border-radius: 50%;
 }
 
 .Person button img {
@@ -240,8 +249,12 @@ Point Earning Section
     transform-origin: center;
 }
 
-.Person button:hover img {
-    transform: scale(1.05);
+/* .Person button:hover img {
+    transform: scale(1.05); 
+} */
+
+.Mission-pending-container .Person button:hover:not(:disabled) {
+    filter: drop-shadow(4px 6px 1px rgba(234, 165, 5, 0.945));
 }
 
 /* Toast */
@@ -300,10 +313,10 @@ Point Earning Section
     color: white !important;
 }
 
-.toast-blue {
+/* .toast-blue {
     background: blue !important;
     color: white !important;
-}
+} */
 
 /* Results Section Buttons */
 
