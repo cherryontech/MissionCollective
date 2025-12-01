@@ -8,3 +8,9 @@
   border: 2px solid #f2bd00;
   position: relative;
 }
+
+.statCards {
+  display: flex;
+  gap: 3.19rem;
+  margin: 3.12rem 0;
+}

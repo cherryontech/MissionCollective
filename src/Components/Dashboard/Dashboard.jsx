@@ -4,23 +4,41 @@ import TeamProgress from "./TeamProgress";
 import StatCard from "./StatCard";
 import Leaderboard from "./Leaderboard";
 import { statCardContent } from "../../data/statCards";
+import { useUserContext } from "../../Context/UserContext";
 
 export default function Dashboard() {
+  const { activityCompleted, missionCompleted } = useUserContext();
   return (
     <>
       <TeamProgress />
       <MissionStatus />
-      <div>
-        {statCardContent.map(({ id, icon, alt, number, stat }) => (
-          <StatCard
-            key={id}
-            id={id}
-            icon={icon}
-            alt={alt}
-            number={number}
-            stat={stat}
-          />
-        ))}
+      <div className="statCards">
+        {statCardContent.map(
+          ({
+            id,
+            icon,
+            alt,
+            initialNumber,
+            activityNumber,
+            rewardNumber,
+            stat,
+          }) => (
+            <StatCard
+              key={id}
+              id={id}
+              icon={icon}
+              alt={alt}
+              number={
+                missionCompleted
+                  ? rewardNumber
+                  : activityCompleted
+                    ? activityNumber
+                    : initialNumber
+              }
+              stat={stat}
+            />
+          )
+        )}
       </div>
       <Leaderboard />
     </>
