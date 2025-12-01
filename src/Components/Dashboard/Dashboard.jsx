@@ -1,3 +1,4 @@
+import "../../styles/Dashboard.css";
 import MissionStatus from "./MissionStatus";
 import TeamProgress from "./TeamProgress";
 import StatCard from "./StatCard";
@@ -9,7 +10,7 @@ export default function Dashboard() {
     <>
       <TeamProgress />
       <MissionStatus />
-      <div>
+      <div className="statCards">
         {statCardContent.map(({ id, icon, alt, number, stat }) => (
           <StatCard
             key={id}
