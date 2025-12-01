@@ -1,11 +1,14 @@
 import starRounded from "../assets/icons/starRounded.svg";
-import notifyEmpty from "../assets/icons/notifyEmpty.svg";
 import profile from "../assets/images/navbar/profile.png";
+import notificationBell from "../assets/icons/notificationBell.svg";
+import notificationBellEmpty from "../assets/icons/notificationBellEmpty.svg";
+import notificationBellSolid from "../assets/icons/notificationBellSolid.svg";
 import "../styles/NavUserSection.css";
 import { useUserContext } from "../Context/UserContext";
 
 export default function NavUserSection() {
-  const { quizScore, setMissionCompleted } = useUserContext();
+  const { quizScore, activityCompleted, setMissionCompleted } =
+    useUserContext();
 
   return (
     <div className="NavUserContainer">
@@ -18,7 +21,14 @@ export default function NavUserSection() {
           className="iconButton"
           onClick={() => setMissionCompleted(true)}
         >
-          <img src={notifyEmpty} alt="notification bell icon" />
+          <img
+            src={activityCompleted ? notificationBell : notificationBellEmpty}
+            alt={
+              activityCompleted
+                ? "notification bell icon with notification"
+                : "empty notification bell icon"
+            }
+          />
         </button>
       </div>
       <div className="NavUserProfileContainer">
