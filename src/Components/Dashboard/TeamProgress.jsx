@@ -1,4 +1,5 @@
 import { teamProgressContent } from "../../data/teamProgress";
+import FilterArrow from "../../assets/icons/filterArrow.svg";
 
 export default function TeamProgress() {
   return (
@@ -13,6 +14,13 @@ export default function TeamProgress() {
             <p className="member-points">{points}</p>
           </div>
         ))}
+      </div>
+      <div className="team-progress-filter">
+        <p>Sort By</p>
+        <div classname="filter-dropdown">
+          <p>Total Points in Last 30 Days</p>
+          <img src={FilterArrow} alt="filter-arrow"></img>
+        </div>
       </div>
     </div>
   );
