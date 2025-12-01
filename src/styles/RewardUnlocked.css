@@ -5,7 +5,6 @@
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  background-color: lightgreen;
 }
 
 .rewardUnlockedContainer > h1 {
@@ -14,4 +13,21 @@
   font-size: 3rem;
   font-weight: 700;
   line-height: 4rem;
+  position: absolute;
+  top: 3rem;
+}
+
+.rewardUnlockedButtons {
+  position: absolute;
+  bottom: 2rem;
+  display: flex;
+  gap: 1rem;
+}
+
+.animations canvas {
+  max-width: 22rem;
+  max-height: 22rem;
+  position: absolute;
+  top: 6.94rem;
+  left: 13.88rem;
 }
