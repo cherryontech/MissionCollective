@@ -1,0 +1,17 @@
+.rewardUnlockedContainer {
+  display: flex;
+  width: 31.25rem;
+  height: 31.25rem;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  background-color: lightgreen;
+}
+
+.rewardUnlockedContainer > h1 {
+  color: #212529;
+  text-align: center;
+  font-size: 3rem;
+  font-weight: 700;
+  line-height: 4rem;
+}

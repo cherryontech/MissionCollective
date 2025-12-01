@@ -1,3 +1,4 @@
+import "../../styles/Dashboard.css";
 import MissionStatus from "./MissionStatus";
 import TeamProgress from "./TeamProgress";
 import StatCard from "./StatCard";
