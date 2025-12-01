@@ -25,7 +25,7 @@ export const ATTRIBUTIONS = [
     attributionSource2: "",
     attributionLink2: "",
     resourceText: "Here's a resource to learn more about ",
-    resourceName: "Samba",
+    resourceName: "Samba.",
     resourceLink: "https://en.wikipedia.org/wiki/Samba",
   },
   {
@@ -43,7 +43,7 @@ export const ATTRIBUTIONS = [
     attributionLink2:
       "https://creativecommons.org/licenses/by-nc-sa/2.0/deed.en",
     resourceText: "Here's a resource to learn more about the ",
-    resourceName: "Carnival of Las Tablas",
+    resourceName: "Carnival of Las Tablas.",
     resourceLink: "https://carnivaland.net/las-tablas-carnival/",
   },
   {
@@ -78,7 +78,7 @@ export const ATTRIBUTIONS = [
     attributionSource2: "",
     attributionLink2: "",
     resourceText: "Here's a resource to learn more about ",
-    resourceName: "Nahuatl",
+    resourceName: "Nahuatl.",
     resourceLink: "https://en.wikipedia.org/wiki/Nahuatl",
   },
   {
