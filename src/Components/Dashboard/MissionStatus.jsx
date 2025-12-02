@@ -11,8 +11,16 @@ export default function MissionStatus() {
       </div>
     );
   } else if (activityCompleted) {
-    return <h1>Mission Accomplished!</h1>;
+    return (
+      <div className="missionStatusContainer">
+        <h1>Mission Accomplished!</h1>
+      </div>
+    );
   } else {
-    return <h1>Start a New Mission</h1>;
+    return (
+      <div className="missionStatusContainer">
+        <h1>Start a New Mission</h1>
+      </div>
+    );
   }
 }
