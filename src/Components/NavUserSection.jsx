@@ -5,7 +5,7 @@ import "../styles/NavUserSection.css";
 import { useUserContext } from "../Context/UserContext";
 
 export default function NavUserSection() {
-  const { quizScore } = useUserContext();
+  const { quizScore, setMissionCompleted } = useUserContext();
 
   return (
     <div className="NavUserContainer">
@@ -14,10 +14,16 @@ export default function NavUserSection() {
         <span className="NavUserPointsText">{230 + quizScore}</span>
       </div>
       <div className="NavUserBellIcon">
-        <img src={notifyEmpty} alt="notification bell icon" />
+        <button
+          className="iconButton"
+          onClick={() => setMissionCompleted(true)}
+        >
+          <img src={notifyEmpty} alt="notification bell icon" />
+        </button>
       </div>
       <div className="NavUserProfileContainer">
         <img src={profile} alt="user profile icon" />
+
         <span className="NavUserName">Lisa P.</span>
       </div>
     </div>
