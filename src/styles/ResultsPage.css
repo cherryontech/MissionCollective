@@ -1,0 +1,5 @@
+.resultsPage {
+  display: flex;
+  flex-direction: column;
+  gap: 3.75rem;
+}
