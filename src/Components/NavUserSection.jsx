@@ -7,8 +7,22 @@ import "../styles/NavUserSection.css";
 import { useUserContext } from "../Context/UserContext";
 
 export default function NavUserSection() {
-  const { quizScore, activityCompleted, setMissionCompleted } =
-    useUserContext();
+  const {
+    quizScore,
+    activityCompleted,
+    missionCompleted,
+    setMissionCompleted,
+  } = useUserContext();
+
+  function getImageSrc(activityCompleted, missionCompleted) {
+    if (missionCompleted) {
+      return notificationBellSolid;
+    } else if (activityCompleted) {
+      return notificationBell;
+    } else {
+      return notificationBellEmpty;
+    }
+  }
 
   return (
     <div className="NavUserContainer">
@@ -22,7 +36,7 @@ export default function NavUserSection() {
           onClick={() => setMissionCompleted(true)}
         >
           <img
-            src={activityCompleted ? notificationBell : notificationBellEmpty}
+            src={getImageSrc(activityCompleted, missionCompleted)}
             alt={
               activityCompleted
                 ? "notification bell icon with notification"
