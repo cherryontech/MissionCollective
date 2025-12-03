@@ -1,4 +1,4 @@
-import MissionStatus from "./MissionStatus";
+import StartMission from "./StartMission";
 import TeamProgress from "./TeamProgress";
 import StatCard from "./StatCard";
 import Leaderboard from "./Leaderboard";
@@ -8,7 +8,7 @@ export default function Dashboard() {
   return (
     <>
       <TeamProgress />
-      <MissionStatus />
+      <StartMission />
       <div>
         {statCardContent.map(({ id, icon, alt, number, stat }) => (
           <StatCard
