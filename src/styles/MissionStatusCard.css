@@ -1,0 +1,46 @@
+.missionStatusCardContainer {
+    border-radius: 1rem;
+    border: 1px solid #e5e5e5;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-flow: column;
+    width: 100%;
+    max-width: 23rem;
+    padding: 3.9375rem 0 3.875rem 0;
+    justify-content: center;
+    align-items: center;
+    flex-shrink: 0;
+    text-align: center;
+    background: #FFF;
+}
+
+.missionStatusCardIcon {
+    width: 5rem;
+    height: 5rem;
+    flex-shrink: 0;
+    margin-bottom: 0.88rem;
+}
+
+.missionStatusCardContainer h2 {
+    text-align: center;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.75rem;
+    margin-bottom: 1.28rem;
+}
+
+.missionStatusCardContainer p {
+    color: #343A40;
+    text-align: center;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.missionStatusCardContainer p {
+    line-height: 1.75rem;
+    font-size: 1rem;
+    padding: 0 1rem;
+    margin-bottom: 0.5rem;
+}
