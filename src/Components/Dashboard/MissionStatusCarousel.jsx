@@ -33,7 +33,7 @@ export default function MissionStatusCarousel() {
   return (
     <div className="mission-status-carousel">
       <div className="carousel-header">
-        <h2>Start Your Mission</h2>
+        <h2>Start a New Mission</h2>
       </div>
 
       <div className="carousel-container">

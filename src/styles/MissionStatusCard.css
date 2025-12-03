@@ -21,13 +21,16 @@
     margin-bottom: 0.88rem;
 }
 
-.missionStatusCardContainer h2 {
+.missionStatusCardContainer h3 {
+    color: #000;
     text-align: center;
     font-size: 1.5rem;
     font-style: normal;
     font-weight: 400;
+    height: 1.75rem;
     line-height: 1.75rem;
-    margin-bottom: 1.28rem;
+    align-self: stretch;
+    margin-bottom: 0.88rem;
 }
 
 .missionStatusCardContainer p {
