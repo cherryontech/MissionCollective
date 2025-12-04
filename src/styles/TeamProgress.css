@@ -1,0 +1,87 @@
+.team-progress-container {
+  width: 25rem;
+  height: 35.12rem;
+  border: 2px solid #f2bd00;
+  border-radius: 0.5rem;
+  padding: 1.8125rem 1.7285rem 1.75rem 1.6875rem;
+}
+
+.team-progress-container h2{
+  font-size: 1.25rem;
+  font-weight: 600;
+  margin-bottom: 1.25rem;
+  line-height: normal;
+}
+
+.team-progress-content {
+
+}
+
+.team-members {
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  border-radius: 0.5rem;
+}
+
+.team-member {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  height: 4.25rem;
+  background: #F8F9FA;
+}
+
+.team-member img {
+  width: 1.875rem;
+  height: 1.875rem;
+  margin: 1.06rem 0.87rem 1.31rem 0.75rem;
+}
+
+.member-text {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+.member-text p {
+  font-weight: 400;
+}
+
+.member-name {
+  font-size: 1rem;
+}
+
+.member-role {
+  font-size: 0.875rem;
+  color: #525252;
+}
+
+.member-points {
+  font-size: 1.125rem;
+  display: flex;
+  /* push points to the far right of the .team-member row */
+  margin-left: auto;
+  margin-right: 1rem;
+  /* vertically center the points */
+  align-items: center;
+}
+
+.team-progress-filter {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: 0.5rem;
+  font-size: 1rem;
+  margin-top: 1.5rem;
+}
+
+.filter-dropdown {
+  border: 1px solid #D4D4D4;
+  border-radius: 0.5rem;
+  padding: 0.625rem 0.5rem 0.625rem 0.75rem;
+  display: flex;
+  flex-direction: row;
+  gap: 3.5rem;
+  font-size: 0.875rem;
+}
