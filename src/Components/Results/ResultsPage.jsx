@@ -1,11 +1,14 @@
 import Attributions from "./Attributions";
 import ResultsDisplay from "./ResultsDisplay";
+import "../../styles/ResultsPage.css";
 
 export default function ResultsPage() {
   return (
     <main>
-      <ResultsDisplay />
-      <Attributions />
+      <div className="resultsPage">
+        <ResultsDisplay />
+        <Attributions />
+      </div>
     </main>
   );
 }

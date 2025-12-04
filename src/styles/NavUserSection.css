@@ -1,63 +1,72 @@
 .NavUserContainer {
-    display: flex;
-    justify-content: space-between;
-    gap: 1.25rem;
-    margin: 0;
+  display: flex;
+  justify-content: space-between;
+  gap: 1.25rem;
+  margin: 0;
 }
 
 .NavUserPointsContainer {
-    font-weight: bold;
-    padding: 0 0.94rem 0 0.63rem;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    gap: 0.4375rem;
-    border-radius: 0.6875rem;
-    background: #F0F3FF;
+  font-weight: bold;
+  padding: 0 0.94rem 0 0.63rem;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  gap: 0.4375rem;
+  border-radius: 0.6875rem;
+  background: #f0f3ff;
 }
 
 .NavUserPointsContainer img {
-    width: 1.5rem;
-    height: 1.5rem;
-    aspect-ratio: 1/1;
-    margin: 0.62rem 0 0.62rem 0.62rem;
-
+  width: 1.5rem;
+  height: 1.5rem;
+  aspect-ratio: 1/1;
+  margin: 0.62rem 0 0.62rem 0.62rem;
 }
 
 .NavUserPointsContainer span {
-    color: #0036F5;
-    font-size: 0.9375rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: normal;
+  color: #0036f5;
+  font-size: 0.9375rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
 }
 
 .NavUserBellIcon {
-    display: flex;
-    border-radius: 6.25rem;
-    background: #FFF;
-    /* cursor: pointer; */
-
+  border-radius: 6.25rem;
 }
 
 .NavUserProfileContainer {
-    display: flex;
-    align-items: center;
-    gap: 0.5rem;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
 }
 
 .NavUserProfileContainer img {
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    aspect-ratio: 1/1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  aspect-ratio: 1/1;
 }
 
 .NavUserProfileContainer span {
-    color: #1C1C1E;
-    text-align: center;
-    font-size: 1rem;
-    font-style: normal;
-    font-weight: 500;
-    line-height: 1.5rem;
+  color: #1c1c1e;
+  text-align: center;
+  font-size: 1rem;
+  font-style: normal;
+  font-weight: 500;
+  line-height: 1.5rem;
+}
+
+.iconButton {
+  padding: 0;
+  border: none;
+  display: inline-block;
+  border-radius: 6.25rem;
+  width: 2.75rem;
+  height: 2.75rem;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-content: center;
+  background-color: #ffffff;
 }

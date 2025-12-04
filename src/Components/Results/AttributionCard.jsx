@@ -1,14 +1,34 @@
 export default function AttributionCard({
   imageSrc,
   altText,
-  attribution,
-  resource,
+  attributionText1,
+  attributionName,
+  attributionNameLink,
+  attributionText2,
+  attributionSource1,
+  attributionLink1,
+  attributionSource2,
+  attributionLink2,
+  resourceText,
+  resourceName,
+  resourceLink,
 }) {
   return (
-    <div>
+    <div className="attributionCard">
       <img src={imageSrc} alt={altText} />
-      <p>{attribution}</p>
-      <p>{resource}</p>
+      <div className="attributionText">
+        <p>
+          {attributionText1}
+          <a href={attributionNameLink}>{attributionName}</a>
+          {attributionText2}
+          <a href={attributionLink1}>{attributionSource1}</a>
+          <a href={attributionLink2}>{attributionSource2}</a>
+        </p>
+        <p>
+          {resourceText}
+          <a href={resourceLink}>{resourceName}</a>
+        </p>
+      </div>
     </div>
   );
 }
