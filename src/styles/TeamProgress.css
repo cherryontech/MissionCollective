@@ -13,10 +13,6 @@
   line-height: normal;
 }
 
-.team-progress-content {
-
-}
-
 .team-members {
   display: flex;
   flex-direction: column;
@@ -30,6 +26,22 @@
   align-items: center;
   height: 4.25rem;
   background: #F8F9FA;
+}
+
+.team-member:last-child {
+  background: #F0F3FF;
+}
+
+.team-member:last-child {
+  background: #F0F3FF;
+}
+
+.team-member:last-child .member-points {
+  font-weight: 600;
+}
+
+.team-member:last-child .member-name {
+  font-weight: 600;
 }
 
 .team-member img {
