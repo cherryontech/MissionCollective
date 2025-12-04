@@ -32,9 +32,7 @@ export default function MissionStatusCarousel() {
   const currentCard = incompleteMissions[currentIndex];
   return (
     <div className="mission-status-carousel">
-      <div className="carousel-header">
-        <h2>Start a New Mission</h2>
-      </div>
+      <h1 className="mission-carousel-header">Start a New Mission</h1>
 
       <div className="carousel-container">
         <button onClick={prevCard} className="carousel-leftarrow">
