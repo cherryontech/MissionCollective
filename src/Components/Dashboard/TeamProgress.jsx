@@ -1,6 +1,6 @@
 import { teamProgressContent } from "../../data/teamProgress";
 import FilterArrow from "../../assets/icons/filterArrow.svg";
-import "../../styles/teamProgress.css";
+import "../../styles/TeamProgress.css";
 
 export default function TeamProgress() {
   return (
