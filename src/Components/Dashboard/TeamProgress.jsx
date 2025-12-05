@@ -17,7 +17,7 @@ export default function TeamProgress() {
       </div>
       <div className="team-progress-filter">
         <p>Sort By</p>
-        <div classname="filter-dropdown">
+        <div className="filter-dropdown">
           <p>Total Points in Last 30 Days</p>
           <img src={FilterArrow} alt="filter-arrow"></img>
         </div>

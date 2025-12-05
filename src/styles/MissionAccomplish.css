@@ -1,7 +1,164 @@
 .mission-accomplish-container {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    /* justify-content: space-between; */
+    gap: 2rem;
+    align-items: center;
+    padding: 2rem 1.5rem;
     width: 100%;
     height: 100%;
+}
+
+.mission-accomplish-container h1 {
+    color: var(--Neutral-900, #212529);
+    text-align: center;
+    font-feature-settings: 'ss01' on;
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4rem;
+    margin-top: 2.56rem;
+    align-self: stretch;
+}
+
+.mission-accomplish-container p {
+    color: var(--Neutral-900, #212529);
+    text-align: center;
+    font-size: 1.5rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: 1.75rem;
+    /* margin-bottom: 1.88rem; */
+    align-self: stretch;
+    margin: 0;
+
+}
+
+
+.points-added-display {
+    /* display: inline-flex; */
+    display: flex;
+    justify-content: center;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #eee;
+    border-radius: 0.75rem;
+    width: 19rem;
+    height: 9.75rem;
+    /* gap: 1.875rem; */
+    background-color: #F0F3FF;
+    border-radius: 1rem;
+    border: 2px solid rgba(0, 54, 245, 0.66);
+    margin: 0 auto;
+}
+
+.points-added {
+    font-size: 2rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4.75rem;
+    padding: 0;
+    /* margin-top: 1.5rem; */
+    margin: 0;
+}
+
+.points-added-text {
+    font-size: 1.25rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 1.5rem;
+}
+
+.points-added,
+.points-added-text {
+    color: #0036F5;
+    text-align: center;
+    font-feature-settings: 'ss01' on;
+}
+
+
+.accomplish-progress-box {
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    /* height: 20px;
+    width: 300px; */
+    overflow: visible;
+    gap: 1rem;
+    /* margin: 0 auto; */
+}
+
+/* 
+.accomplish-progress-text {
+    color: #1C1C1E;
+    text-align: center;
+    font-size: 1.125rem;
+    font-style: normal;
+    font-weight: 600;
+    line-height: 1.75rem;
+    padding-left: 0.5rem;
+    padding-bottom: 0;
+} */
+
+.accomplish-progress-box p {
+    color: #1C1C1E;
+    text-align: center;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-bottom: 0.5rem;
+}
+
+
+.button-accomplish-container {
+    display: flex;
+    justify-content: center;
+    /* margin-top: 1.5rem; */
+}
+
+.accomplish-button-container,
+.nextmission-button-container {
+    display: flex;
+    width: 13.75rem;
+    height: 3rem;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+    border-radius: 0.5rem;
+    border: 0 solid #E5E7EB;
+}
+
+.view-results-button {
+    gap: 1rem;
+    color: #1C1C1E;
+    text-align: center;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background-color: #F0F3FF;
+    padding: 0.6875rem 1rem;
+    margin-right: 0.5rem;
+}
+
+.view-results-button:hover {
+    background-color: #D1DAFF;
+}
+
+.start-nextmission-button {
+    margin-left: 0.5rem;
+    color: #F2F2F7;
+    text-align: center;
+    font-size: 1rem;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    background-color: #0036F5;
+    padding: 0.6875rem 1rem;
+}
+
+.start-nextmission-button:hover {
+    background-color: #002ECC;
 }
