@@ -2,6 +2,12 @@ import { useUserContext } from "../../Context/UserContext";
 import { useNavigate } from "react-router-dom";
 import { Line } from "rc-progress";
 import "../../styles/MissionAccomplish.css";
+import { DotLottieReact } from "@lottiefiles/dotlottie-react";
+
+const layout = {
+  fit: "fit-height",
+  align: [0.5, 0.5],
+};
 
 export default function MissionAccomplish() {
   const { quizScore } = useUserContext();
@@ -18,10 +24,17 @@ export default function MissionAccomplish() {
 
   return (
     <div className="mission-accomplish-container">
-      {/* <div className="mission-accomplish-header"> */}
+      <div className="animations-box">
+        <DotLottieReact
+          src="https://lottie.host/2b6403b7-3511-447a-8f22-cfdfdabfc500/RUbDVg5LNJ.lottie"
+          loop
+          autoplay
+          layout={layout}
+        />
+      </div>
       <h1>Mission Accomplished!</h1>
       <p>Your impact from completing Different Cultures Trivia</p>
-      {/* </div> */}
+
       <div className="points-added-display">
         <span className="points-added">+{quizScore}</span>
         <span className="points-added-text">Points Added</span>
