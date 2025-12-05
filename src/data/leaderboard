@@ -17,7 +17,7 @@ export const leaderboardContent = [
   {
     rank: 4,
     teamName: "Team Cookie Dough (Product)",
-    points: "2,840 pts"
+    points: "1,800 pts"
   },
   {
     rank: 5,
