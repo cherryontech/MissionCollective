@@ -1,5 +1,6 @@
 import { leaderboardContent } from "../../data/leaderboard";
 import FilterArrow from "../../assets/icons/filterArrow.svg";
+import "../../styles/Leaderboard.css";
 
 export default function Leaderboard() {
   return (
@@ -29,7 +30,8 @@ export default function Leaderboard() {
             </div>
           </div>
         </div>
-        <div className="leaderboard">
+      </div>
+      <div className="leaderboard">
           {leaderboardContent.map(({ rank, teamName, points }, idx) => (
             <div className="leaderboard-entry" key={`${teamName}-${idx}`}>
               <p className="rank">{rank}</p>
@@ -38,7 +40,6 @@ export default function Leaderboard() {
             </div>
           ))}
         </div>
-      </div>
     </div>
   );
 }
