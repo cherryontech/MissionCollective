@@ -1,3 +1,16 @@
+.dashboardContainer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin: 5.25rem 6.25rem;
+}
+
+.progressMissionSection {
+  display: flex;
+  flex-direction: row;
+  gap: 3.12rem;
+}
+
 .missionStatusContainer {
   width: 49.6875rem;
   height: 35.125rem;
