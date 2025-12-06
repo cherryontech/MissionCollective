@@ -71,11 +71,15 @@
   align-items: center;
   height: 3.75rem;
   background: #F8F9FA;
+  color: #525252;
+  font-weight: 400;
   padding: 1rem;
 }
 
-.leaderboard-entry p {
-  color: #525252;
+.leaderboard-entry:nth-last-child(2) {
+  background: #F0F3FF;
+  color: #000;
+  font-weight: 600;
 }
 
 .rank {
