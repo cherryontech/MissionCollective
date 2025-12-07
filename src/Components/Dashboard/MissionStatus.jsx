@@ -1,6 +1,7 @@
 import RewardUnlocked from "./RewardUnlocked";
 import MissionStart from "./MissionStart";
 import { useUserContext } from "../../Context/UserContext";
+import MissionAccomplish from "./MissionAccomplish";
 
 export default function MissionStatus() {
   const { activityCompleted, missionCompleted } = useUserContext();
@@ -14,7 +15,7 @@ export default function MissionStatus() {
   } else if (activityCompleted) {
     return (
       <div className="missionStatusContainer">
-        <h1>Mission Accomplished!</h1>
+        <MissionAccomplish />
       </div>
     );
   } else {
