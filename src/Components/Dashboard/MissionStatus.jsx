@@ -1,4 +1,5 @@
 import RewardUnlocked from "./RewardUnlocked";
+import MissionStart from "./MissionStart";
 import { useUserContext } from "../../Context/UserContext";
 
 export default function MissionStatus() {
@@ -19,7 +20,7 @@ export default function MissionStatus() {
   } else {
     return (
       <div className="missionStatusContainer">
-        <h1>Start a New Mission</h1>
+        <MissionStart />
       </div>
     );
   }
