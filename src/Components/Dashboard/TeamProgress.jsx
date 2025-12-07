@@ -1,5 +1,6 @@
 import { teamProgressContent } from "../../data/teamProgress";
 import FilterArrow from "../../assets/icons/filterArrow.svg";
+import "../../styles/TeamProgress.css";
 
 export default function TeamProgress() {
   return (
@@ -9,8 +10,10 @@ export default function TeamProgress() {
         {teamProgressContent.map(({ name, role, points, img }, idx) => (
           <div className="team-member" key={`${name}-${idx}`}>
             <img src={img} alt={name} />
-            <p className="member-name">{name}</p>
-            <p className="member-role">{role}</p>
+            <div className="member-text">
+              <p className="member-name">{name}</p>
+              <p className="member-role">{role}</p>
+            </div>
             <p className="member-points">{points}</p>
           </div>
         ))}

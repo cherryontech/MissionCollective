@@ -1,0 +1,27 @@
+export const leaderboardContent = [
+  {
+    rank: 1,
+    teamName: "Team Rocky Road (Engineering)",
+    points: "2,840 pts"
+  },
+  {
+    rank: 2,
+    teamName: "Team Blackberry Swirl (Product) ",
+    points: "2,720 pts"
+  },
+  {
+    rank: 3,
+    teamName: "Team Butter Pecan (Marketing)",
+    points: "1,810 pts"
+  },
+  {
+    rank: 4,
+    teamName: "Team Cookie Dough (Product)",
+    points: "1,800 pts"
+  },
+  {
+    rank: 5,
+    teamName: "Team Maple Walnut (HR)",
+    points: "1,320 pts"
+  },
+];
