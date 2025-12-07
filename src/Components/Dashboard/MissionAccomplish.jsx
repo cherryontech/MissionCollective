@@ -51,7 +51,7 @@ export default function MissionAccomplish() {
             trailWidth={6}
           />
         </div>
-        <p>{rewardPercent}%</p>
+        <span>{rewardPercent}%</span>
       </div>
       <div className="button-accomplish-container">
         <div className="accomplish-button-container">
