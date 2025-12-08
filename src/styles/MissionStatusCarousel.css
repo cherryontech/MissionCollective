@@ -1,0 +1,76 @@
+.mission-status-carousel {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+}
+
+.mission-carousel-header {
+    width: 100%;
+    text-align: center;
+    color: var(--Neutral-900, #212529);
+    font-size: 3rem;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 4rem;
+    margin-bottom: 1.88rem;
+    align-self: stretch;
+
+}
+
+.carousel-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    overflow: hidden;
+}
+
+.card-stack {
+    position: relative;
+    width: 100%;
+    max-width: 30.0625rem;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 0.25rem;
+}
+
+.background-card {
+    position: absolute;
+    width: 30.0625rem;
+    height: 15.875rem;
+    align-self: center;
+    background: #F8F9FA;
+    border-radius: 1rem;
+    box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.25);
+    margin: 1.75rem 5.81rem 1.69rem;
+    z-index: 0;
+}
+
+.carousel-content {
+    position: relative;
+    z-index: 1;
+    width: 100%;
+    max-width: 23rem;
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+}
+
+.carousel-leftarrow,
+.carousel-rightarrow {
+    background: none;
+    border: none;
+    cursor: pointer;
+    display: flex;
+    padding: 0;
+    align-items: center;
+    border-radius: 0.5rem;
+    width: 3rem;
+}
+
+.leftarrow-img,
+.rightarrow-img {
+    margin: 0;
+}

@@ -1,4 +1,5 @@
 import { useState } from "react";
+import { useUserContext } from "../../Context/UserContext";
 import { useNavigate } from "react-router-dom";
 import profile from "../../assets/images/navbar/profile.png";
 import profileemma from "../../assets/images/resultpage/profile-emma.png";
@@ -13,6 +14,10 @@ import "../../styles/ResultsDisplay.css";
 import "react-toastify/dist/ReactToastify.css";
 
 export default function ResultsDisplay() {
+  const { quizScore } = useUserContext();
+  const initialTeamPoints = 1772;
+  const displayedScore = quizScore || 85;
+  const newTeamPoints = initialTeamPoints + displayedScore;
   const [nudgedTeammates, setNudgedTeammates] = useState({});
 
   const pendingTeammates = [
@@ -23,12 +28,6 @@ export default function ResultsDisplay() {
 
   const handleNudge = (id, teammate) => {
     if (nudgedTeammates[id]) return;
-    // toast.info(
-    //   `You recently nudged ${teammate}. Try again tomorrow to give them time to contribute.`,
-    //   {
-    //     className: "toast-blue",
-    //   }
-    // );
     toast.success(
       `Friendly nudge sent to ${teammate}! Thanks for helping the team.`,
       {
@@ -52,7 +51,7 @@ export default function ResultsDisplay() {
       <div className="Results-grid-container">
         <div className="Points-earned-container">
           <div className="Points-earned-text">
-            <h1>Points Earned: 90</h1>
+            <h1>Points Earned: {displayedScore}</h1>
             <p>
               <span>Great work, Lisa! </span>
               <br />
@@ -60,7 +59,7 @@ export default function ResultsDisplay() {
             </p>
           </div>
           <div className="Team-points-info">
-            <span>1,890</span>
+            <span>{newTeamPoints.toLocaleString("en-US")}</span>
             <p>New Team Total</p>
           </div>
         </div>

@@ -4,6 +4,7 @@ import completed from "../assets/icons/missionHub/completed.svg";
 import MissionBriefingModal from "./MissionBriefingModal";
 import clock from "../assets/icons/missionHub/clock.svg";
 import starCircle from "../assets/icons/starCircle.svg";
+import { useNavigate } from "react-router-dom";
 import "../styles/MissionHubCard.css";
 
 const buttonText = {
@@ -47,6 +48,7 @@ export default function MissionHubCard({
 }) {
   const { activityCompleted } = useUserContext();
   const [showModal, setShowModal] = useState(false);
+  const navigate = useNavigate();
 
   // TODO: Update to link to the dashboard after activity has been completed
   const handleMissionModal = () => {
@@ -54,6 +56,10 @@ export default function MissionHubCard({
   };
   const handleCloseModal = () => {
     setShowModal(false);
+  };
+
+  const handleViewContributions = () => {
+    navigate("/results");
   };
 
   return (
@@ -83,7 +89,11 @@ export default function MissionHubCard({
         </p>
       </div>
       <button
-        onClick={handleMissionModal}
+        onClick={
+          activityCompleted && id === 0
+            ? handleViewContributions
+            : handleMissionModal
+        }
         disabled={id == 0 ? false : true}
         className={getButtonStyle(id, activityCompleted)}
       >
