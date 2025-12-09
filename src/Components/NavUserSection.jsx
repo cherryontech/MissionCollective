@@ -33,7 +33,11 @@ export default function NavUserSection() {
       <div className="NavUserBellIcon">
         <button
           className="iconButton"
-          onClick={() => setMissionCompleted(true)}
+          onClick={() => {
+            if (activityCompleted) {
+              setMissionCompleted(true);
+            }
+          }}
         >
           <img
             src={getImageSrc(activityCompleted, missionCompleted)}
