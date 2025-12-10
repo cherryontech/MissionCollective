@@ -97,3 +97,7 @@
   gap: 3.5rem;
   font-size: 0.875rem;
 }
+
+.filter-dropdown p {
+  white-space: nowrap
+}
