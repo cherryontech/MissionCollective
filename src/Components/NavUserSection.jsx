@@ -49,6 +49,7 @@ export default function NavUserSection() {
           />
         </button>
       </div>
+      <div className="NavUserDivider">|</div>
       <div className="NavUserProfileContainer">
         <img src={profile} alt="user profile icon" />
 
