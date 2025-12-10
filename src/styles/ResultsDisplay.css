@@ -14,7 +14,7 @@ Point Earning Section
   display: flex;
   flex-direction: row;
   gap: 6.5rem;
-  padding: 10rem 0 3.75rem 0;
+  padding: 5rem 0 3.75rem 0;
   align-items: flex-start;
   width: 100%;
 }
