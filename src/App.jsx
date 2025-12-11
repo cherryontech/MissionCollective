@@ -7,11 +7,13 @@ import MissionHub from "./Components/MissionHub";
 import ResultsPage from "./Components/Results/ResultsPage";
 import { UserContextProvider } from "./Context/UserContext";
 import Dashboard from "./Components/Dashboard/Dashboard";
+import ScrollTopPage from "./Components/ScrollTopPage";
 
 function App() {
   return (
     <BrowserRouter>
       <UserContextProvider>
+        <ScrollTopPage />
         <NavBar />
         <Routes>
           <Route path="/" element={<HomePage />} />
