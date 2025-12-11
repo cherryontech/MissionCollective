@@ -14,7 +14,7 @@ Point Earning Section
   display: flex;
   flex-direction: row;
   gap: 6.5rem;
-  padding: 5rem 0 3.75rem 0;
+  padding: 0 0 3.75rem 0;
   align-items: flex-start;
   width: 100%;
 }
@@ -196,10 +196,6 @@ Point Earning Section
 
 .Person {
   width: 60px;
-  /* display: flex;
-    flex-direction: column;
-    align-items: center;
-    text-align: center; */
   position: relative;
 }
 
@@ -242,10 +238,6 @@ Point Earning Section
   transition: transform 0.2s ease;
   transform-origin: center;
 }
-
-/* .Person button:hover img {
-    transform: scale(1.05); 
-} */
 
 .Mission-pending-container .Person button:hover:not(:disabled) {
   filter: drop-shadow(4px 6px 1px rgba(234, 165, 5, 0.945));
@@ -303,13 +295,6 @@ Point Earning Section
   color: white !important;
 }
 
-/* .toast-blue {
-    background: blue !important;
-    color: white !important;
-} */
-
-/* Results Section Buttons */
-
 .Results-Buttons-Container {
   display: flex;
   flex-direction: row;
@@ -325,17 +310,13 @@ Point Earning Section
   align-items: center;
   justify-content: center;
   width: 13.8rem;
-  /* gap: 0.5rem; */
 
-  /* width: 100%;
-    max-width: 250px; */
   height: 3rem;
   padding: 0.69rem 1rem 0.69rem 0;
   border-radius: 0.5rem;
   border: 0 solid #e5e7eb;
   background: #f0f3ff;
   cursor: pointer;
-  /* margin-top: 2rem; */
 }
 
 .View-Mission-Hub:hover {
@@ -355,10 +336,7 @@ Point Earning Section
   align-items: center;
   justify-content: center;
   width: 13.8rem;
-  /* gap: 0.5rem; */
 
-  /* width: 100%;
-    max-width: 250px; */
   height: 3rem;
   padding: 0.69rem 1rem 0.69rem 0;
 
@@ -366,7 +344,7 @@ Point Earning Section
   border: 0 solid #e5e7eb;
   background: #0036f5;
   cursor: pointer;
-  /* margin-top: 2rem; */
+
 }
 
 .Go-to-Dashboard:hover {
