@@ -1,19 +1,12 @@
-import { NavLink, useLocation, useNavigate } from "react-router-dom";
-import { useState } from "react";
+import { NavLink, useLocation } from "react-router-dom";
 import logo from "../assets/icons/logo.svg";
 import "../styles/NavBar.css";
 import NavUserSection from "./NavUserSection";
+import LoginModal from "./LoginModal";
+import { useUserContext } from "../Context/UserContext";
 
 export default function NavBar() {
-  const navigate = useNavigate();
-  const [isLoggedIn, setIsLoggedIn] = useState(false);
-
-  // TODO: Update to link to the dashboard after activity has been completed
-  const handleLoginClick = () => {
-    setIsLoggedIn(true);
-    navigate("/dashboard");
-  };
-
+  const { showLoginModal, setShowLoginModal, isLoggedIn } = useUserContext();
   const { pathname } = useLocation();
 
   const hideOnActivity =
@@ -24,8 +17,13 @@ export default function NavBar() {
 
   if (hideOnActivity || hideOnResults) return null;
 
+  function handleLoginClick() {
+    setShowLoginModal(true);
+  }
+
   return (
     <nav>
+      {showLoginModal ? <LoginModal /> : <></>}
       <div className="navElements">
         <div className="menu">
           <img src={logo} alt="logo" />
@@ -50,7 +48,6 @@ export default function NavBar() {
               <a className="inactiveLink" title="Coming Soon">
                 Your Team
               </a>
-              {/* Just use testing-Remove later */}
               <NavLink
                 to="/results"
                 className={({ isActive }) => (isActive ? "activeLink" : "")}
