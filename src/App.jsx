@@ -6,20 +6,25 @@ import NavBar from "./Components/NavBar";
 import MissionHub from "./Components/MissionHub";
 import ResultsPage from "./Components/Results/ResultsPage";
 import { UserContextProvider } from "./Context/UserContext";
+import { NotificationProvider } from "./Context/NotificationContext";
 import Dashboard from "./Components/Dashboard/Dashboard";
+import Notification from "./Components/Notification";
 
 function App() {
   return (
     <BrowserRouter>
       <UserContextProvider>
-        <NavBar />
-        <Routes>
-          <Route path="/" element={<HomePage />} />
-          <Route path="/activity" element={<Activity />} />
-          <Route path="/mission-hub" element={<MissionHub />} />
-          <Route path="/results" element={<ResultsPage />} />
-          <Route path="/dashboard" element={<Dashboard />} />
-        </Routes>
+        <NotificationProvider>
+          <NavBar />
+          <Notification />
+          <Routes>
+            <Route path="/" element={<HomePage />} />
+            <Route path="/activity" element={<Activity />} />
+            <Route path="/mission-hub" element={<MissionHub />} />
+            <Route path="/results" element={<ResultsPage />} />
+            <Route path="/dashboard" element={<Dashboard />} />
+          </Routes>
+        </NotificationProvider>
       </UserContextProvider>
     </BrowserRouter>
   );

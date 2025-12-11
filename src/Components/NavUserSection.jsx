@@ -5,6 +5,7 @@ import notificationBellEmpty from "../assets/icons/notificationBellEmpty.svg";
 import notificationBellSolid from "../assets/icons/notificationBellSolid.svg";
 import "../styles/NavUserSection.css";
 import { useUserContext } from "../Context/UserContext";
+import { useNotification } from "../Context/NotificationContext";
 
 export default function NavUserSection() {
   const {
@@ -14,14 +15,21 @@ export default function NavUserSection() {
     setMissionCompleted,
   } = useUserContext();
 
-  function getImageSrc(activityCompleted, missionCompleted) {
-    if (missionCompleted) {
-      return notificationBellSolid;
-    } else if (activityCompleted) {
-      return notificationBell;
-    } else {
-      return notificationBellEmpty;
+  const { toggleOverlay } = useNotification();
+
+  const handleBellClick = () => {
+    if (!activityCompleted) return;
+
+    if (!missionCompleted) {
+      setMissionCompleted(true);
     }
+    toggleOverlay();
+  };
+
+  function getImageSrc() {
+    if (missionCompleted) return notificationBellSolid;
+    if (activityCompleted) return notificationBell;
+    return notificationBellEmpty;
   }
 
   return (
@@ -32,15 +40,13 @@ export default function NavUserSection() {
       </div>
       <div className="NavUserBellIcon">
         <button
-          className="iconButton"
-          onClick={() => {
-            if (activityCompleted) {
-              setMissionCompleted(true);
-            }
-          }}
+          className={`iconButton ${!activityCompleted ? "disabled-bell" : ""}`}
+          onClick={handleBellClick}
+          disabled={!activityCompleted}
+          aria-label="Toggle notifications"
         >
           <img
-            src={getImageSrc(activityCompleted, missionCompleted)}
+            src={getImageSrc()}
             alt={
               activityCompleted
                 ? "notification bell icon with notification"
@@ -49,7 +55,6 @@ export default function NavUserSection() {
           />
         </button>
       </div>
-      <div className="NavUserDivider">|</div>
       <div className="NavUserProfileContainer">
         <img src={profile} alt="user profile icon" />
 
