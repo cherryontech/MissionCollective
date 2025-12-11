@@ -7,8 +7,9 @@ main {
 }
 
 .homepage-container {
-  width: 100%;
-  max-width: 1440px;
+  /* width: 100%;
+  max-width: 1440px; */
+  width: 90rem;
   margin: 0.5rem auto;
   padding: 0 6.94rem;
   display: flex;
