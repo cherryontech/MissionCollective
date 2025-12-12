@@ -5,7 +5,7 @@ import { useUserContext } from "../Context/UserContext";
 import "../styles/Notification.css";
 
 export default function Notification() {
-  const { notifications, isOverlayVisible } = useNotification();
+  const { notifications, isOverlayVisible, toggleOverlay } = useNotification();
   const { missionCompleted, setRewardViewed } = useUserContext();
   const [showAll, setShowAll] = useState(false);
 
@@ -16,14 +16,7 @@ export default function Notification() {
     : notifications.slice(0, 3);
 
   return (
-    <div
-      className={`notification-overlay ${showAll ? "show-all" : ""}`}
-      onClick={() => {
-        if (missionCompleted) {
-          setRewardViewed(true);
-        }
-      }}
-    >
+    <div className={`notification-overlay ${showAll ? "show-all" : ""}`}>
       <h2>Notifications</h2>
       <div className="notification-search">
         <span className="search-label">Search</span>
@@ -35,22 +28,39 @@ export default function Notification() {
         <img className="search-icon" src={search} alt="search icon" />
       </div>
       <div className="notification-list">
-        {visibleNotifications.map(({ message, img, time }, idx) => (
-          <div className="notification-item" key={`${time}-${idx}`}>
-            <p className="notification-message">{message}</p>
-            {img && <img src={img} alt="notification icon" />}
-            <div className="notification-date">{time}</div>
+        {visibleNotifications.map(({ message, highlight, img, time }, idx) => {
+          const parts = highlight ? message.split(highlight) : [message];
+
+          return (
+            <div className="notification-item" key={`${time}-${idx}`}>
+              <p
+                className="notification-message"
+                onClick={() => {
+                  if (missionCompleted) {
+                    setRewardViewed(true);
+                    toggleOverlay();
+                  }
+                }}
+              >
+                {parts[0]}
+                {highlight && <strong>{highlight}</strong>}
+                {parts[1] || ""}
+              </p>
+              {img && <img src={img} alt="notification icon" />}
+              <div className="notification-date">{time}</div>
+            </div>
+          );
+        })}
+
+        {notifications.length > 3 && (
+          <div
+            className="view-all-text"
+            onClick={() => setShowAll((prev) => !prev)}
+          >
+            {showAll ? "Show Less" : "View All"}
           </div>
-        ))}
+        )}
       </div>
-      {notifications.length > 3 && (
-        <div
-          className="view-all-text"
-          onClick={() => setShowAll((prev) => !prev)}
-        >
-          {showAll ? "Show Less" : "View All"}
-        </div>
-      )}
     </div>
   );
 }

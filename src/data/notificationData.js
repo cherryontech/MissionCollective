@@ -5,6 +5,7 @@ export const notificationData = [
     id: 1,
     message:
       "Emma sent a friendly nudge for Office Olympics. Time to contribute to the mission!",
+    highlight: "Office Olympics",
     img: newnotification,
     time: "5 minutes ago",
   },
@@ -12,6 +13,7 @@ export const notificationData = [
     id: 2,
     message:
       "Alex sent a friendly nudge for Two Truths and a Lie. Time to contribute to the mission!",
+    highlight: "Two Truths and a Lie",
     img: newnotification,
     time: "1 hour ago",
   },
@@ -19,6 +21,7 @@ export const notificationData = [
     id: 3,
     message:
       "New mission alert! Pet Peeves is now open for your team to start the next round.",
+    highlight: "Pet Peeves",
     time: "3 days ago",
   },
   {
