@@ -1,10 +1,12 @@
 import search from "../assets/icons/search.svg";
 import { useState } from "react";
 import { useNotification } from "../Context/NotificationContext";
+import { useUserContext } from "../Context/UserContext";
 import "../styles/Notification.css";
 
 export default function Notification() {
   const { notifications, isOverlayVisible } = useNotification();
+  const { missionCompleted, setRewardViewed } = useUserContext();
   const [showAll, setShowAll] = useState(false);
 
   if (!isOverlayVisible) return null;
@@ -14,7 +16,14 @@ export default function Notification() {
     : notifications.slice(0, 3);
 
   return (
-    <div className={`notification-overlay ${showAll ? "show-all" : ""}`}>
+    <div
+      className={`notification-overlay ${showAll ? "show-all" : ""}`}
+      onClick={() => {
+        if (missionCompleted) {
+          setRewardViewed(true);
+        }
+      }}
+    >
       <h2>Notifications</h2>
       <div className="notification-search">
         <span className="search-label">Search</span>

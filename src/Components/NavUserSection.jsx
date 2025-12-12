@@ -18,9 +18,7 @@ export default function NavUserSection() {
   const { toggleOverlay } = useNotification();
 
   const handleBellClick = () => {
-    if (!activityCompleted) return;
-
-    if (!missionCompleted) {
+    if (activityCompleted && !missionCompleted) {
       setMissionCompleted(true);
     }
     toggleOverlay();
@@ -40,9 +38,8 @@ export default function NavUserSection() {
       </div>
       <div className="NavUserBellIcon">
         <button
-          className={`iconButton ${!activityCompleted ? "disabled-bell" : ""}`}
+          className="iconButton"
           onClick={handleBellClick}
-          disabled={!activityCompleted}
           aria-label="Toggle notifications"
         >
           <img
