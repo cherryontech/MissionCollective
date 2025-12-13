@@ -8,19 +8,11 @@ import { useUserContext } from "../Context/UserContext";
 import { useNotification } from "../Context/NotificationContext";
 
 export default function NavUserSection() {
-  const {
-    quizScore,
-    activityCompleted,
-    missionCompleted,
-    setMissionCompleted,
-  } = useUserContext();
+  const { quizScore, activityCompleted, missionCompleted } = useUserContext();
 
   const { toggleOverlay } = useNotification();
 
   const handleBellClick = () => {
-    if (activityCompleted && !missionCompleted) {
-      setMissionCompleted(true);
-    }
     toggleOverlay();
   };
 

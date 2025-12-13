@@ -1,7 +1,8 @@
 .notification-overlay {
     position: absolute;
+    /* position: fixed; */
     top: 8rem;
-    right: 20px;
+    right: 15px;
     width: 25rem;
 
     padding: 1.88rem;
@@ -15,7 +16,6 @@
     gap: 1.5rem;
     z-index: 1100;
 }
-
 
 .notification-overlay h2 {
     font-size: 1.25rem;
@@ -99,11 +99,11 @@
     margin-right: 0.5rem;
 }
 
-.notification-item:has(> img) {
+.notification-item.has-image {
     background: #F0F3FF;
 }
 
-.notification-item:not(:has(> img)) {
+.notification-item.no-image {
     background: #F8F9FA;
 }
 

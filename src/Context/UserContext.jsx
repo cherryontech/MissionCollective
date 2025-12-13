@@ -7,8 +7,6 @@ export const defaultState = {
   setQuizScore: () => {},
   missionCompleted: false,
   setMissionCompleted: () => {},
-  rewardViewed: false,
-  setRewardViewed: () => {},
 };
 
 export const UserContext = createContext(defaultState);
@@ -19,7 +17,6 @@ export const UserContextProvider = ({ children }) => {
   const [activityCompleted, setActivityCompleted] = useState(false);
   const [quizScore, setQuizScore] = useState(0);
   const [missionCompleted, setMissionCompleted] = useState(false);
-  const [rewardViewed, setRewardViewed] = useState(false);
 
   const value = {
     activityCompleted,
@@ -28,8 +25,6 @@ export const UserContextProvider = ({ children }) => {
     setQuizScore,
     missionCompleted,
     setMissionCompleted,
-    rewardViewed,
-    setRewardViewed,
   };
   return <UserContext.Provider value={value}>{children}</UserContext.Provider>;
 };

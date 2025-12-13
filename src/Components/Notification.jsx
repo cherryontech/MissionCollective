@@ -1,13 +1,29 @@
 import search from "../assets/icons/search.svg";
-import { useState } from "react";
+import { useState, useEffect, useRef } from "react";
 import { useNotification } from "../Context/NotificationContext";
 import { useUserContext } from "../Context/UserContext";
 import "../styles/Notification.css";
 
 export default function Notification() {
   const { notifications, isOverlayVisible, toggleOverlay } = useNotification();
-  const { missionCompleted, setRewardViewed } = useUserContext();
+  const { setMissionCompleted, missionCompleted, activityCompleted } =
+    useUserContext();
   const [showAll, setShowAll] = useState(false);
+
+  const panelRef = useRef(null);
+
+  useEffect(() => {
+    if (!isOverlayVisible) return;
+
+    const handleClickOutside = (e) => {
+      if (panelRef.current && !panelRef.current.contains(e.target)) {
+        toggleOverlay();
+      }
+    };
+
+    document.addEventListener("mousedown", handleClickOutside);
+    return () => document.removeEventListener("mousedown", handleClickOutside);
+  }, [isOverlayVisible, toggleOverlay]);
 
   if (!isOverlayVisible) return null;
 
@@ -16,7 +32,7 @@ export default function Notification() {
     : notifications.slice(0, 3);
 
   return (
-    <div className={`notification-overlay ${showAll ? "show-all" : ""}`}>
+    <div className="notification-overlay" ref={panelRef}>
       <h2>Notifications</h2>
       <div className="notification-search">
         <span className="search-label">Search</span>
@@ -32,12 +48,15 @@ export default function Notification() {
           const parts = highlight ? message.split(highlight) : [message];
 
           return (
-            <div className="notification-item" key={`${time}-${idx}`}>
+            <div
+              className={`notification-item ${img ? "has-image" : "no-image"}`}
+              key={`${time}-${idx}`}
+            >
               <p
                 className="notification-message"
                 onClick={() => {
-                  if (missionCompleted) {
-                    setRewardViewed(true);
+                  if (activityCompleted && !missionCompleted) {
+                    setMissionCompleted(true);
                     toggleOverlay();
                   }
                 }}
