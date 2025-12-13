@@ -35,7 +35,7 @@ export default function LoginModal() {
           mission of connection starts here.
         </p>
         <form>
-          <div>
+          <div className="input">
             <label>Email</label>
             <input
               name="Email"
@@ -45,7 +45,7 @@ export default function LoginModal() {
               onChange={(e) => setEmail(e.target.value)}
             />
           </div>
-          <div>
+          <div className="input">
             <label>Password</label>
             <input
               name="Password"
@@ -57,7 +57,7 @@ export default function LoginModal() {
           </div>
         </form>
         <div className="loginNav">
-          <p>Forgot your password?</p>
+          <a>Forgot your password?</a>
           <button onClick={handleLogin}>Log In</button>
           <p>
             Don't have an account yet? <a>Sign up here!</a>
