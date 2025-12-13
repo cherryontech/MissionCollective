@@ -8,7 +8,7 @@ import ResultsPage from "./Components/Results/ResultsPage";
 import { UserContextProvider } from "./Context/UserContext";
 import { NotificationProvider } from "./Context/NotificationContext";
 import Dashboard from "./Components/Dashboard/Dashboard";
-import Notification from "./Components/Notification";
+
 import ScrollTopPage from "./Components/ScrollTopPage";
 
 function App() {
@@ -18,7 +18,6 @@ function App() {
         <ScrollTopPage />
         <NotificationProvider>
           <NavBar />
-          <Notification />
           <Routes>
             <Route path="/" element={<HomePage />} />
             <Route path="/activity" element={<Activity />} />

@@ -6,6 +6,7 @@ import notificationBellSolid from "../assets/icons/notificationBellSolid.svg";
 import "../styles/NavUserSection.css";
 import { useUserContext } from "../Context/UserContext";
 import { useNotification } from "../Context/NotificationContext";
+import Notification from "./Notification";
 
 export default function NavUserSection() {
   const { quizScore, activityCompleted, missionCompleted } = useUserContext();
@@ -43,6 +44,7 @@ export default function NavUserSection() {
             }
           />
         </button>
+        <Notification />
       </div>
       <div className="NavUserProfileContainer">
         <img src={profile} alt="user profile icon" />

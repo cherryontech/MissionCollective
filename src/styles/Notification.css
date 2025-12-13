@@ -1,9 +1,9 @@
 .notification-overlay {
     position: absolute;
-    /* position: relative; */
-    top: 8rem;
-    right: 15px;
+    top: 5rem;
     width: 25rem;
+    right: 0;
+
 
     padding: 1.88rem;
     background: #ffffff;
