@@ -5,23 +5,22 @@ import notificationBellEmpty from "../assets/icons/notificationBellEmpty.svg";
 import notificationBellSolid from "../assets/icons/notificationBellSolid.svg";
 import "../styles/NavUserSection.css";
 import { useUserContext } from "../Context/UserContext";
+import { useNotification } from "../Context/NotificationContext";
+import Notification from "./Notification";
 
 export default function NavUserSection() {
-  const {
-    quizScore,
-    activityCompleted,
-    missionCompleted,
-    setMissionCompleted,
-  } = useUserContext();
+  const { quizScore, activityCompleted, missionCompleted } = useUserContext();
 
-  function getImageSrc(activityCompleted, missionCompleted) {
-    if (missionCompleted) {
-      return notificationBellSolid;
-    } else if (activityCompleted) {
-      return notificationBell;
-    } else {
-      return notificationBellEmpty;
-    }
+  const { toggleOverlay } = useNotification();
+
+  const handleBellClick = () => {
+    toggleOverlay();
+  };
+
+  function getImageSrc() {
+    if (missionCompleted) return notificationBellSolid;
+    if (activityCompleted) return notificationBell;
+    return notificationBellEmpty;
   }
 
   return (
@@ -33,14 +32,11 @@ export default function NavUserSection() {
       <div className="NavUserBellIcon">
         <button
           className="iconButton"
-          onClick={() => {
-            if (activityCompleted) {
-              setMissionCompleted(true);
-            }
-          }}
+          onClick={handleBellClick}
+          aria-label="Toggle notifications"
         >
           <img
-            src={getImageSrc(activityCompleted, missionCompleted)}
+            src={getImageSrc()}
             alt={
               activityCompleted
                 ? "notification bell icon with notification"
@@ -48,6 +44,7 @@ export default function NavUserSection() {
             }
           />
         </button>
+        <Notification />
       </div>
       <div className="NavUserProfileContainer">
         <img src={profile} alt="user profile icon" />

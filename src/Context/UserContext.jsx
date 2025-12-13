@@ -17,6 +17,7 @@ export const UserContextProvider = ({ children }) => {
   const [activityCompleted, setActivityCompleted] = useState(false);
   const [quizScore, setQuizScore] = useState(0);
   const [missionCompleted, setMissionCompleted] = useState(false);
+
   const value = {
     activityCompleted,
     setActivityCompleted,

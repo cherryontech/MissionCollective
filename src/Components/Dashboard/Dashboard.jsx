@@ -9,13 +9,14 @@ import { useUserContext } from "../../Context/UserContext";
 
 export default function Dashboard() {
   const { activityCompleted, missionCompleted } = useUserContext();
+
   return (
     <>
       <div className="dashboardWrapper">
         <div className="dashboardContainer">
           <div className="progressMissionSection">
-          <TeamProgress />
-          <MissionStatus />
+            <TeamProgress />
+            <MissionStatus />
           </div>
           <div className="statCards">
             {statCardContent.map(

@@ -33,6 +33,7 @@
 
 .NavUserBellIcon {
   border-radius: 6.25rem;
+  position: relative;
 }
 
 .NavUserProfileContainer {
