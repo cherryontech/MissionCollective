@@ -9,11 +9,13 @@ import { UserContextProvider } from "./Context/UserContext";
 import { NotificationProvider } from "./Context/NotificationContext";
 import Dashboard from "./Components/Dashboard/Dashboard";
 import Notification from "./Components/Notification";
+import ScrollTopPage from "./Components/ScrollTopPage";
 
 function App() {
   return (
     <BrowserRouter>
       <UserContextProvider>
+        <ScrollTopPage />
         <NotificationProvider>
           <NavBar />
           <Notification />

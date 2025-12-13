@@ -1,6 +1,6 @@
 .notification-overlay {
     position: absolute;
-    /* position: fixed; */
+    /* position: relative; */
     top: 8rem;
     right: 15px;
     width: 25rem;
